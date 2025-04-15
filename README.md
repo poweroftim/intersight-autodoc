@@ -65,7 +65,10 @@ base_url: "https://www.intersight.com/api/v1"
 ```
 <br>
 <br>
-Operations.yaml - Review the operations.yaml file for correct syntax. For help learning which $select and $expand queries to use, leverage the [Intersight API REST Client](https://us-east-1.intersight.com/apidocs/apirefs/All/api/v1/)
+Operations.yaml - Review the operations.yaml file for correct syntax. 
+<br>
+<br>
+For help learning which $select and $expand queries to use, the Intersight API REST Client is helpful.
 
 
 ```bash
@@ -103,7 +106,7 @@ python intersight_ops.py
 ## Notes
 - **Authentication**: Ensure the secret_key_path and api_key_id in the .env file are valid for accessing the Intersight API. See operations.yaml for examples of use.
 - **Word Template**: Use the Word Doc template provided in the repository.
-- **Filtering**: The filter key in operations.yaml specifies which fields to include in the filtered JSON output. It is not the $filter used in the Intersight API. 
+- **Filtering**: The filter key in operations.yaml specifies which fields to include in the filtered JSON output. It is not same as the $filter query used in the Intersight API REST Client. 
 
 ## Troubleshooting
 - **Missing Dependencies**: Run pip install -r requirements.txt to ensure all dependencies are installed.
