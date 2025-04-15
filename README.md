@@ -102,6 +102,12 @@ python intersight_ops.py
 - **API Errors**: Check your api_key_id and secret_key_path for validity.
 
 ## Feature Backlog
+
+Get Requests
 - Fibre Channel Objects (vHBAs, Zoning, etc.)
 - Security Advisories
 
+Code Improvements
+- Error Handling
+- Logging
+- Environment Variable Validation
