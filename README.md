@@ -66,7 +66,7 @@ OPERATIONS:
     resource_path: "/resource/path"
     select: "?$select=field1,field2"
     expand: "&$expand=relatedResource" 
-    filter: "field1,field2" # This is a filter for JSON output, not the same filter for the Intersight API. 
+    filter: "field1,field2" # This is a filter for JSON output, not the $filter for the Intersight API. 
     request_process: true
     table_name: "Name of table in Word Doc"
     column_names: "Rename columns from filter list. Retain the order."
@@ -93,9 +93,9 @@ python intersight_ops.py
 
 ## Notes
 
-- **Authentication**: Ensure the secret_key_path and api_key_id in config.yaml are valid for accessing the Intersight API.
-- **Word Template**: The word_template_path should point to a valid .docx file if Word document generation is required.
-- **Filtering**: The filter key in operations.yaml specifies which fields to include in the filtered JSON output.
+- **Authentication**: Ensure the secret_key_path and api_key_id in the .env file are valid for accessing the Intersight API.
+- **Word Template**: Use the Word Doc template provided in the repository.
+- **Filtering**: The filter key in operations.yaml specifies which fields to include in the filtered JSON output. It is not the $filter used in the Intersight API. 
 
 
 ## Troubleshooting
