@@ -1,5 +1,5 @@
 # intersight-autodoc
-Using API get requests, create tables in a Word Doc for easy documentation. 
+From API get requests, dynamically create tables in a Word Doc for easy documentation.
 
 ---
 ## Prerequisites
