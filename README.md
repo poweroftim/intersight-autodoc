@@ -106,6 +106,7 @@ python intersight_ops.py
 Get Requests
 - Fibre Channel Objects (vHBAs, Zoning, etc.)
 - Security Advisories
+- EoX Information
 
 Code Improvements
 - Error Handling
