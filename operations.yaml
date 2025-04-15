@@ -31,10 +31,10 @@ OPERATIONS:
     resource_path: "fabric/SwitchProfiles"
     request_method: "GET"
     select: "?$select=Name,PolicyBucket"
-    expand: "&$expand=PolicyBucket($select=Name,ObjectType)"
-    filter: "Name,PolicyBucket.Name,PolicyBucket.ObjectType"
+    expand: "&$expand=PolicyBucket($select=Name,DeviceModel)"
+    filter: "Name,PolicyBucket.DeviceModel,PolicyBucket.Name"
     table_name: "Domain Policies"
-    column_names: "Name,Policy Name,PolicyType"
+    column_names: "Profile,Device Model,Policy Name"
 
 # GET VLAN POLICIES
   - request_process: true
