@@ -1,10 +1,6 @@
 # intersight-autodoc
 Using API get requests, create tables in a Word Doc for easy documentation. 
 
-# Project Setup Guide
-
-This guide explains how to set up the environment and run the `intersight_ops.py` script.
-
 ---
 
 ## Prerequisites
