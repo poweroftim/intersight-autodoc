@@ -1,9 +1,0 @@
-[
-    {
-        "Name": "UCSX-ASB-MCAST",
-        "QuerierState": "Disabled",
-        "SnoopingState": "Enabled",
-        "SrcIpProxy": "Enabled",
-        "Organization.Name": "default"
-    }
-]
