@@ -1,17 +1,17 @@
-# intersight-autodoc
-From API get requests, dynamically create tables in a Word Doc for easy documentation.
-
 ***ALPHA RELEASE - NOT FOR PRODUCTION***
 
 ---
+
+# intersight-autodoc
+From API get requests, dynamically create tables in a Word Doc for easy documentation.
+
+
 ## Prerequisites
 
 Ensure you have the following installed:
 - **Python**: Version 3.8 or higher
 - **pip**: Python package manager
 - **Git**: For cloning the repository (optional)
-
----
 
 ## Setup Instructions
 
