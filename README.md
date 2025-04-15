@@ -74,9 +74,10 @@ OPERATIONS:
 
 Ensure the directories specified in config.yaml exist:
 
-- **input**: Place input files here.
+- **input**: Raw JSON files will be saved here.
 - **output**: Processed JSON files will be saved here.
 - **excel_output**: Excel files will be saved here.
+- **word_template_path**: "template.docx" # Create a Word Doc in and save it as template.docx. Ensure path is correct.
 
 ### 7. Run the script
 
