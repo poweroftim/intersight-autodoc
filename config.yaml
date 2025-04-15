@@ -4,6 +4,4 @@ directories:
   excel_output: './excel_output'
 
 word_template_path: './template.docx'
-secret_key_path: './PATH_TO_SECRET_KEY>'
-api_key_id: 'INTERSIGHT_API_KEY'
 base_url: 'https://www.intersight.com/api/v1/'
