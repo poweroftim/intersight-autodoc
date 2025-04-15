@@ -78,7 +78,7 @@ Ensure the directories specified in config.yaml exist:
 - **output**: Processed JSON files will be saved here.
 - **excel_output**: Excel files will be saved here.
 - **word_template_path**: "template.docx"
-    - Create a Word Doc and save it as template.docx. Ensure path is correct.
+    - Use the Word Doc included in the repo.
 
 ### 7. Run the script
 
