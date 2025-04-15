@@ -70,14 +70,14 @@ OPERATIONS:
     column_names: "Rename columns from filter list. Retain the order."
 ```
 
-### 6. Prepare Input and Output Directories
+### 6. Prepare Word Doc and Directories
 
 Ensure the directories specified in config.yaml exist:
 
 - **input**: Raw JSON files will be saved here.
 - **output**: Processed JSON files will be saved here.
 - **excel_output**: Excel files will be saved here.
-- **word_template_path**: "template.docx" # Create a Word Doc in and save it as template.docx. Ensure path is correct.
+- **word_template_path**: "template.docx" # Create a Word Doc and save it as template.docx. Ensure path is correct.
 
 ### 7. Run the script
 
