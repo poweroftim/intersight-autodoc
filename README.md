@@ -56,9 +56,11 @@ OPERATIONS:
   - request_method: "GET"
     resource_path: "/resource/path"
     select: "?$select=field1,field2"
-    expand: "&$expand=relatedResource"
-    filter: "field1,field2"
+    expand: "&$expand=relatedResource" 
+    filter: "field1,field2" # This is a filter for JSON output, not the same filter for the Intersight API. 
     request_process: true
+    table_name: "Name of table in Word Doc"
+    column_names: "Rename columns from filter list. Retain the order."
 ```
 
 ### 5. Prepare Input and Output Directories
