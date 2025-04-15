@@ -142,16 +142,6 @@ OPERATIONS:
     table_name: "Server Profiles"
     column_names: "Name, Management Mode,Platform,Associated Server,Server Template"
 
-# # GET VNICS
-#   - request_process: true
-#     resource_path: "vnic/EthIfs"
-#     request_method: "GET"
-#     select: "?$select=Name,FabricEthNetworkControlPolicy,FabricEthNetworkGroupPolicy,LanConnectivityPolicy,SrcTemplate"
-#     expand: "&$expand=FabricEthNetworkControlPolicy($select=Name),FabricEthNetworkGroupPolicy($select=Name,VlanSettings),LanConnectivityPolicy($select=Name),SrcTemplate($select=Name,FailoverEnabled)"
-#     filter: "Name,FabricEthNetworkControlPolicy.Name,FabricEthNetworkGroupPolicy.Name,LanConnectivityPolicy.Name,SrcTemplate.Name,SrcTemplate.FailoverEnabled,FabricEthNetworkGroupPolicy.VlanSettings"
-#     table_name: "vNICs"
-#     column_names: "Name,EthConPol,EthNetGrpPol,LANConPol,vNIC Template,Failover,Allowed Vlans,ClassId,NativeVlan,ObjectType,QinQEnabled,QinqVLAN" #Currently displaying VlanSettings as a list with separate columns
-
 # GET SERVER PROFILE vNICs
   - request_process: true
     resource_path: "server/Profiles"
@@ -345,37 +335,6 @@ OPERATIONS:
     table_name: "Contract Status"
     column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
 
-
-
-# ------------------------------------------------------
-# --------- SECURITY NOTIFICATIONS SECTION -------------
-# ------------------------------------------------------ 
-
-# # GET SECURITY ADVISORIES 
-#   - request_process: true
-#     resource_path: "tam/SecurityAdvisories"
-#     request_method: "GET"
-#     select: "?$select=Severity,Name,BaseScore,Description,CveIds"
-#     expand: "&$expand=Severity"
-#     filter: "Severity.Level,Name,BaseScore,Description,CveIds"
-#     table_name: "Security Advisories"
-#     column_names: "Severity Level,Name,Base Score,Description,CveIds"
-
-# # GET ADVISORY INSTANCES
-#   - request_process: true
-#     resource_path: "tam/AdvisoryInstances"
-#     request_method: "GET"
-#     select: "?$select=Advisory,AffectedObject"
-#     expand: "&$expand=Advisory,AffectedObject"
-#     filter: "Advisory.Actions.AlertType,AffectedObject.Model"
-#     table_name: "Advisories"
-#     column_names: "Alert Type,Model"
-
-
-# TO GET
-#-----------
-# Server Profile vHBAs
-# Server Profile Boot Policy
 
 
 
