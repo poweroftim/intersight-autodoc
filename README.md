@@ -34,7 +34,16 @@ Install the required Python libraries:
 pip install -r requirements.txt
 ```
 
-### 4. Create Configuration Files
+### 4. Define Environment Variables
+
+Create an .env file in the intersight-autodoc directory with the following values:
+```bash
+SECRET_KEY_PATH=./<PATH_TO_API_KEY>
+API_KEY_ID=<API_KEY>
+```
+
+
+### 5. Create Configuration Files
 
 Create the necessary configuration files in the root directory:
 
@@ -45,8 +54,6 @@ directories:
   output: "output"
   excel_output: "excel_output"
 word_template_path: "template.docx"
-secret_key_path: "path/to/secret_key.txt"
-api_key_id: "your_api_key_id"
 base_url: "https://www.intersight.com/api/v1"
 ```
 
@@ -63,7 +70,7 @@ OPERATIONS:
     column_names: "Rename columns from filter list. Retain the order."
 ```
 
-### 5. Prepare Input and Output Directories
+### 6. Prepare Input and Output Directories
 
 Ensure the directories specified in config.yaml exist:
 
@@ -71,7 +78,7 @@ Ensure the directories specified in config.yaml exist:
 - **output**: Processed JSON files will be saved here.
 - **excel_output**: Excel files will be saved here.
 
-### 6. Run the script
+### 7. Run the script
 
 Execute the script:
 
