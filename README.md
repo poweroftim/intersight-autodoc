@@ -47,10 +47,15 @@ API_KEY_ID=<API_KEY>
 
 ### 5. Create Configuration Files
 
-Create the necessary configuration files in the root directory:
+Create the necessary configuration files in the root directory. 
 
-config.yaml
+<br>
+<br>
+Config.yaml - If using an Intersight appliance, an update to the base_url will be required. Otherwise, the config.yaml is ready to use. 
+
+
 ```bash
+# Config.yaml
 directories:
   input: "input"
   output: "output"
@@ -58,9 +63,13 @@ directories:
 word_template_path: "template.docx"
 base_url: "https://www.intersight.com/api/v1"
 ```
+<br>
+<br>
+Operations.yaml - Review the operations.yaml file for correct syntax. For help learning which $select and $expand queries to use, leverage the [Intersight API REST Client](https://us-east-1.intersight.com/apidocs/apirefs/All/api/v1/)
 
-operations.yaml
+
 ```bash
+# Operations.yaml
 OPERATIONS:
   - request_method: "GET"
     resource_path: "/resource/path"
