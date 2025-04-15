@@ -16,8 +16,8 @@ Ensure you have the following installed:
 ### 1. Clone the Repository
 If the project is hosted on GitHub, clone it using:
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/poweroftim/intersight-autodoc.git
+cd intersight-autodoc
 ```
 ### 2. Create a Virtual Environment
 
