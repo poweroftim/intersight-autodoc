@@ -1,5 +1,5 @@
 <p align="center">
-***ALPHA RELEASE - NOT FOR PRODUCTION USE***
+*** ALPHA RELEASE - NOT FOR PRODUCTION USE ***
 </p>
 
 # intersight-autodoc
