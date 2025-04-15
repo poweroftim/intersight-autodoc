@@ -92,13 +92,16 @@ python intersight_ops.py
 
 
 ## Notes
-
-- **Authentication**: Ensure the secret_key_path and api_key_id in the .env file are valid for accessing the Intersight API.
+- **Authentication**: Ensure the secret_key_path and api_key_id in the .env file are valid for accessing the Intersight API. See operations.yaml for examples of use.
 - **Word Template**: Use the Word Doc template provided in the repository.
 - **Filtering**: The filter key in operations.yaml specifies which fields to include in the filtered JSON output. It is not the $filter used in the Intersight API. 
-
 
 ## Troubleshooting
 - **Missing Dependencies**: Run pip install -r requirements.txt to ensure all dependencies are installed.
 - **Directory Errors**: Verify that the directories specified in config.yaml exist.
 - **API Errors**: Check your api_key_id and secret_key_path for validity.
+
+## Feature Backlog
+- Fibre Channel Objects (vHBAs, Zoning, etc.)
+- Security Advisories
+
