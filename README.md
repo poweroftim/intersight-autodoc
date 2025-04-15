@@ -49,8 +49,7 @@ API_KEY_ID=<API_KEY>
 
 Create the necessary configuration files in the root directory. 
 
-<br>
-<br>
+
 Config.yaml - If using an Intersight appliance, an update to the base_url will be required. Otherwise, the config.yaml is ready to use. 
 
 
@@ -63,12 +62,10 @@ directories:
 word_template_path: "template.docx"
 base_url: "https://www.intersight.com/api/v1"
 ```
-<br>
-<br>
+
 Operations.yaml - Review the operations.yaml file for correct syntax. 
-<br>
-<br>
-For help learning which $select and $expand queries to use, the Intersight API REST Client is helpful.
+
+For help learning which $select and $expand queries to use, the [Intersight API REST Client](https://us-east-1.intersight.com/apidocs/apirefs/All/api/v1) is helpful. 
 
 
 ```bash
@@ -83,6 +80,8 @@ OPERATIONS:
     table_name: "Name of table in Word Doc"
     column_names: "Rename columns from filter list. Retain the order."
 ```
+
+
 
 ### 6. Prepare Word Doc and Directories
 
@@ -101,7 +100,6 @@ Execute the script:
 ```bash
 python intersight_ops.py
 ```
-
 
 ## Notes
 - **Authentication**: Ensure the secret_key_path and api_key_id in the .env file are valid for accessing the Intersight API. See operations.yaml for examples of use.
