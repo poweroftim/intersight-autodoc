@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "UCSX-ASB-NTP",
+        "NtpServers": [
+            "ntp4.rutgers.edu",
+            "ntp3.rutges.edu",
+            "ntp2.rugers.edu",
+            "ntp1.rutgers.edu"
+        ]
+    }
+]

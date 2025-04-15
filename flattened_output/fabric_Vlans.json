@@ -1,0 +1,205 @@
+{
+    "ObjectType": "fabric.Vlan.List",
+    "Results": [
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "67644ae76f626933015c640f",
+            "MulticastPolicy": null,
+            "Name": "default",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 1
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "676984ee6f62693301817ffe",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCSX-ASB_4",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 4
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "677d50de6f62693301b2f626",
+                "Name": "UCSX-KB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "677d50de6f62693301b2f6df",
+            "MulticastPolicy": null,
+            "Name": "default",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 1
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "677d50de6f62693301b2f626",
+                "Name": "UCSX-KB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "677d50de6f62693301b2f6fe",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCSX-KB",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 4
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "677d50de6f62693301b2f626",
+                "Name": "UCSX-KB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "677d51a36f62693301b3e5f2",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "VLAN_2609",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 2609
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "67b36f696f62693301ca9c0e",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCS-ASB_1704",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 1704
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "67b36f696f62693301ca9c15",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCS-ASB_1705",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 1705
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "67f6baba6f6269330128fcef",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCS-ASB_1707",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 1707
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "67f7c4b06f6269330130bd2f",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCS-ASB_2209",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 2209
+        },
+        {
+            "AutoAllowOnUplinks": true,
+            "ClassId": "fabric.Vlan",
+            "EthNetworkPolicy": {
+                "ClassId": "fabric.EthNetworkPolicy",
+                "Moid": "67644ae76f626933015c63fa",
+                "Name": "UCSX-ASB-VLAN",
+                "ObjectType": "fabric.EthNetworkPolicy"
+            },
+            "IsNative": false,
+            "Moid": "67fd3ce76f626933014a43c4",
+            "MulticastPolicy": {
+                "ClassId": "fabric.MulticastPolicy",
+                "Moid": "676984ce6f62693301815ba1",
+                "Name": "UCSX-ASB-MCAST",
+                "ObjectType": "fabric.MulticastPolicy"
+            },
+            "Name": "UCS-ASB_2223",
+            "ObjectType": "fabric.Vlan",
+            "VlanId": 2223
+        }
+    ]
+}

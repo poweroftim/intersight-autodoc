@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "UCSX-ASB-MANAGEMENT-IP",
+        "IpV4Blocks.From": "10.84.64.4",
+        "IpV4Blocks.To": "10.84.64.35",
+        "IpV4Config.Gateway": "10.84.64.1",
+        "IpV4Config.Netmask": "255.255.255.192",
+        "IpV4Config.PrimaryDns": "128.6.1.2",
+        "Size": 32,
+        "Assigned": 0
+    }
+]

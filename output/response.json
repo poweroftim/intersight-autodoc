@@ -1,0 +1,220 @@
+{
+    "ObjectType": "server.Profile.List",
+    "Results": [
+        {
+            "AssociatedServer": {
+                "ClassId": "compute.Blade",
+                "Moid": "6797a91076752d3301948834",
+                "Name": "UCSX-FI-ASB-01-5-1",
+                "ObjectType": "compute.Blade"
+            },
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e54e",
+            "Name": "UCSX-ASB-GPU-SERVER-01",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e55b",
+            "Name": "UCSX-ASB-GPU-SERVER-02",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e562",
+            "Name": "UCSX-ASB-GPU-SERVER-03",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e569",
+            "Name": "UCSX-ASB-GPU-SERVER-04",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e570",
+            "Name": "UCSX-ASB-GPU-SERVER-05",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e578",
+            "Name": "UCSX-ASB-GPU-SERVER-06",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e57f",
+            "Name": "UCSX-ASB-GPU-SERVER-07",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e587",
+            "Name": "UCSX-ASB-GPU-SERVER-08",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e58e",
+            "Name": "UCSX-ASB-GPU-SERVER-09",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b2ab77696e3301d1e595",
+            "Name": "UCSX-ASB-GPU-SERVER-10",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "6765b0df77696e3301d19227",
+                "Name": "UCSX-ASB-GPU-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "67c0880977696e3301eb1083",
+            "Name": "UCSX-ASB-ESXI-SERVER-01",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "67c079dc77696e3301e8f7e9",
+                "Name": "UCSX-ASB-ESXI-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "67c0880977696e3301eb1098",
+            "Name": "UCSX-ASB-ESXI-SERVER-02",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "67c079dc77696e3301e8f7e9",
+                "Name": "UCSX-ASB-ESXI-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "67c0880977696e3301eb109e",
+            "Name": "UCSX-ASB-ESXI-SERVER-03",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "67c079dc77696e3301e8f7e9",
+                "Name": "UCSX-ASB-ESXI-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        },
+        {
+            "AssociatedServer": null,
+            "ClassId": "server.Profile",
+            "ManagementMode": "Intersight",
+            "Moid": "67c0880a77696e3301eb10a6",
+            "Name": "UCSX-ASB-ESXI-SERVER-04",
+            "ObjectType": "server.Profile",
+            "SrcTemplate": {
+                "ClassId": "server.ProfileTemplate",
+                "Moid": "67c079dc77696e3301e8f7e9",
+                "Name": "UCSX-ASB-ESXI-SERVER",
+                "ObjectType": "server.ProfileTemplate"
+            },
+            "TargetPlatform": "FIAttached"
+        }
+    ]
+}

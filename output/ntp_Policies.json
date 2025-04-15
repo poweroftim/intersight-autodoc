@@ -1,0 +1,17 @@
+{
+    "ObjectType": "ntp.Policy.List",
+    "Results": [
+        {
+            "ClassId": "ntp.Policy",
+            "Moid": "6764456662757231016e59d0",
+            "Name": "UCSX-ASB-NTP",
+            "NtpServers": [
+                "ntp4.rutgers.edu",
+                "ntp3.rutges.edu",
+                "ntp2.rugers.edu",
+                "ntp1.rutgers.edu"
+            ],
+            "ObjectType": "ntp.Policy"
+        }
+    ]
+}

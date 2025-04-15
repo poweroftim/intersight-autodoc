@@ -1,0 +1,66 @@
+[
+    {
+        "Name": "UCSX-ASB-SNMP",
+        "AccessCommunityString": "AD9Cp6nhitnNk",
+        "Enabled": true,
+        "SnmpPort": 161,
+        "SnmpUsers": [],
+        "SnmpTraps": [],
+        "V2Enabled": false,
+        "V3Enabled": false,
+        "Profiles.Name": [
+            "UCSX-ASB-A",
+            "UCSX-ASB-B",
+            "UCSX-ASB-CHASSIS",
+            "UCSX-ASB-CHASSIS-01",
+            "UCSX-ASB-CHASSIS-02",
+            "UCSX-ASB-CHASSIS-03",
+            "UCSX-ASB-CHASSIS-04",
+            "UCSX-ASB-CHASSIS-05",
+            "UCSX-ASB-CHASSIS-06",
+            "UCSX-ASB-CHASSIS-07",
+            "UCSX-ASB-GPU-SERVER",
+            "UCSX-ASB-GPU-SERVER-01",
+            "UCSX-KB-CHASSIS",
+            "UCSX-ASB-ESXI-SERVER",
+            "UCSX-VCF-MGMT-SERVER",
+            "UCSX-VCF-MGMT-01",
+            "UCSX-VCF-MGMT-02",
+            "UCSX-VCF-MGMT-03",
+            "UCSX-VCF-MGMT-04",
+            "UCSX-ASB-ESXI-SERVER-01",
+            "UCSX-ASB-ESXI-SERVER-02",
+            "UCSX-ASB-ESXI-SERVER-03",
+            "UCSX-ASB-ESXI-SERVER-04",
+            "UCSX-ASB-ESXI-SERVER-05",
+            "UCSX-ASB-ESXI-SERVER-06",
+            "UCSX-ASB-ESXI-SERVER-07",
+            "UCSX-ASB-ESXI-SERVER-08"
+        ]
+    },
+    {
+        "Name": "UCSX-KB-SNMP",
+        "AccessCommunityString": "AD9Cp6nhitnNk",
+        "Enabled": true,
+        "SnmpPort": 161,
+        "SnmpUsers": [],
+        "SnmpTraps": [],
+        "V2Enabled": false,
+        "V3Enabled": false,
+        "Profiles.Name": [
+            "UCSX-KB-UCSX-ASB-A",
+            "UCSX-KB-UCSX-ASB-B"
+        ]
+    },
+    {
+        "Name": "SystemDefault",
+        "AccessCommunityString": "",
+        "Enabled": false,
+        "SnmpPort": 161,
+        "SnmpUsers": [],
+        "SnmpTraps": [],
+        "V2Enabled": false,
+        "V3Enabled": false,
+        "Profiles.Name": []
+    }
+]

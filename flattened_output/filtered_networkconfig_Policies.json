@@ -1,0 +1,13 @@
+[
+    {
+        "Name": "UCSX-ASB-NETWORK",
+        "PreferredIpv4dnsServer": "128.6.1.2",
+        "AlternateIpv4dnsServer": "128.6.1.2",
+        "Profiles.Name": [
+            "UCSX-ASB-A",
+            "UCSX-ASB-B",
+            "UCSX-KB-UCSX-ASB-A",
+            "UCSX-KB-UCSX-ASB-B"
+        ]
+    }
+]

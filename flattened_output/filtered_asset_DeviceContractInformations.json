@@ -1,0 +1,802 @@
+[
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM253001HP",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-07T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM25290M7F",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-07T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2530008M",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-07T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM25290M3G",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-07T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2530035T",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-07T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2528061K",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-15T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM25240CAF",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-15T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM252605HF",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-15T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM253001Q7",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-15T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH20157GMT",
+        "ServiceDescription": "^Not sold standaloneB200M4Hi-Core2w/2xE52697v3,8x32GB,VIC1340",
+        "ServiceEndDate": "2024-02-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH201670YH",
+        "ServiceDescription": "^Not sold standaloneB200M4Hi-Core2w/2xE52697v3,8x32GB,VIC1340",
+        "ServiceEndDate": "2024-02-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2615050J",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP26150504",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2614020Y",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP26140217",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2615050K",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2614020K",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP26110N4L",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP261504Y8",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP26140216",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP26140215",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204915414",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2629V657",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2027-08-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204915414",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2629V2BQ",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2027-08-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204915414",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2629V60Q",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2027-08-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204915414",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2629V693",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2027-08-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204915414",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2629V3G9",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2027-08-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204915414",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2629V3BT",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2027-08-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM23420A2A",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2026-09-15T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2615050L",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2614020A",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSR2F-FI6332-16UP",
+        "DeviceId": "FDO23420W5A",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSR2F-FI6332-16UP",
+        "DeviceId": "FDO23420Y94",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM24100E0K",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM241101RC",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2411095M",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM2411097J",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM24100HKG",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM24110912",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM23210JAK",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM23210BHF",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-FI48P",
+        "DeviceId": "SSI1945046F",
+        "ServiceDescription": "SNTC 24X7X4OS",
+        "ServiceEndDate": "2024-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-FI48P",
+        "DeviceId": "SSI1945046G",
+        "ServiceDescription": "SNTC 24X7X4OS",
+        "ServiceEndDate": "2024-05-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH20167HGX",
+        "ServiceDescription": "^Not sold standaloneB200M4Hi-Core2w/2xE52697v3,8x32GB,VIC1340",
+        "ServiceEndDate": "2024-02-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH20147HD3",
+        "ServiceDescription": "^Not sold standaloneB200M4Hi-Core2w/2xE52697v3,8x32GB,VIC1340",
+        "ServiceEndDate": "2024-02-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH20137JPD",
+        "ServiceDescription": "^Not sold standaloneB200M4Hi-Core2w/2xE52697v3,8x32GB,VIC1340",
+        "ServiceEndDate": "2024-02-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH20147HZ1",
+        "ServiceDescription": "^Not sold standaloneB200M4Hi-Core2w/2xE52697v3,8x32GB,VIC1340",
+        "ServiceEndDate": "2024-02-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "202025911",
+        "Contract.LineStatus": "CANCELLED/TERMINATED",
+        "Product.Number": "UCS-SP-FI48P",
+        "DeviceId": "SSI194402HM",
+        "ServiceDescription": "^(Not sold Standalone)UCS SP Select 6248 FI w/ 12p LIC",
+        "ServiceEndDate": "2023-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "202025911",
+        "Contract.LineStatus": "CANCELLED/TERMINATED",
+        "Product.Number": "UCS-SP-FI48P",
+        "DeviceId": "SSI194402KQ",
+        "ServiceDescription": "^(Not sold Standalone)UCS SP Select 6248 FI w/ 12p LIC",
+        "ServiceEndDate": "2023-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSC-C220-M5SX",
+        "DeviceId": "WZP24220NE2",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2336P2KR",
+        "ServiceDescription": "SOLN SUPP 8X5XNBDOS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2338P16T",
+        "ServiceDescription": "SOLN SUPP 8X5XNBDOS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2335PBF8",
+        "ServiceDescription": "SOLN SUPP 8X5XNBD",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2336P0WZ",
+        "ServiceDescription": "SOLN SUPP 8X5XNBD",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2338P24D",
+        "ServiceDescription": "SOLN SUPP 8X5XNBDOS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2338P248",
+        "ServiceDescription": "SOLN SUPP 8X5XNBD",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205809248",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SP-5108-AC3",
+        "DeviceId": "FOX2338P16U",
+        "ServiceDescription": "SOLN SUPP 8X5XNBDOS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCS-SPM-5108-AC2",
+        "DeviceId": "FOX2004G0AK",
+        "ServiceDescription": "SNTC 24X7X4OS",
+        "ServiceEndDate": "2028-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "95256644",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "N20-C6508-UPG",
+        "DeviceId": "FOX1830GLHP",
+        "ServiceDescription": "^^UCS 5108 Blade Svr AC Chassis/0 PSU/8 fans/0 fabric extender",
+        "ServiceEndDate": "2021-11-30T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "202025911",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SPM-5108-AC2",
+        "DeviceId": "FOX2006GB4Y",
+        "ServiceDescription": "^UCS SP Select 5108 AC2 Chassis w/2208 IO, 4x SFP cable 3m",
+        "ServiceEndDate": "2023-08-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "OVERDUE",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM241106U3",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "92879291",
+        "Contract.LineStatus": "CANCELLED/TERMINATED",
+        "Product.Number": "UCSB-B200-M5-CH",
+        "DeviceId": "FCH224470Y5",
+        "ServiceDescription": "SNTC 8X5X4OS",
+        "ServiceEndDate": "2025-03-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "",
+        "Contract.LineStatus": "NEVER COVERED",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM24270A76",
+        "ServiceDescription": "UCS B200 M5 Blade w/o CPU, mem, HDD, mezz (UPG)",
+        "ServiceEndDate": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2614021G",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "205260839",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "HXAF-E-220M6S",
+        "DeviceId": "WZP2614020T",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2027-05-11T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM230103F7",
+        "ServiceDescription": "",
+        "ServiceEndDate": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM230105G2",
+        "ServiceDescription": "",
+        "ServiceEndDate": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCSB-B200-M5-U",
+        "DeviceId": "FLM230103GC",
+        "ServiceDescription": "",
+        "ServiceEndDate": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH201170HZ",
+        "ServiceDescription": "",
+        "ServiceEndDate": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "",
+        "Contract.LineStatus": "EXPIRED",
+        "Product.Number": "UCS-SP-B200M4-C2",
+        "DeviceId": "FCH20167HM0",
+        "ServiceDescription": "",
+        "ServiceEndDate": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204369901",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-FI-6536-D-U",
+        "DeviceId": "FDO28040VKH",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204369901",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-FI-6536-D-U",
+        "DeviceId": "FDO283101W4",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-FI-6536-D-U",
+        "DeviceId": "FDO283101X4",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-30T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-FI-6536-D-U",
+        "DeviceId": "FDO283101Z4",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-30T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204369901",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-9508-D=",
+        "DeviceId": "FOX2802PWCX",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204369901",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-9508-D=",
+        "DeviceId": "FOX2808P25X",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-28T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204369901",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-9508-D=",
+        "DeviceId": "FOX2802PWD2",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "204369901",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-9508-D=",
+        "DeviceId": "FOX2802PWCZ",
+        "ServiceDescription": "SNTC 8X5XNBD",
+        "ServiceEndDate": "2029-10-29T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283671JE",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283671CW",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283071VJ",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH2836719W",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283670SD",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283671A5",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283071XB",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283671H7",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283071LX",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH2832730B",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH281678ZS",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283671GU",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH2823732Q",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283071LF",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283070YT",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283674GU",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283670AU",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH281678SP",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH2830718M",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH2830714B",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH2830717G",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH28307167",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    },
+    {
+        "Contract.ContractNumber": "206291282",
+        "Contract.LineStatus": "ACTIVE",
+        "Product.Number": "UCSX-210C-M7-U",
+        "DeviceId": "FCH283670DT",
+        "ServiceDescription": "SNTC 8X5XNBDOS",
+        "ServiceEndDate": "2029-10-31T00:00:00Z"
+    }
+]

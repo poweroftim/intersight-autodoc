@@ -1,0 +1,29 @@
+{
+    "ObjectType": "server.ProfileTemplate.List",
+    "Results": [
+        {
+            "ClassId": "server.ProfileTemplate",
+            "ManagementMode": "Intersight",
+            "Moid": "6765b0df77696e3301d19227",
+            "Name": "UCSX-ASB-GPU-SERVER",
+            "ObjectType": "server.ProfileTemplate",
+            "Usage": 1
+        },
+        {
+            "ClassId": "server.ProfileTemplate",
+            "ManagementMode": "Intersight",
+            "Moid": "67c079dc77696e3301e8f7e9",
+            "Name": "UCSX-ASB-ESXI-SERVER",
+            "ObjectType": "server.ProfileTemplate",
+            "Usage": 8
+        },
+        {
+            "ClassId": "server.ProfileTemplate",
+            "ManagementMode": "Intersight",
+            "Moid": "67f677b477696e3301252e3f",
+            "Name": "UCSX-VCF-MGMT-SERVER",
+            "ObjectType": "server.ProfileTemplate",
+            "Usage": 4
+        }
+    ]
+}

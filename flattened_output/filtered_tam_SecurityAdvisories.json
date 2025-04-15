@@ -1,0 +1,939 @@
+[
+    {
+        "Severity.Level": "high",
+        "Name": "Multiple Vulnerabilities in Apache HTTP Server Affecting Cisco Products: November 2021",
+        "BaseScore": 7.5,
+        "Description": "On September 16, 2021, the Apache Software Foundation disclosed five vulnerabilities affecting the Apache HTTP Server (httpd) 2.4.48 and earlier releases.\n- CVE-2021-33193\n- CVE-2021-34798\n- CVE-2021-36160\n- CVE-2021-39275\n- CVE-2021-40438\n\n Cisco UCS Manager is impacted with **CVE-2021-34798** only and remaining advisories are not applicable.\n\nFor more information about this vulnerability, please refer [CVE-2021-34798](https://www.cve.org/CVERecord?id=CVE-2021-34798).\n\n",
+        "CveIds": [
+            "CVE-2021-34798"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "CPU Side-Channel Information Disclosure Vulnerabilities",
+        "BaseScore": 5.6,
+        "Description": "On January 3, 2018, researchers disclosed three vulnerabilities that take advantage of the implementation of speculative execution of instructions on many modern microprocessor architectures to perform side-channel information disclosure attacks. These vulnerabilities could allow an unprivileged local attacker, in specific circumstances, to read privileged memory belonging to other processes or memory allocated to the operating system kernel.\n\n The first two vulnerabilities, CVE-2017-5753 and CVE-2017-5715, are collectively known as Spectre. The third vulnerability, CVE-2017-5754, is known as Meltdown. The vulnerabilities are all variants of the same attack and differ in the way that speculative execution is exploited.\n\n To exploit any of these vulnerabilities, an attacker must be able to run crafted code on an affected device. Although the underlying CPU and operating system combination in a product or service may be affected by these vulnerabilities, the majority of Cisco products are closed systems that do not allow customers to run custom code and are, therefore, not vulnerable. There is no vector to exploit them. Cisco products are considered potentially vulnerable only if they allow customers to execute custom code side-by-side with Cisco code on the same microprocessor.\n\n A Cisco product that may be deployed as a virtual machine or a container, even while not directly affected by any of these vulnerabilities, could be targeted by such attacks if the hosting environment is vulnerable. Cisco recommends that customers harden their virtual environments, tightly control user access, and ensure that all security updates are installed. Customers who are deploying products as a virtual device in multi-tenant hosting environments should ensure\n that the underlying hardware, as well as operating system or hypervisor, is patched against the vulnerabilities in question.\n\n",
+        "CveIds": [
+            "CVE-2017-5715",
+            "CVE-2017-5753",
+            "CVE-2017-5754"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Integrated Management Controller Redirection Vulnerability",
+        "BaseScore": 4.7,
+        "Description": "A vulnerability in the web interface of Cisco Integrated Management Controller (IMC) Software could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\n\n The vulnerability is due to improper input validation of parameters in HTTP requests. An attacker could exploit this\n vulnerability by sending a crafted HTTP request to an affected system, which could cause the web interface of the\n affected software to redirect the request to a malicious URL. This vulnerability is known as an open redirect attack,\n which is used in phishing attacks to get users to visit malicious sites without their knowledge.\n",
+        "CveIds": [
+            "CVE-2017-6604"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco HyperFlex Software Static Signing Key Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in Cisco HyperFlex Software could allow an unauthenticated, remote attacker to generate valid, signed session tokens.\n\n The vulnerability is due to a static signing key that is present in all Cisco HyperFlex systems. An attacker could exploit this vulnerability by accessing the static signing key from one HyperFlex system and using it to generate valid, signed session tokens for another HyperFlex system.\nA successful exploit could allow the attacker to access the HyperFlex Web UI of a system for which they are not authorized.\n\n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-15382"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex World-Readable Sensitive Information Vulnerability",
+        "BaseScore": 5.5,
+        "Description": "A vulnerability in the installation process of Cisco HyperFlex Software could allow an authenticated, local attacker to read sensitive information.\n\n The vulnerability is due to insufficient cleanup of installation files. An attacker could exploit this vulnerability by accessing the residual installation files on an affected system. A successful exploit could allow the attacker to collect sensitive information regarding the configuration of the system.\n",
+        "CveIds": [
+            "CVE-2018-15407"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex HX Data Platform Software Unauthorized Directory Access Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the web-based UI of Cisco HyperFlex HX Data Platform Software could allow an unauthenticated, remote attacker to access sensitive information on an affected system.\n\n The vulnerability is due to a lack of proper input and authorization of HTTP requests. An attacker could exploit this vulnerability by sending a malicious HTTP request to the web-based UI of an affected system. A successful exploit could allow the attacker to access files that may contain sensitive data.\n",
+        "CveIds": [
+            "CVE-2018-15429"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS, IOS XR, and NX-OS Software Cisco Discovery Protocol Denial of Service Vulnerability",
+        "BaseScore": 7.4,
+        "Description": "A vulnerability in the Cisco Discovery Protocol implementation for Cisco FXOS Software, Cisco IOS XR Software, and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to cause a reload of an affected device, resulting in a denial of service (DoS) condition.\n \n The vulnerability is due to a missing check when the affected software processes Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. A successful exploit could allow the attacker to exhaust system memory, causing the device to reload.\n \n Note: Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent).\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2020-3120"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex System Authenticated Information Disclosure Vulnerability",
+        "BaseScore": 6,
+        "Description": "A vulnerability in system logging when replication is being configured with the Cisco HyperFlex System could allow an authenticated, local attacker to view sensitive information that should be restricted in the system log files. The attacker would have to be authenticated as an administrative user to conduct this attack.\n\n The vulnerability is due to lack of proper masking of sensitive information in system log files. An attacker could exploit this vulnerability by authenticating to the targeted device and viewing the system log file. An exploit could allow the attacker to view sensitive system information that should have been restricted. The attacker could use this information to conduct additional reconnaissance attacks.\n",
+        "CveIds": [
+            "CVE-2017-12315"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco HyperFlex Software Command Injection Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the cluster service manager of Cisco HyperFlex Software could allow an unauthenticated, adjacent attacker to execute commands as the root user.\n\n The vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by connecting to the cluster service manager and injecting commands into the bound process.\n A successful exploit could allow the attacker to run commands on the affected host as the root user.\n\n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-15380"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex Software Counter Value Injection Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the statistics collection service of Cisco\u00a0HyperFlex Software could allow an unauthenticated, remote attacker to inject arbitrary values on an affected device.\n\n The vulnerability is due to insufficient authentication for the statistics collection service. An attacker could exploit this vulnerability by sending properly formatted data values to the statistics collection service of an affected device. A successful exploit could allow the attacker to cause the web interface statistics view to present invalid data to users.\n\n",
+        "CveIds": [
+            "CVE-2019-12620"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex Static SSL Key Vulnerability",
+        "BaseScore": 6.8,
+        "Description": "A vulnerability in Cisco HyperFlex Software could allow an unauthenticated, remote attacker to perform a man-in-the-middle attack.\n\n The vulnerability is due to insufficient key management. An attacker could exploit this vulnerability by obtaining a specific encryption key for the cluster. A successful exploit could allow the attacker to perform a man-in-the-middle attack against other nodes in the cluster.\n\n Cisco has released software updates that address this vulnerability\n ",
+        "CveIds": [
+            "CVE-2019-12621"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Hyperflex Stored Cross-Site Scripting Vulnerability",
+        "BaseScore": 4.7,
+        "Description": "A vulnerability in the web-based management interface of Cisco HyperFlex software could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the web-based management interface of an affected system.\n\n The vulnerability is due to  validation of user-supplied input by the web-based management interface of an affected system. An attacker could\n exploit this vulnerability by persuading a user of the interface to click a maliciously crafted link. A successful exploit could allow the attacker\n to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.\n",
+        "CveIds": [
+            "CVE-2019-1665"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex Unauthenticated Statistics Retrieval Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the Graphite service of Cisco HyperFlex software could allow an unauthenticated, remote attacker to retrieve data from the Graphite service.\n\n The vulnerability is due to insufficient authentication controls. An attacker could exploit this vulnerability by sending crafted requests to the Graphite service. A successful exploit could allow the attacker to retrieve any statistics from the Graphite service.\n\n",
+        "CveIds": [
+            "CVE-2019-1666"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex Arbitrary Statistics Write Vulnerability",
+        "BaseScore": 4,
+        "Description": "A vulnerability in the Graphite interface of Cisco HyperFlex software could allow an authenticated, local attacker to write arbitrary data to the Graphite interface.\n\n The vulnerability is due to insufficient authorization controls. An attacker could exploit this vulnerability by connecting to the Graphite service and sending arbitrary data. A successful exploit could allow the attacker to write arbitrary data to Graphite, which could result in invalid statistics being presented in the interface.\n",
+        "CveIds": [
+            "CVE-2019-1667"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex Software Cross-Site Request Forgery Vulnerability",
+        "BaseScore": 5.4,
+        "Description": "A vulnerability in the web-based management interface of Cisco HyperFlex Software could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack on affected system.\n\n The vulnerability is due to insufficient CSRF protections for the web UI on an affected device. An attacker could exploit this vulnerability by persuading a user of the interface to follow a malicious link. A successful exploit could allow the attacker to perform arbitrary actions with the privilege level of the affected user.\n",
+        "CveIds": [
+            "CVE-2019-1958"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex Software Cross-Frame Scripting Vulnerability",
+        "BaseScore": 6.5,
+        "Description": "A vulnerability in the web-based interface of Cisco HyperFlex Software could allow an unauthenticated, remote attacker to execute a cross-frame scripting (XFS) attack on an affected device.\n\n This vulnerability is due to insufficient HTML iframe protection. An attacker could exploit this vulnerability by directing a user to an attacker-controlled web page that contains a malicious HTML iframe. A successful exploit could allow the attacker to conduct clickjacking or other clientside browser attacks.\n",
+        "CveIds": [
+            "CVE-2019-1975"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco HyperFlex Software Unauthenticated Root Access Vulnerability",
+        "BaseScore": 8.1,
+        "Description": "A vulnerability in the\u00a0hxterm\u00a0service of Cisco HyperFlex Software could allow an unauthenticated, local attacker to gain\u00a0root\u00a0access to all nodes in the cluster.\n\n The vulnerability is due to insufficient authentication controls. An attacker could exploit this vulnerability by connecting to the\u00a0hxterm\u00a0service as a non-privileged, local user. A successful exploit could allow the attacker to gain\u00a0root\u00a0access to all member nodes of the HyperFlex cluster.\n\n Cisco has released software updates that address this vulnerability\n",
+        "CveIds": [
+            "CVE-2019-1664"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex UI Clickjacking Vulnerability",
+        "BaseScore": 4.7,
+        "Description": "A vulnerability in the web UI of Cisco HyperFlex Software could allow an unauthenticated, remote attacker to affect the integrity of a device via a clickjacking attack.\n\n The vulnerability is due to insufficient input validation of iFrame data in HTTP requests that are sent to an affected device. An attacker could exploit this vulnerability by sending crafted HTTP packets with malicious iFrame data. A successful exploit could allow the attacker to perform a clickjacking attack where the user is tricked into clicking a malicious link.\n",
+        "CveIds": [
+            "CVE-2018-15423"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex HX-Series Web-Based Management Interface Cross-Site Request Forgery Vulnerability",
+        "BaseScore": 6.1,
+        "Description": "A vulnerability in the web-based management interface of Cisco HyperFlex HX-Series could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and perform arbitrary actions on an affected system.\n\n The vulnerability is due to insufficient CSRF protections for the web-based management interface of the affected software. An attacker could exploit this vulnerability by persuading a user of the interface to follow a crafted link. A successful exploit could allow the attacker to perform arbitrary actions on an affected system by using a web browser and with the privileges of the user.\n ",
+        "CveIds": [
+            "CVE-2019-1857"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Unified Computing System Role-Based Access Vulnerability",
+        "BaseScore": 6.7,
+        "Description": "A vulnerability in the role-based access-checking mechanisms of Cisco Unified Computing System (UCS) Software could allow an authenticated, local attacker to execute arbitrary commands on an affected system.\n\n The vulnerability exists because the affected software lacks proper input and validation checks for certain file systems. An attacker could exploit this vulnerability by issuing crafted commands in the CLI of an affected system. A successful exploit could allow the attacker to cause other users to execute unwanted arbitrary commands on the affected system.\n",
+        "CveIds": [
+            "CVE-2018-0338"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the Link Layer Discovery Protocol (LLDP) implementation for Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to cause a denial of service (DoS) condition when the device unexpectedly reloads.\n\n The vulnerability is due to improper input validation of certain type, length, value (TLV) fields of the LLDP frame header. An attacker could exploit this vulnerability by sending a crafted LLDP packet to an interface on the targeted device. A successful exploit could allow the attacker to cause the switch to reload unexpectedly.\n\n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0395"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Cisco Fabric Services Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a buffer overflow, resulting in a denial of service (DoS) condition.\n \n The vulnerability is due to insufficient validation of Cisco Fabric Services packets. An attacker could exploit this vulnerability by sending a crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overflow, resulting in process crashes and a DoS condition on the device.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2019-1616"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco NX-OS Software CLI Bypass to Internal Service Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the CLI of Cisco NX-OS Software could allow an authenticated, local attacker to access internal services that should be restricted on an affected device, such as the NX-API.\n\n The vulnerability is due to insufficient validation of arguments passed to a certain CLI command. An attacker could exploit this vulnerability by including malicious input as the argument to the affected command. A successful exploit could allow the attacker to bypass intended restrictions and access internal services of the device. An attacker would need valid device credentials to exploit this vulnerability.\n\n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2019-1726"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco NX-OS Software Command Injection Vulnerability (CVE-2019-1790)",
+        "BaseScore": 6.7,
+        "Description": "A vulnerability in the CLI of Cisco NX-OS Software could allow an authenticated, local attacker with valid administrator credentials to execute arbitrary commands on the underlying operating system of an affected device.\n\n The vulnerability is due to insufficient validation of arguments passed to certain CLI commands. An attacker could exploit this vulnerability by including malicious input as the argument of an affected command. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with elevated privileges. An attacker would need valid administrator credentials to exploit this vulnerability.\n \n Cisco has released software updates that address this vulnerability\n",
+        "CveIds": [
+            "CVE-2019-1790"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco FXOS and NX-OS Software Command Injection Vulnerability (CVE-2019-1795)",
+        "BaseScore": 6.7,
+        "Description": "A vulnerability in the CLI of Cisco FXOS Software and Cisco NX-OS Software could allow an authenticated, local attacker to execute arbitrary commands on the underlying Linux operating system with the privilege level of root.\n \n The vulnerability is due to insufficient validation of arguments passed to a specific CLI command on the affected device. An attacker could exploit this vulnerability by including malicious input as the argument of an affected command. A successful exploit could allow the attacker to execute arbitrary commands on the underlying Linux operating system with elevated privileges. An attacker would need valid administrator credentials to exploit this vulnerability.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2019-1795"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco NX-OS Software Patch Signature Verification Bypass Vulnerability",
+        "BaseScore": 6.4,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause process crashes, which can result in a denial of service (DoS) condition on an affected system.\n \n The vulnerability is due to insufficient validation of TCP packets when processed by the Cisco Fabric Services over IP (CFSoIP) feature. An attacker could exploit this vulnerability by sending a malicious Cisco Fabric Services TCP packet to an affected device. A successful exploit could allow the attacker to cause process crashes, resulting in a device reload and a DoS condition.\n\n Note: There are three distribution methods that can be configured for Cisco Fabric Services. This vulnerability affects only distribution method CFSoIP, which is disabled by default.\n",
+        "CveIds": [
+            "CVE-2019-1809"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Cisco Fabric Services over IP Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause process crashes, which can result in a denial of service (DoS) condition on an affected system.\n \n The vulnerability is due to insufficient validation of TCP packets when processed by the Cisco Fabric Services over IP (CFSoIP) feature. An attacker could exploit this vulnerability by sending a malicious Cisco Fabric Services TCP packet to an affected device. A successful exploit could allow the attacker to cause process crashes, resulting in a device reload and a DoS condition.\n \n Note: There are three distribution methods that can be configured for Cisco Fabric Services. This vulnerability affects only distribution method CFSoIP, which is disabled by default.\n",
+        "CveIds": [
+            "CVE-2019-1962"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco Unified Computing System Fabric Interconnect root Privilege Escalation Vulnerability",
+        "BaseScore": 7.8,
+        "Description": "A vulnerability in a specific CLI command within the local management (local-mgmt) context for Cisco UCS Fabric Interconnect Software could allow an authenticated, local attacker to gain elevated privileges as the root user on an affected device.\n\n The vulnerability is due to extraneous subcommand options present for a specific CLI command within the local-mgmt context. An attacker could exploit this vulnerability by authenticating to an affected device, entering the local-mgmt context, and issuing a specific CLI command and submitting user input. A successful exploit could allow the attacker to execute arbitrary operating system commands as root on an affected device. The attacker would need to have valid user credentials for the device.\n\n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2019-1966"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Authenticated Simple Network Management Protocol Denial of Service Vulnerability",
+        "BaseScore": 7.7,
+        "Description": "A vulnerability in the Simple Network Management Protocol (SNMP) input packet processor of Cisco NX-OS Software could allow an authenticated, remote attacker to cause the SNMP application on an affected device to restart unexpectedly.\n \n The vulnerability is due to improper validation of SNMP protocol data units (PDUs) in SNMP packets. An attacker could exploit this vulnerability by sending a crafted SNMP packet to an affected device. A successful exploit could allow the attacker to cause the SNMP application to restart multiple times, leading to a system-level restart and a denial of service (DoS) condition.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0291"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Unauthorized Administrator Account Vulnerability",
+        "BaseScore": 6.4,
+        "Description": "A vulnerability in the write-erase feature of Cisco FXOS Software and Cisco NX-OS Software could allow an authenticated, local attacker to configure an unauthorized administrator account for an affected device.\n \n The vulnerability exists because the affected software does not properly delete sensitive files when certain CLI commands are used to clear the device configuration and reload a device. An attacker could exploit this vulnerability by logging into an affected device as an administrative user and configuring an unauthorized account for the device. The account would not require a password for authentication and would be accessible only via a Secure Shell (SSH) connection to the device. A successful exploit could allow the attacker to configure an unauthorized account that has administrative privileges, does not require a password for authentication, and does not appear in the running configuration or the audit logs for the affected device.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2018-0294"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Arbitrary Code Execution Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to read sensitive memory content, create a denial of service (DoS) condition, or execute arbitrary code as root.\n \n The vulnerability exists because the affected software insufficiently validates Cisco Fabric Services packet headers. An attacker could exploit this vulnerability by sending a crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overflow or buffer overread condition in the Cisco Fabric Services component, which could allow the attacker to read sensitive memory content, create a DoS condition, or execute arbitrary code as root.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2018-0304"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on the affected device.\n \n The vulnerability exists because the affected software insufficiently validates Cisco Fabric Services packets. An attacker could exploit this vulnerability by sending a crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to force a NULL pointer dereference and cause a DoS condition.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0305"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Arbitrary Code Execution Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code or cause a denial of service (DoS) condition.\n \n The vulnerability exists because the affected software insufficiently validates header values in Cisco Fabric Services packets. An attacker could exploit this vulnerability by sending a crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overflow that could allow the attacker to execute arbitrary code or cause a DoS condition.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2018-0308"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to obtain sensitive information from memory or cause a denial of service (DoS) condition on the affected product.\n \n The vulnerability exists because the affected software insufficiently validates header values in Cisco Fabric Services packets. An attacker could exploit this vulnerability by sending a crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overread condition, which could allow the attacker to obtain sensitive information from memory or cause a DoS condition on the affected product.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2018-0310"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\n \n The vulnerability exists because the affected software insufficiently validates Cisco Fabric Services packets when the software processes packet data. An attacker could exploit this vulnerability by sending a maliciously crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overflow condition on the device, which could cause process crashes and result in a DoS condition on the device.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2018-0311"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Arbitrary Code Execution Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code or cause a denial of service (DoS) condition on an affected device.\n \n The vulnerability exists because the affected software insufficiently validates Cisco Fabric Services packet headers when the software processes packet data. An attacker could exploit this vulnerability by sending a maliciously crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overflow condition on the device, which could allow the attacker to execute arbitrary code or cause a DoS condition on the device.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0312"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS, NX-OS, and UCS Manager Software Cisco Discovery Protocol Denial of Service Vulnerability",
+        "BaseScore": 7.4,
+        "Description": "A vulnerability in the CLI of Cisco NX-OS Software could allow an authenticated, local attacker with valid administrator credentials to execute arbitrary commands on the underlying operating system of an affected device.\n \n The vulnerability is due to insufficient validation of arguments passed to certain CLI commands. An attacker could exploit this vulnerability by including malicious input as the argument of an affected command. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with elevated privileges. An attacker would need valid administrator credentials to exploit this vulnerability.\n \n Cisco has released software updates that address this vulnerability\n",
+        "CveIds": [
+            "CVE-2018-0331"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Lightweight Directory Access Protocol Denial of Service Vulnerabilities",
+        "BaseScore": 8.6,
+        "Description": "Multiple vulnerabilities in the implementation of the Lightweight Directory Access Protocol (LDAP) feature in Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause an affected device to reload, resulting in a denial of service (DoS) condition.\n \n  The vulnerabilities are due to the improper parsing of LDAP packets by an affected device. An attacker could exploit these vulnerabilities by sending an LDAP packet crafted using Basic Encoding Rules (BER) to an affected device. The LDAP packet must have a source IP address of an LDAP server configured on the targeted device. A successful exploit could cause the affected device to reload, resulting in a DoS condition.\n \n Cisco has released software updates that address these vulnerabilities.\n",
+        "CveIds": [
+            "CVE-2019-1597",
+            "CVE-2019-1598"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Multiple Vulnerabilities in OpenSSL (June 2015) Affecting Cisco Products",
+        "BaseScore": 7.8,
+        "Description": "On June 11, 2015, the OpenSSL Project released a security advisory detailing six distinct vulnerabilities, and another fix that provides hardening protections against exploits as described in the Logjam research.\n \n Multiple Cisco products incorporate a version of the OpenSSL package affected by one or more vulnerabilities that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition or corrupt portions of OpenSSL process memory.\n",
+        "CveIds": [
+            "CVE-2014-8176",
+            "CVE-2015-1788",
+            "CVE-2015-1789",
+            "CVE-2015-1790",
+            "CVE-2015-1791",
+            "CVE-2015-1792"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software TCP Netstack Denial of Service Vulnerability",
+        "BaseScore": 7.8,
+        "Description": "A vulnerability in the TCP stack of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition.\n \n The vulnerability is due to improper processing of certain TCP packets in the closing sequence of a TCP session while the affected device is in a TIME_WAIT state. An attacker could exploit this vulnerability by sending a specific TCP packet to an affected device on a TCP session that is already in a TIME_WAIT state. An exploit could allow the attacker to cause a reload of the TCP stack on the affected device, resulting in a DoS condition.\n \n This vulnerability can be exploited using either IPv4 or IPv6 packets. The vulnerability can be triggered by a crafted sequence of TCP packets destined for TCP ports listening on the device. The packets may use the IPv4 or IPv6 unicast address of any interface configured on the device.\n \n This vulnerability can be triggered only by traffic destined to an affected device and cannot be exploited using traffic that transits an affected device.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2015-0718"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Multiple Vulnerabilities in OpenSSL Affecting Cisco Products: September 2016",
+        "BaseScore": 7.5,
+        "Description": "On September 22, 2016, the OpenSSL Software Foundation released an advisory that describes 14 vulnerabilities. Of these 14 vulnerabilities, the OpenSSL Software Foundation classifies one as \u201cCritical Severity,\u201d one as \u201cModerate Severity,\u201d and the other 12 as \u201cLow Severity.\u201d\n \n Subsequently, on September 26, the OpenSSL Software Foundation released an additional advisory that describes two new vulnerabilities. These vulnerabilities affect the OpenSSL versions that were released to address the vulnerabilities disclosed in the previous advisory. One of the new vulnerabilities was rated as \u201cHigh Severity\u201d and the other as \u201cModerate Severity.\u201d\n \n Of the 16 released vulnerabilities: \n * Fourteen track issues that could result in a denial of service (DoS) condition \n * One (CVE-2016-2183, aka SWEET32) tracks an implementation of a Birthday attack against Transport Layer Security (TLS) block ciphers that use a 64-bit block size that could result in loss of confidentiality \n * One (CVE-2016-2178) is a timing side-channel attack that, in specific circumstances, could allow an attacker to derive the private DSA key that belongs to another user or service running on the same system\n \n Five of the 16 vulnerabilities exclusively affect the recently released OpenSSL versions that are part of the 1.1.0 release series, which has not yet been integrated into any Cisco product.\n",
+        "CveIds": [
+            "CVE-2016-2177",
+            "CVE-2016-2178",
+            "CVE-2016-2179",
+            "CVE-2016-2180",
+            "CVE-2016-2181",
+            "CVE-2016-2182",
+            "CVE-2016-2183",
+            "CVE-2016-6302",
+            "CVE-2016-6303",
+            "CVE-2016-6304",
+            "CVE-2016-6305",
+            "CVE-2016-6306",
+            "CVE-2016-6307",
+            "CVE-2016-6308",
+            "CVE-2016-6309",
+            "CVE-2016-7052"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco UCS Manager, Cisco Firepower 4100 Series NGFW, and Cisco Firepower 9300 Security Appliance Command Injection Vulnerability",
+        "BaseScore": 6.7,
+        "Description": "A vulnerability in the Cisco Unified Computing System (UCS) Manager, Cisco Firepower 4100 Series Next-Generation Firewall (NGFW), and Cisco Firepower 9300 Security Appliance could allow an authenticated, local attacker to obtain root shell privileges on the device.\n \n The vulnerability is due to improper validation of string input in the shell application. An attacker could exploit this vulnerability through the use of malicious commands. A successful exploit could allow the attacker to obtain root shell privileges on the device.\n",
+        "CveIds": [
+            "CVE-2017-12243"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS Software and UCS Fabric Interconnect Web UI Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the web UI of Cisco FXOS and Cisco UCS Fabric Interconnect Software could allow an unauthenticated, remote attacker to cause a buffer overflow on an affected system.\n \n The vulnerability is due to incorrect input validation in the web UI. An attacker could exploit this vulnerability by sending a malicious HTTP or HTTPS packet directed to the physical management interface of an affected system. A successful exploit could allow the attacker to cause the process to crash and possibly reload the device, resulting in a denial of service (DoS) condition on the affected system.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0298"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS Software and UCS Fabric Interconnect Arbitrary Code Execution Vulnerability",
+        "BaseScore": 7.8,
+        "Description": "A vulnerability in the CLI parser of Cisco FXOS Software and Cisco UCS Fabric Interconnect Software could allow an authenticated, local attacker to cause a buffer overflow on an affected device.\n \n The vulnerability is due to incorrect input validation in the CLI parser subsystem. An attacker could exploit this vulnerability by exceeding the expected length of user input. A successful exploit could allow the attacker to execute arbitrary code with root privileges on the affected system.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0302"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Discovery Protocol Arbitrary Code Execution Vulnerability",
+        "BaseScore": 7.5,
+        "Description": "A vulnerability in the Cisco Discovery Protocol component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to execute arbitrary code as root or cause a denial of service (DoS) condition on the affected device.\n \n The vulnerability exists because of insufficiently validated Cisco Discovery Protocol packet headers. An attacker could exploit this vulnerability by sending a crafted Cisco Discovery Protocol packet to a Layer 2 adjacent affected device. A successful exploit could allow the attacker to cause a buffer overflow that could allow the attacker to execute arbitrary code as root or cause a DoS condition on the affected device.\n \n Cisco has released software updates that address this vulnerability. \n",
+        "CveIds": [
+            "CVE-2018-0303"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Arbitrary Code Execution Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code or cause a denial of service (DoS) condition on an affected device.\n \n The vulnerability exists because the affected software insufficiently validates Cisco Fabric Services packet headers when the software processes packet data. An attacker could exploit this vulnerability by sending a maliciously crafted Cisco Fabric Services packet to an affected device. A successful exploit could allow the attacker to cause a buffer overflow condition on the device, which could allow the attacker to execute arbitrary code or cause a DoS condition on the device.\n \n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2018-0314"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco UCS B-Series Blade Servers Local Management CLI Arbitrary File Creation or CLI Parameter Injection Vulnerability",
+        "BaseScore": 5.5,
+        "Description": "A vulnerability in the local management CLI implementation for specific commands on the Cisco UCS B-Series Blade Servers could allow an authenticated, local attacker to overwrite an arbitrary file on disk. It is also possible the attacker could inject CLI command parameters that should not be allowed for a specific subset of local management CLI commands.\n \n The vulnerability is due to lack of proper input validation of user input for local management CLI commands. An attacker could exploit this vulnerability by authenticating to the device and issuing a crafted form of a limited subset of local management CLI commands. An exploit could allow the attacker to overwrite an arbitrary files on disk or inject CLI command parameters that should have been disabled.\n",
+        "CveIds": [
+            "CVE-2019-1725"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Authenticated Simple Network Management Protocol Denial of Service Vulnerability",
+        "BaseScore": 7.7,
+        "Description": "A vulnerability in the Simple Network Management Protocol (SNMP) input packet processor of Cisco FXOS Software and Cisco NX-OS Software could allow an authenticated, remote attacker to cause the SNMP application on an affected device to restart unexpectedly.\n\nThe vulnerability is due to improper validation of Abstract Syntax Notation One (ASN.1)-encoded variables in SNMP packets. An attacker could exploit this vulnerability by sending a crafted SNMP packet to the SNMP daemon on the affected device. A successful exploit could allow the attacker to cause the SNMP application to restart multiple times, leading to a system-level restart and a denial of service (DoS) condition.\n\nCisco has released software updates that address this vulnerability. ",
+        "CveIds": [
+            "CVE-2019-1963"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Remote Management Memory Leak Denial of Service Vulnerability",
+        "BaseScore": 7.7,
+        "Description": "A vulnerability in the Virtual Shell (VSH) session management for Cisco NX-OS Software could allow an authenticated, remote attacker to cause a VSH process to fail to delete upon termination. This can lead to a build-up of VSH processes that overtime can deplete system memory. When there is no system memory available, this can cause unexpected system behaviors and crashes.\n\nThe vulnerability is due to the VSH process not being properly deleted when a remote management connection to the device is disconnected. An attacker could exploit this vulnerability by repeatedly performing a remote management connection to the device and terminating the connection in an unexpected manner. A successful exploit could allow the attacker to cause the VSH processes to fail to delete, which can lead to a system-wide denial of service (DoS) condition. The attacker must have valid user credentials to log in to the device using the remote management connection.\n\nCisco has released software updates that address this vulnerability. ",
+        "CveIds": [
+            "CVE-2019-1965"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco Integrated Management Controller Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition.\n\nThe vulnerability is due to a missing authentication check in an API call. An attacker who can send a request to an affected system could cause all currently authenticated users to be logged off. Repeated exploitation could cause the inability to maintain a session in the web-based management portal.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-12634"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Netstack Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the network stack of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on the affected device.\n\n The vulnerability is due to an issue with allocating and freeing memory buffers in the network stack. An attacker could exploit this vulnerability by sending crafted TCP streams to an affected device in a sustained way. A successful exploit could cause the network stack of an affected device to run out of available buffers, impairing operations of control plane and management plane protocols, resulting in a DoS condition.\n\n Note: This vulnerability can be triggered only by traffic that is destined to an affected device and cannot be exploited using traffic that transits an affected device.\n\n Cisco has released software updates that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2019-1599"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco UCS Director Information Disclosure Vulnerability",
+        "BaseScore": 4.3,
+        "Description": "A vulnerability in the web-based management interface of Cisco UCS Director could allow an unauthenticated, remote attacker to download system log files from an affected device.\n\nThe vulnerability is due to an issue in the authentication logic of the web-based management interface. An attacker could exploit this vulnerability by sending a crafted request to the web interface. A successful exploit could allow the attacker to download log files if they were previously generated by an administrator.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-16003"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco Integrated Management Controller Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data SCP User Default Credentials Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in Cisco Integrated Management Controller (IMC) Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data could allow an unauthenticated, remote attacker to log in to the CLI of an affected system by using the SCP User account (scpuser), which has default user credentials.\n\nThe vulnerability is due to the presence of a documented default account with an undocumented default password and incorrect permission settings for that account. Changing the default password for this account is not enforced during the installation of the product. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow the attacker to execute arbitrary commands with the privileges of the scpuser account. This includes full read and write access to the system's database.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-1935"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco Integrated Management Controller Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data Command Injection Vulnerability",
+        "BaseScore": 7.2,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data could allow an authenticated, remote attacker to execute arbitrary commands on the underlying Linux shell as the root user. Exploitation of this vulnerability requires privileged access to an affected device.\n\nThe vulnerability is due to insufficient validation of user-supplied input by the web-based management interface. An attacker could exploit this vulnerability by logging in to the web-based management interface with administrator privileges and then sending a malicious request to a certain part of the interface.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-1936"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco Integrated Management Controller Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data Authentication Bypass Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data could allow an unauthenticated, remote attacker to acquire a valid session token with administrator privileges, bypassing user authentication.\n\nThe vulnerability is due to insufficient request header validation during the authentication process. An attacker could exploit this vulnerability by sending a series of malicious requests to an affected device. An exploit could allow the attacker to use the acquired session token to gain full administrator access to the affected device.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-1937"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco UCS Director and Cisco UCS Director Express for Big Data API Authentication Bypass Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the web-based management interface of Cisco UCS Director and Cisco UCS Director Express for Big Data could allow an unauthenticated, remote attacker to bypass authentication and execute arbitrary actions with administrator privileges on an affected system.\n\nThe vulnerability is due to improper authentication request handling. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow an unprivileged attacker to access and execute arbitrary actions through certain APIs.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-1938"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco IMC Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data Authentication Bypass Vulnerability",
+        "BaseScore": 9.8,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) Supervisor, Cisco UCS Director, and Cisco UCS Director Express for Big Data could allow an unauthenticated, remote attacker to bypass user authentication and gain access as an administrative user.\n\nThe vulnerability is due to insufficient request header validation during the authentication process. An attacker could exploit this vulnerability by sending a series of malicious requests to an affected device. An exploit could allow the attacker to gain full administrative access to the affected device.\n\nCisco has released software updates that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-1974"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Multiple Vulnerabilities in Cisco UCS Director and Cisco UCS Director Express for Big Data",
+        "BaseScore": 9.8,
+        "Description": "Multiple vulnerabilities in the REST API of Cisco UCS Director and Cisco UCS Director Express for Big Data may allow a remote attacker to bypass authentication or conduct directory traversal attacks on an affected device.\n Cisco has released software updates that address these vulnerabilities. There are no workarounds that address these vulnerabilities.\n",
+        "CveIds": [
+            "CVE-2020-3239",
+            "CVE-2020-3240",
+            "CVE-2020-3243",
+            "CVE-2020-3247",
+            "CVE-2020-3248",
+            "CVE-2020-3249",
+            "CVE-2020-3250",
+            "CVE-2020-3251",
+            "CVE-2020-3252"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Unified Computing System BIOS Signature Bypass Vulnerability",
+        "BaseScore": 4.4,
+        "Description": "A vulnerability in the BIOS upgrade utility of Cisco Unified Computing System (UCS) C-Series Rack Servers could allow an authenticated, local attacker to install compromised BIOS firmware on an affected device.\n \n The vulnerability is due to insufficient validation of the firmware image file. An attacker could exploit this vulnerability by executing the BIOS upgrade utility with a specific set of options. A successful exploit could allow the attacker to bypass the firmware signature-verification process and install compromised BIOS firmware on an affected device.\n \n There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2019-1880"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and UCS Manager Software CLI Command Injection Vulnerability",
+        "BaseScore": 7.8,
+        "Description": "A vulnerability in the CLI of Cisco FXOS Software and Cisco UCS Manager Software could allow an authenticated, local attacker to execute arbitrary commands on the underlying operating system (OS).\n \n The vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by including crafted arguments to specific commands. A successful exploit could allow the attacker to execute arbitrary commands on the underlying OS with the privileges of the currently logged-in user for all affected platforms excluding Cisco UCS 6400 Series Fabric Interconnects. On Cisco UCS 6400 Series Fabric Interconnects, the injected commands are executed with root privileges.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3167"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and UCS Manager Software Local Management CLI Command Injection Vulnerability",
+        "BaseScore": 7.8,
+        "Description": "A vulnerability in the local management (local-mgmt) CLI of Cisco FXOS Software and Cisco UCS Manager Software could allow an authenticated, local attacker to execute arbitrary commands on the underlying operating system (OS) of an affected device.\n \n The vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by including crafted arguments to specific commands. A successful exploit could allow the attacker to execute arbitrary commands on the underlying OS with the privileges of the currently logged-in user for all affected platforms excluding Cisco UCS 6400 Series Fabric Interconnects. On Cisco UCS 6400 Series Fabric Interconnects, the injected commands are executed with root privileges.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3171"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Discovery Protocol Arbitrary Code Execution and Denial of Service Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the Cisco Discovery Protocol feature of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to execute arbitrary code as root or cause a denial of service (DoS) condition on an affected device.\n \n The vulnerability exists because of insufficiently validated Cisco Discovery Protocol packet headers. An attacker could exploit this vulnerability by sending a crafted Cisco Discovery Protocol packet to a Layer 2-adjacent affected device. A successful exploit could allow the attacker to cause a buffer overflow that could allow the attacker to execute arbitrary code as root or cause a DoS condition on the affected device.\n \n Note: Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent).",
+        "CveIds": [
+            "CVE-2020-3172"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco UCS Manager Software Local Management CLI Command Injection Vulnerability",
+        "BaseScore": 7.8,
+        "Description": "A vulnerability in the local management (local-mgmt) CLI of Cisco UCS Manager Software could allow an authenticated, local attacker to execute arbitrary commands on the underlying operating system (OS) on an affected device.\n \n The vulnerability is due to insufficient input validation of command arguments. An attacker could exploit this vulnerability by including crafted arguments to specific commands on the local management CLI. A successful exploit could allow the attacker to execute arbitrary commands on the underlying OS with the privileges of the currently logged-in user for all affected platforms excluding Cisco UCS 6400 Series Fabric Interconnects. On Cisco UCS 6400 Series Fabric Interconnects, the injected commands are executed with root privileges.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3173"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Integrated Management Controller Command Injection Vulnerability",
+        "BaseScore": 6.3,
+        "Description": "A vulnerability in the web UI of Cisco Integrated Management Controller (IMC) could allow an authenticated, remote attacker to inject arbitrary code and execute arbitrary commands at the underlying operating system level.\n \n The vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to inject and execute arbitrary commands at the underlying operating system level.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3371"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Data Management Engine Remote Code Execution Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the Data Management Engine (DME) of Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to execute arbitrary code with administrative privileges or cause a denial of service (DoS) condition on an affected device.\n \n The vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by sending a crafted Cisco Discovery Protocol packet to a Layer 2-adjacent affected device. A successful exploit could allow the attacker to execute arbitrary code with administrative privileges or cause the Cisco Discovery Protocol process to crash and restart multiple times, causing the affected device to reload and resulting in a DoS condition.\n \n Note: Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent). Exploitation of this vulnerability also requires jumbo frames to be enabled on the interface that receives the crafted Cisco Discovery Protocol packets on the affected device.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3415"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Fabric Services Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services component of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated attacker to cause process crashes, which could result in a denial of service (DoS) condition on an affected device. The attack vector is configuration dependent and could be remote or adjacent. For more information about the attack vector, see the Details section of this advisory.\n \n The vulnerability is due to insufficient error handling when the affected software parses Cisco Fabric Services messages. An attacker could exploit this vulnerability by sending malicious Cisco Fabric Services messages to an affected device. A successful exploit could allow the attacker to cause a reload of an affected device, which could result in a DoS condition.\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3517"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco Integrated Management Controller Multiple Remote Code Execution Vulnerabilities",
+        "BaseScore": 9.8,
+        "Description": "Multiple vulnerabilities in the API subsystem of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges.\n \n The vulnerabilities are due to improper boundary checks for certain user-supplied input. An attacker could exploit these vulnerabilities by sending a crafted HTTP request to the API subsystem of an affected system. When this request is processed, an exploitable buffer overflow condition may occur. A successful exploit could allow the attacker to execute arbitrary code with root privileges on the underlying operating system (OS).\n \n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2020-3470"
+        ]
+    },
+    {
+        "Severity.Level": "critical",
+        "Name": "Cisco HyperFlex HX Command Injection Vulnerabilities",
+        "BaseScore": 9.8,
+        "Description": "Multiple vulnerabilities in the web-based management interface of Cisco HyperFlex HX could allow an unauthenticated, remote attacker to perform command injection attacks against an affected device.\n\nThe vulnerabilities are not dependent on one another. Exploitation of one of the vulnerabilities is not required to exploit the other vulnerability. In addition, a software release that is affected by one of the vulnerabilities may not be affected by the other vulnerability.\n\nCisco has released software updates that address these vulnerabilities. There are no workarounds that address these vulnerabilities.\n",
+        "CveIds": [
+            "CVE-2021-1497",
+            "CVE-2021-1498"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco NX-OS Software system login block-for Denial of Service Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the implementation of the system login block-for command for Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a login process to unexpectedly restart, causing a denial of service (DoS) condition.\n\n This vulnerability is due to a logic error in the implementation of the system login block-for command when an attack is detected and acted upon. An attacker could exploit this vulnerability by performing a brute-force login attack on an affected device. A successful exploit could allow the attacker to cause a login process to reload, which could result in a delay during authentication to the affected device.\n\n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2021-1590"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco FXOS and NX-OS Software Unidirectional Link Detection Denial of Service and Arbitrary Code Execution Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the Unidirectional Link Detection (UDLD) feature of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to execute arbitrary code with administrative privileges or cause a denial of service (DoS) condition on an affected device.\n\n This vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by sending crafted Cisco UDLD protocol packets to a directly connected, affected device. A successful exploit could allow the attacker to execute arbitrary code with administrative privileges or cause the Cisco UDLD process to crash and restart multiple times, causing the affected device to reload and resulting in a DoS condition.\n\n Note: The UDLD feature is disabled by default, and the conditions to exploit this vulnerability are strict. The attacker needs full control of a directly connected device. That device must be connected over a port channel that has UDLD enabled. To trigger arbitrary code execution, both the UDLD-enabled port channel and specific system conditions must exist. In the absence of either the UDLD-enabled port channel or the system conditions, attempts to exploit this vulnerability will result in a DoS condition.\n\n It is possible, but highly unlikely, that an attacker could control the necessary conditions for exploitation. The CVSS score reflects this possibility. However, given the complexity of exploitation, Cisco has assigned a Medium Security Impact Rating (SIR) to this vulnerability.\n\n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2021-1368"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software IPv6 Netstack Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the network stack of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\n\n This vulnerability exists because the software improperly releases resources when it processes certain IPv6 packets that are destined to an affected device. An attacker could exploit this vulnerability by sending multiple crafted IPv6 packets to an affected device. A successful exploit could cause the network stack to run out of available buffers, impairing operations of control plane and management plane protocols and resulting in a DoS condition. Manual intervention would be required to restore normal operations on the affected device.\n\n Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n",
+        "CveIds": [
+            "CVE-2021-1387"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Intel 2022.1 IPU - BIOS Advisory",
+        "BaseScore": 8.2,
+        "Description": "Potential security vulnerabilities in the BIOS firmware or BIOS authenticated code module for Cisco UCS M4, M5 and M6 generation of servers using Intel\u00ae Processors may allow escalation of privilege or information disclosure.  Cisco is releasing BIOS updates to mitigate these potential vulnerabilities.\n\n",
+        "CveIds": [
+            "CVE-2021-0154",
+            "CVE-2021-0153",
+            "CVE-2021-33123",
+            "CVE-2021-0190",
+            "CVE-2021-33122",
+            "CVE-2021-0189",
+            "CVE-2021-33124",
+            "CVE-2021-33103",
+            "CVE-2021-0159",
+            "CVE-2021-0155",
+            "CVE-2021-0188",
+            "CVE-2022-0005",
+            "CVE-2022-21131",
+            "CVE-2022-21136",
+            "CVE-2022-21151"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco UCS Manager Software SSH Sessions Denial of Service Vulnerability",
+        "BaseScore": 4.3,
+        "Description": "A vulnerability in the way Cisco UCS Manager software handles SSH sessions could allow an authenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\n\n This vulnerability is due to improper resource management for established SSH sessions. An attacker could exploit this vulnerability by opening a significant number of SSH sessions on an affected device. A successful exploit could allow the attacker to cause a crash and restart of internal Cisco UCS Manager software processes and a temporary loss of access to the Cisco UCS Manager CLI and web UI.\n\n Note: The attacker must have valid user credentials to authenticate to the affected device. \n",
+        "CveIds": [
+            "CVE-2021-1592"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Cisco Fabric Services over IP Denial of Service Vulnerability",
+        "BaseScore": 8.6,
+        "Description": "A vulnerability in the Cisco Fabric Services over IP (CFSoIP) feature of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. Cisco UCS 6400 Series Fabric Interconnects are impacted by this advisory.\n\n This vulnerability is due to insufficient validation of incoming CFSoIP packets. An attacker could exploit this vulnerability by sending crafted CFSoIP packets to an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.\n",
+        "CveIds": [
+            "CVE-2022-20624"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Discovery Protocol Service Denial of Service Vulnerability",
+        "BaseScore": 4.3,
+        "Description": "A vulnerability in the Cisco Discovery Protocol service of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to cause the service to restart, resulting in a denial of service (DoS) condition.\n\n This vulnerability is due to improper handling of Cisco Discovery Protocol messages that are processed by the Cisco Discovery Protocol service. An attacker could exploit this vulnerability by sending a series of malicious Cisco Discovery Protocol messages to an affected device. A successful exploit could allow the attacker to cause the Cisco Discovery Protocol service to fail and restart. In rare conditions, repeated failures of the process could occur, which could cause the entire device to restart.\n",
+        "CveIds": [
+            "CVE-2022-20625"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Multiple Cisco Operating Systems Unidirectional Link Detection Denial of Service Vulnerability",
+        "BaseScore": 7.4,
+        "Description": "A vulnerability in the Unidirectional Link Detection (UDLD) feature of Cisco FXOS Software, Cisco IOS Software, Cisco IOS XE Software, Cisco IOS XR Software, and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to cause an affected device to reload.\n\n This vulnerability is due to improper input validation of the UDLD packets. An attacker could exploit this vulnerability by sending specifically crafted UDLD packets to an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a denial of service (DoS) condition.\n\n Note: The UDLD feature is disabled by default, and the conditions to exploit this vulnerability are strict. An attacker must have full control of a directly connected device.\n",
+        "CveIds": [
+            "CVE-2021-34714"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco FXOS and NX-OS Software Cisco Discovery Protocol Denial of Service and Arbitrary Code Execution Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the Cisco Discovery Protocol feature of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to execute arbitrary code with root privileges or cause a denial of service (DoS) condition on an affected device.\n\n This vulnerability is due to improper input validation of specific values within a Cisco Discovery Protocol message. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. A successful exploit could allow the attacker to execute arbitrary code with root privileges or cause the Cisco Discovery Protocol process to crash and restart multiple times, causing the affected device to reload and resulting in a DoS condition.\n\n Note: Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent).\n\n",
+        "CveIds": [
+            "CVE-2022-20824"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Integrated Management Controller GUI Denial of Service Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) Software could allow an unauthenticated, remote attacker to cause the web-based management interface to unexpectedly restart.\n\n The vulnerability is due to insufficient input validation on the web-based management interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to cause the interface to restart, resulting in a denial of service (DoS) condition.\n\nVulnerable Products\n\n This vulnerability affected the following Cisco products\n\n- UCS C-Series Rack Servers in standalone mode\n- UCS S-Series Storage Servers in standalone mode\n",
+        "CveIds": [
+            "CVE-2021-34736"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Intel 2022.2 IPU - BIOS Advisory",
+        "BaseScore": 7.8,
+        "Description": "A potential security vulnerability in the BIOS firmware for Cisco UCS M6 generation of servers using Intel\u00ae Processors may allow escalation of privilege. Cisco is releasing BIOS updates to mitigate this potential vulnerability.\n\n",
+        "CveIds": [
+            "CVE-2021-33060"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Firepower 4100 Series, Firepower 9300 Security Appliances and UCS Fabric Interconnects Command Injection Vulnerability",
+        "BaseScore": 6,
+        "Description": "A vulnerability in the CLI of Cisco Firepower 4100 Series, Cisco Firepower 9300 Security Appliances, and Cisco UCS 6200, 6300, 6400, and 6500 Series Fabric Interconnects could allow an authenticated, local attacker to inject unauthorized commands.\n\nThis vulnerability is due to insufficient input validation of commands supplied by the user. An attacker could exploit this vulnerability by authenticating to a device and submitting crafted input to the affected command. A successful exploit could allow the attacker to execute unauthorized commands within the CLI. An attacker with Administrator privileges could also execute arbitrary commands on the underlying operating system of Cisco UCS 6400 and 6500 Series Fabric Interconnects with root-level privileges.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+        "CveIds": [
+            "CVE-2023-20015"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Intel 2023.1 IPU - BIOS Advisory",
+        "BaseScore": 8.2,
+        "Description": "Potential security vulnerabilities in the BIOS firmware and Intel\u00ae Trusted Execution Technology (TXT) Secure Initialization (SINIT) Authenticated Code Modules (ACM) for some Intel\u00ae Processors may allow escalation of privilege.  Intel is releasing BIOS updates to mitigate these potential vulnerabilities.\n\n- CVE-2022-26343 impacts only M5 servers.\n- CVE-2022-32231 impacts both M5 and M6 servers.\n- Rest all CVEs impact only M6 servers.\n\n",
+        "CveIds": [
+            "CVE-2022-26343",
+            "CVE-2022-30539",
+            "CVE-2022-32231",
+            "CVE-2022-26837",
+            "CVE-2022-30704",
+            "CVE-2021-0187",
+            "CVE-2022-36348",
+            "CVE-2022-36794",
+            "CVE-2021-33124",
+            "CVE-2022-21216",
+            "CVE-2022-33196",
+            "CVE-2022-38090",
+            "CVE-2022-33972"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco FXOS Software and UCS Manager Software Configuration Backup Static Key Vulnerability",
+        "BaseScore": 6.3,
+        "Description": "A vulnerability in the backup configuration feature of Cisco UCS Manager Software and in the configuration export feature of Cisco FXOS Software could allow an unauthenticated attacker with access to a backup file to decrypt sensitive information stored in the full state and configuration backup files.\n\nThis vulnerability is due to a weakness in the encryption method used for the backup function. An attacker could exploit this vulnerability by leveraging a static key used for the backup configuration feature. A successful exploit could allow the attacker to decrypt sensitive information that is stored in full state and configuration backup files, such as local user credentials, authentication server passwords, Simple Network Management Protocol (SNMP) community names, and other credentials.\n\nThis vulnerability affects the following Cisco products if they are running a vulnerable release of Cisco UCS Manager Software:\n- UCS 6200 Series Fabric Interconnects\n- UCS 6300 Series Fabric Interconnects\n- UCS 6400 Series Fabric Interconnects\n- UCS 6500 Series Fabric Interconnects\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability\n.",
+        "CveIds": [
+            "CVE-2023-20016"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Intel 2023.3 IPU - BIOS and Processors Advisories",
+        "BaseScore": 7.2,
+        "Description": "Potential security vulnerabilities in the BIOS firmware or Intel\u00ae Processors for Cisco UCS M4, M5 and M6 generation of servers may allow escalation of privilege, information disclosure or denial of service. Cisco is releasing software updates to mitigate these potential vulnerabilities.\n\n",
+        "CveIds": [
+            "CVE-2022-37343",
+            "CVE-2022-44611",
+            "CVE-2022-38083",
+            "CVE-2022-27879",
+            "CVE-2022-43505",
+            "CVE-2022-40982",
+            "CVE-2023-23908",
+            "CVE-2022-41804",
+            "CVE-2022-36392",
+            "CVE-2022-38102",
+            "CVE-2022-29871"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco Firepower 4100 Series, Firepower 9300 Security Appliances, and UCS 6300 Series Fabric Interconnects SNMP Denial of Service Vulnerability",
+        "BaseScore": 7.7,
+        "Description": "A vulnerability in the Simple Network Management Protocol (SNMP) service of Cisco FXOS Software for Firepower 4100 Series and Firepower 9300 Security Appliances and of Cisco UCS 6300 Series Fabric Interconnects could allow an authenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\n\nThis vulnerability is due to the improper handling of specific SNMP requests. An attacker could exploit this vulnerability by sending a crafted SNMP request to an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.\n\n**Note:** This vulnerability affects all supported SNMP versions. To exploit this vulnerability through SNMPv2c or earlier, an attacker must know the SNMP community string that is configured on an affected device. To exploit this vulnerability through SNMPv3, the attacker must have valid credentials for an SNMP user who is configured on the affected device.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability\n\n",
+        "CveIds": [
+            "CVE-2023-20200"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Nexus 9300-FX3 Series Fabric Extender for UCS Fabric Interconnects Authentication Bypass Vulnerability",
+        "BaseScore": 5.3,
+        "Description": "A vulnerability in the CLI console login authentication of Cisco Nexus 9300-FX3 Series Fabric Extender (FEX) when used in UCS Fabric Interconnect deployments could allow an unauthenticated attacker with physical access to bypass authentication.\n\nThis vulnerability is due to the improper implementation of the password validation function. An attacker could exploit this vulnerability by logging in to the console port on an affected device. A successful exploit could allow the attacker to bypass authentication and execute a limited set of commands local to the FEX, which could cause a device reboot and denial of service (DoS) condition.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n\nThis vulnerability affects Cisco Nexus 9300-FX3 Series FEX when used with the following Cisco products if they are running a vulnerable release of Cisco UCS Software:\n\n- UCS 6400 Series Fabric Interconnects\n- UCS 6500 Series Fabric Interconnects\n\nOnly the following Cisco Nexus 9000 Series PIDs when configured in FEX mode are vulnerable:\n\n- N9K-C93180YC-FX3\n- N9K-C93180YC-FX3S\n\n**Note:** These PIDs are not vulnerable if they are used in FEX mode with a Cisco Nexus 9000 parent switch or if they are configured as a standalone Top of Rack (TOR) switch.\n\n",
+        "CveIds": [
+            "CVE-2023-20012"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco Integrated Management Controller Cross-Site Scripting Vulnerability",
+        "BaseScore": 6.1,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.\n\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability\n\n**Note**:- This vulnerability only impacts the specific rack server models (mentioned below in Fixed Software section) operating in standalone mode only.",
+        "CveIds": [
+            "CVE-2023-20228"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco FXOS and NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability",
+        "BaseScore": 6.6,
+        "Description": "A vulnerability in the Link Layer Discovery Protocol (LLDP) feature of Cisco FXOS Software and Cisco NX-OS Software could allow an unauthenticated, adjacent attacker to cause a denial of service (DoS) condition on an affected device.\n\nThis vulnerability is due to improper handling of specific fields in an LLDP frame. An attacker could exploit this vulnerability by sending a crafted LLDP packet to an interface of an affected device and having an authenticated user retrieve LLDP statistics from the affected device through CLI show commands or Simple Network Management Protocol (SNMP) requests. A successful exploit could allow the attacker to cause the LLDP service to crash and stop running on the affected device. In certain situations, the LLDP crash may result in a reload of the affected device.\n\n**Note:** LLDP is a Layer 2 link protocol. To exploit this vulnerability, an attacker would need to be directly connected to an interface of an affected device, either physically or logically (for example, through a Layer 2 Tunnel configured to transport the LLDP protocol).\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n\n**Determine the Status of LLDP on Cisco UCS Fabric Interconnects**\n\nThe LLDP feature is enabled by default on Cisco UCS 6200, 6300, 6400, and 6500 Series Fabric Interconnects and cannot be fully disabled. LLDP is always enabled on the following interfaces:\n\n- Ethernet uplink ports (network interfaces that connect to upstream switches for network connectivity)\n- Ethernet port channel members\n- Fibre Channel over Ethernet (FCoE) uplink ports\n- Management interface (mgmt0)\n\nLLDP may also be enabled on server ports (interfaces that are presented to the servers in the Cisco UCS Manager domain) and appliance ports (interfaces that connect to directly attached NFS storage) through a network control policy. Additional information is available in the Configuring Network Control Policies section of the [Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_01010.html#d20481e10246a1635)\n\nTo determine the status of LLDP on a specific interface, use the connect nxos command at the device CLI, then use the show lldp interface ethernet module/interface command. If the enable (rx) status is set to Y, the interface accepts incoming LLDP packets, as shown in the following example:\n\n###################################################################################################\nFI-A# show lldp interface ethernet 1/1/1\nInterface Information:\n   Enable (tx/rx/dcbx): Y/Y/Y    Port Mac address: 00:c8:8b:84:a2:54\n###################################################################################################\n\n",
+        "CveIds": [
+            "CVE-2024-20294"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco HyperFlex HX Data Platform Open Redirect Vulnerability",
+        "BaseScore": 4.7,
+        "Description": "A vulnerability in the web-based management interface of Cisco HyperFlex HX Data Platform could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\n\nThis vulnerability is due to improper input validation of the parameters in an HTTP request. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to redirect a user to a malicious website.",
+        "CveIds": [
+            "CVE-2023-20263"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco Integrated Management Controller CLI Command Injection Vulnerability",
+        "BaseScore": 8.8,
+        "Description": "A vulnerability in the CLI of the Cisco Integrated Management Controller (IMC) could allow an authenticated, local attacker to perform command injection attacks on the underlying operating system and elevate privileges to root. To exploit this vulnerability, the attacker must have read-only or higher privileges on an affected device.\n\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted CLI command. A successful exploit could allow the attacker to elevate privileges to root.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n\n**Note**: This vulnerability only impacts the specific rack server models (mentioned below in Fixed Software section) operating in standalone mode only.",
+        "CveIds": [
+            "CVE-2024-20295"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco Integrated Management Controller Web-Based Management Interface Command Injection Vulnerability",
+        "BaseScore": 8.7,
+        "Description": "A vulnerability in the web-based management interface of Cisco Integrated Management Controller (IMC) could allow an authenticated, remote attacker with Administrator-level privileges to perform command injection attacks on an affected system and elevate their privileges to root.\n\nThis vulnerability is due to insufficient user input validation. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to elevate their privileges to root.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n\n**Note**: This vulnerability only impacts the specific rack server models (mentioned below in Fixed Software section) operating in standalone mode only.",
+        "CveIds": [
+            "CVE-2024-20356"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Intel 2024.1 IPU - BIOS and Processor Advisories",
+        "BaseScore": 7.2,
+        "Description": "Potential security vulnerabilities in the BIOS firmware or BIOS authenticated code module for Cisco UCS M6 and M7 generation of servers using Intel\u00ae Processors may allow escalation of privilege, information disclosure or denial of service. Cisco is releasing BIOS updates to mitigate these potential vulnerabilities.\n\n**Note:** CVE-2023-22655 is impacting all M6 and M7 server models while CVE-2023-35191 is impacting only M6 server models. CVE-2023-32666, CVE-2023-39368, CVE-2023-38575 are impacting all M7 server models.\n",
+        "CveIds": [
+            "CVE-2023-22655",
+            "CVE-2023-35191",
+            "CVE-2023-32666",
+            "CVE-2023-39368",
+            "CVE-2023-38575"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Intel 2024.2 IPU - BIOS and Processor Advisories",
+        "BaseScore": 7.9,
+        "Description": "Potential security vulnerabilities in the BIOS firmware or BIOS authenticated code module for Cisco UCS M7 generation of servers using Intel\u00ae Processors may allow escalation of privilege. Cisco is releasing BIOS updates to mitigate these potential vulnerabilities.\n\n",
+        "CveIds": [
+            "CVE-2023-45745",
+            "CVE-2023-47855"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco NX-OS Software Command Injection Vulnerability",
+        "BaseScore": 4.4,
+        "Description": "A vulnerability in the CLI of Cisco NX-OS Software could allow an authenticated, low-privileged, local attacker to execute arbitrary commands on the underlying operating system of an affected device.\n\nThis vulnerability is due to insufficient validation of arguments for a specific CLI command. An attacker could exploit this vulnerability by including crafted input as the argument of the affected command. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with the privileges of the currently logged-in user.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n\n",
+        "CveIds": [
+            "CVE-2024-20289"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Remote Unauthenticated Code Execution Vulnerability in OpenSSH Server (regreSSHion)",
+        "BaseScore": 8.1,
+        "Description": " A signal handler race condition was found in sshd, where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then the sshd SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog().\n #### Cisco Response to This Vulnerability:\nCisco continues to assess all products and services for impact from CVE-2024-6387. To help detect exploitation of this vulnerability, Cisco has released the following Snort rules:\n [https://snort.org/rule_docs/1-33654](https://snort.org/rule_docs/1-33654)\n[https://snort.org/rule_docs/1-63659](https://snort.org/rule_docs/1-63659)\n\nCisco recommends restricting SSH access to only trusted hosts. For the steps to apply infrastructure access control lists (ACLs) to prevent access to SSH services, see the following guide:\n[Cisco UCS Hardening Guide - Limit Network Access with ACLs on Routers and Firewalls](https://sec.cloudapps.cisco.com/security/center/resources/ucs_hardening.html#15)\n",
+        "CveIds": [
+            "CVE-2024-6387"
+        ]
+    },
+    {
+        "Severity.Level": "medium",
+        "Name": "Cisco UCS B-Series, Managed C-Series, and X-Series Servers Redfish API Command Injection Vulnerability",
+        "BaseScore": 6.5,
+        "Description": "A vulnerability in the Redfish API of Cisco UCS B-Series, Cisco UCS Managed C-Series, and Cisco UCS X-Series Servers could allow an authenticated, remote attacker with administrative privileges to perform command injection attacks on an affected system and elevate privileges to root.\n\nThis vulnerability is due to insufficient input validation. An attacker with administrative privileges could exploit this vulnerability by sending crafted commands through the Redfish API on an affected device. A successful exploit could allow the attacker to elevate privileges to root.\n\n**Note:** Redfish is enabled by default in Cisco UCS B-Series, Cisco UCS Managed C-Series, and Cisco UCS X-Series Servers. To access it, configure the device with a Management IP address.\n\n",
+        "CveIds": [
+            "CVE-2024-20365"
+        ]
+    },
+    {
+        "Severity.Level": "high",
+        "Name": "Cisco NX-OS Software Image Verification Bypass Vulnerability",
+        "BaseScore": 5.2,
+        "Description": "A vulnerability in the bootloader of Cisco NX-OS Software could allow an unauthenticated attacker with physical access to an affected device, or an authenticated, local attacker with administrative credentials, to bypass NX-OS image signature verification.\n\nThis vulnerability is due to insecure bootloader settings. An attacker could exploit this vulnerability by executing a series of bootloader commands. A successful exploit could allow the attacker to bypass NX-OS image signature verification and load unverified software.\n\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\n\n",
+        "CveIds": [
+            "CVE-2024-20397"
+        ]
+    }
+]

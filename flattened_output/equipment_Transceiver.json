@@ -1,0 +1,6 @@
+{
+    "code": "InvalidUrl",
+    "message": "Operation not supported. Check if the API path and method are valid.",
+    "messageId": "iam_invalid_method_operation",
+    "traceId": "BvHACy-k8CZ3l3ijs4iUiVX2QrXsARbBHUjzv0cqWVduWutveeA4fQ=="
+}

@@ -1,0 +1,106 @@
+{
+    "ObjectType": "memory.Policy.List",
+    "Results": [
+        {
+            "ClassId": "memory.Policy",
+            "EnableDimmBlocklisting": true,
+            "Moid": "67c0804c6275723101bd8fad",
+            "Name": "UCSX-ASB-MEMORY",
+            "ObjectType": "memory.Policy",
+            "Profiles": [
+                {
+                    "ClassId": "server.ProfileTemplate",
+                    "Moid": "67c079dc77696e3301e8f7e9",
+                    "Name": "UCSX-ASB-ESXI-SERVER",
+                    "ObjectType": "server.ProfileTemplate"
+                },
+                {
+                    "ClassId": "server.ProfileTemplate",
+                    "Moid": "67f677b477696e3301252e3f",
+                    "Name": "UCSX-VCF-MGMT-SERVER",
+                    "ObjectType": "server.ProfileTemplate"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6794d77696e3301257e62",
+                    "Name": "UCSX-VCF-MGMT-01",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6794f77696e3301257f16",
+                    "Name": "UCSX-VCF-MGMT-02",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6795077696e3301257fca",
+                    "Name": "UCSX-VCF-MGMT-03",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6795177696e33012580b3",
+                    "Name": "UCSX-VCF-MGMT-04",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd403a77696e330121cdee",
+                    "Name": "UCSX-ASB-ESXI-SERVER-01",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd403c77696e330121ced5",
+                    "Name": "UCSX-ASB-ESXI-SERVER-02",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd403e77696e330121cf70",
+                    "Name": "UCSX-ASB-ESXI-SERVER-03",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd404077696e330121d071",
+                    "Name": "UCSX-ASB-ESXI-SERVER-04",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613077696e330153646b",
+                    "Name": "UCSX-ASB-ESXI-SERVER-05",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613277696e330153653c",
+                    "Name": "UCSX-ASB-ESXI-SERVER-06",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613377696e33015365ef",
+                    "Name": "UCSX-ASB-ESXI-SERVER-07",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613577696e33015366b7",
+                    "Name": "UCSX-ASB-ESXI-SERVER-08",
+                    "ObjectType": "server.Profile"
+                }
+            ]
+        },
+        {
+            "ClassId": "memory.Policy",
+            "EnableDimmBlocklisting": false,
+            "Moid": "66ff5e3862757231010157a7",
+            "Name": "SystemDefault",
+            "ObjectType": "memory.Policy",
+            "Profiles": []
+        }
+    ]
+}

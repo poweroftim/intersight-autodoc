@@ -1,0 +1,23 @@
+[
+    {
+        "Name": "UCSX-ASB-WWPN_Pool-A",
+        "IdBlocks.From": "20:00:00:25:B5:1A:01:00",
+        "IdBlocks.To": "20:00:00:25:B5:1A:01:5F",
+        "Size": 96,
+        "Assigned": 8
+    },
+    {
+        "Name": "UCSX-ASB-WWPN_Pool-B",
+        "IdBlocks.From": "20:00:00:25:B5:1B:01:00",
+        "IdBlocks.To": "20:00:00:25:B5:1B:01:5F",
+        "Size": 96,
+        "Assigned": 8
+    },
+    {
+        "Name": "UCSX-ASB-WWNN_Pool",
+        "IdBlocks.From": "20:00:00:25:B5:1C:00:81",
+        "IdBlocks.To": "20:00:00:25:B5:1C:00:D0",
+        "Size": 80,
+        "Assigned": 8
+    }
+]

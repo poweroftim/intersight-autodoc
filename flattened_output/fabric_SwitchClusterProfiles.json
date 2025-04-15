@@ -1,0 +1,69 @@
+{
+    "ObjectType": "fabric.SwitchClusterProfile.List",
+    "Results": [
+        {
+            "ClassId": "fabric.SwitchClusterProfile",
+            "ConfigContext": {
+                "ClassId": "policy.ConfigContext",
+                "ObjectType": "policy.ConfigContext",
+                "ConfigState": "Associated",
+                "ConfigStateSummary": "None",
+                "ConfigType": "",
+                "ControlAction": "No-op",
+                "ErrorState": "",
+                "InconsistencyReason": [],
+                "OperState": "Ok"
+            },
+            "Moid": "67645d2a656e6f3301cc0c02",
+            "Name": "UCSX-ASB",
+            "ObjectType": "fabric.SwitchClusterProfile",
+            "SrcTemplate": null,
+            "SwitchProfiles": [
+                {
+                    "ClassId": "fabric.SwitchProfile",
+                    "Moid": "67645d2a656e6f3301cc0c0a",
+                    "Name": "UCSX-ASB-A",
+                    "ObjectType": "fabric.SwitchProfile"
+                },
+                {
+                    "ClassId": "fabric.SwitchProfile",
+                    "Moid": "67645d2a656e6f3301cc0c12",
+                    "Name": "UCSX-ASB-B",
+                    "ObjectType": "fabric.SwitchProfile"
+                }
+            ]
+        },
+        {
+            "ClassId": "fabric.SwitchClusterProfile",
+            "ConfigContext": {
+                "ClassId": "policy.ConfigContext",
+                "ObjectType": "policy.ConfigContext",
+                "ConfigState": "Associated",
+                "ConfigStateSummary": "None",
+                "ConfigType": "",
+                "ControlAction": "No-op",
+                "ErrorState": "",
+                "InconsistencyReason": [],
+                "OperState": "Ok"
+            },
+            "Moid": "677d4dfc656e6f3301269780",
+            "Name": "UCSX-KB",
+            "ObjectType": "fabric.SwitchClusterProfile",
+            "SrcTemplate": null,
+            "SwitchProfiles": [
+                {
+                    "ClassId": "fabric.SwitchProfile",
+                    "Moid": "677d4dfc656e6f3301269782",
+                    "Name": "UCSX-KB-UCSX-ASB-A",
+                    "ObjectType": "fabric.SwitchProfile"
+                },
+                {
+                    "ClassId": "fabric.SwitchProfile",
+                    "Moid": "677d4dfc656e6f330126978b",
+                    "Name": "UCSX-KB-UCSX-ASB-B",
+                    "ObjectType": "fabric.SwitchProfile"
+                }
+            ]
+        }
+    ]
+}

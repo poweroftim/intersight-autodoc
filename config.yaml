@@ -1,0 +1,9 @@
+directories:
+  input: './output'
+  output: './flattened_output'
+  excel_output: './excel_output'
+
+word_template_path: './template.docx'
+secret_key_path: './API-Key-27JAN-SecretKey.txt'
+api_key_id: '6064aebf7564612d332da45c/677bfe2775646133014d720f/6797ab91756461330151b3c2'
+base_url: 'https://www.intersight.com/api/v1/'

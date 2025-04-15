@@ -1,0 +1,15 @@
+[
+    {
+        "Name": "UCSX-ASB-PORT",
+        "Profiles.Name": [
+            "UCSX-ASB-A",
+            "UCSX-ASB-B",
+            "UCSX-KB-UCSX-ASB-A",
+            "UCSX-KB-UCSX-ASB-B"
+        ]
+    },
+    {
+        "Name": "UCSX-KB-PORT",
+        "Profiles.Name": []
+    }
+]

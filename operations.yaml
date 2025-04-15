@@ -1,0 +1,381 @@
+# operations.yaml
+
+OPERATIONS:
+# ------------------------------------------------------
+# -------- DOMAIN PROFILES AND POLICIES SECTION --------
+# ------------------------------------------------------
+
+
+# GET DOMAIN PROFILES
+  - request_process: true
+    resource_path: "fabric/SwitchClusterProfiles"
+    request_method: "GET"
+    select: "?$select=Name,ConfigContext,SwitchProfiles,SrcTemplate"
+    expand: "&$expand=SwitchProfiles($select=Name)"
+    filter: "Name,ConfigContext.ConfigState,SwitchProfiles.Name,SrcTemplate"
+    table_name: "Domain Profiles"
+    column_names: "Name,Config State,Switch Profile Name,Domain Template"
+
+# GET SWITCH PROFILES
+  - request_process: true
+    resource_path: "fabric/SwitchProfiles"
+    request_method: "GET"
+    select: "?$select=Name,AssociatedSwitch,PolicyBucket"
+    expand: "&$expand=AssociatedSwitch($select=Name,Model,SwitchId,SwitchProfileName,Serial,EthernetSwitchingMode,FcSwitchingMode,OutOfBandIpAddress,OutOfBandIpGateway,OutOfBandIpMask),PolicyBucket($select=Name,ObjectType)"
+    filter: "Name,AssociatedSwitch.Model,AssociatedSwitch.SwitchId,AssociatedSwitch.Serial,AssociatedSwitch.EthernetSwitchingMode,AssociatedSwitch.FcSwitchingMode,AssociatedSwitch.OutOfBandIpAddress"
+    table_name: "Switch Profiles"
+    column_names: "Name,Model,Fabric,Serial,Eth Switch Mode,FC Switch Mode,IP"
+
+# GET DOMAIN POLICIES
+  - request_process: true
+    resource_path: "fabric/SwitchProfiles"
+    request_method: "GET"
+    select: "?$select=Name,PolicyBucket"
+    expand: "&$expand=PolicyBucket($select=Name,ObjectType)"
+    filter: "Name,PolicyBucket.Name,PolicyBucket.ObjectType"
+    table_name: "Domain Policies"
+    column_names: "Name,Policy Name,PolicyType"
+
+# GET VLAN POLICIES
+  - request_process: true
+    resource_path: "fabric/Vlans"
+    request_method: "GET"
+    select: "?$select=EthNetworkPolicy,Name,AutoAllowOnUplinks,SnoopingState,IsNative,VlanId,MulticastPolicy"
+    expand: "&$expand=EthNetworkPolicy($select=Name),MulticastPolicy($select=Name)"
+    filter: "EthNetworkPolicy.Name,Name,AutoAllowOnUplinks,IsNative,VlanId,MulticastPolicy.Name"
+    table_name: "VLAN Policies"
+    column_names: "VLAN Policy,VLAN Name,Allowed On Uplinks,Native,VLAN,Multicast Policy"
+
+# GET MULTICAST POLICIES
+  - request_process: true
+    resource_path: "fabric/MulticastPolicies"
+    request_method: "GET"
+    select: "?$select=Name,QuerierState,SnoopingState,SrcIpProxy,Organization"
+    expand: "&$expand=Organization($select=Name)"
+    filter: "Name,QuerierState,SnoopingState,SrcIpProxy,Organization.Name"
+    table_name: "Multicast Policies"
+    column_names: "Name,Querier State,Snooping State,Source IP Proxy,Organization"
+
+# GET DNS SERVERS
+  - request_process: true
+    resource_path: "networkconfig/Policies"
+    request_method: "GET"
+    select: "?$select=Name,PreferredIpv4dnsServer,AlternateIpv4dnsServer,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,PreferredIpv4dnsServer,AlternateIpv4dnsServer,Profiles.Name"
+    table_name: "DNS Policies"
+    column_names: "Name,Primary DNS,Secondary DNS,Assigned"
+
+# GET NTP SERVERS
+  - request_process: true
+    resource_path: "ntp/Policies"
+    request_method: "GET"
+    select: "?$select=Name,NtpServers,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,NtpServers,Profiles.Name"
+    table_name: "NTP Policies"
+    column_names: "NTP Policy, NTP Servers,Assigned"
+
+# GET SYSTEM QOS
+  - request_process: true
+    resource_path: "fabric/SystemQosPolicies"
+    request_method: "GET"
+    select: "?$select=Name,Classes,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,Classes.AdminState,Classes.Cos,Classes.Mtu,Classes.Name,Classes.PacketDrop,Classes.Weight,Profiles.Name"
+    table_name: "System QoS Policies"
+    column_names: "Name,AdminState,CoS,MTU,Class,Packet Drop,Weight,Assigned"
+
+# GET SYSLOG POLICIES
+  - request_process: true
+    resource_path: "syslog/Policies"
+    request_method: "GET"
+    select: "?$select=Name,RemoteClients"
+    expand: ""
+    filter: "Name,RemoteClients.Hostname,RemoteClients.Port,RemoteClients.Protocol,RemoteClients.MinSeverity,RemoteClients.Enabled"
+    table_name: "SYSLOG Policies"
+    column_names: "Name,Remote Client,Port,Protocol,Min Sev,Enabled"
+
+# GET SWITCH CONTROL POLICIES
+  - request_process: true
+    resource_path: "fabric/SwitchControlPolicies"
+    request_method: "GET"
+    select: "?$select=Name,EthernetSwitchingMode,FcSwitchingMode,ReservedVlanStartId,VlanPortOptimizationEnabled,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,EthernetSwitchingMode,FcSwitchingMode,ReservedVlanStartId,VlanPortOptimizationEnabled,Profiles.Name"
+    table_name: "Switch Control Policies"
+    column_names: "Name,Eth Switch Mode,FC Switch Mode,Reserved VLAN Start ID,VLAN Port Optimization Enabled,Assigned"
+
+# GET PORT POLICIES
+  - request_process: true
+    resource_path: "fabric/PortPolicies"
+    request_method: "GET"
+    select: "?$select=Name,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,Profiles.Name"
+    table_name: "Port Policies"
+    column_names: "Port Policy,Switch Profiles"
+
+
+# ------------------------------------------------------
+# -------- SERVER PROFILES AND POLICIES SECTION --------
+# ------------------------------------------------------
+
+# GET SERVER PROFILE TEMPLATES
+  - request_process: true
+    resource_path: "server/ProfileTemplates"
+    request_method: "GET"
+    select: "?$select=Name,ManagementMode,Usage"
+    expand: ""
+    filter: "Name,ManagementMode,Usage"
+    table_name: "Server Profile Templates"
+    column_names: "Name, Management Mode,Usage"
+
+
+# GET SERVER PROFILES
+  - request_process: true
+    resource_path: "server/Profiles"
+    request_method: "GET"
+    select: "?$select=Name,ManagementMode,TargetPlatform,AssociatedServer,SrcTemplate"
+    expand: "&$expand=SrcTemplate($select=Name),AssociatedServer($select=Name)"
+    filter: "Name,ManagementMode,TargetPlatform,AssociatedServer.Name,SrcTemplate.Name"
+    table_name: "Server Profiles"
+    column_names: "Name, Management Mode,Platform,Associated Server,Server Template"
+
+# # GET VNICS
+#   - request_process: true
+#     resource_path: "vnic/EthIfs"
+#     request_method: "GET"
+#     select: "?$select=Name,FabricEthNetworkControlPolicy,FabricEthNetworkGroupPolicy,LanConnectivityPolicy,SrcTemplate"
+#     expand: "&$expand=FabricEthNetworkControlPolicy($select=Name),FabricEthNetworkGroupPolicy($select=Name,VlanSettings),LanConnectivityPolicy($select=Name),SrcTemplate($select=Name,FailoverEnabled)"
+#     filter: "Name,FabricEthNetworkControlPolicy.Name,FabricEthNetworkGroupPolicy.Name,LanConnectivityPolicy.Name,SrcTemplate.Name,SrcTemplate.FailoverEnabled,FabricEthNetworkGroupPolicy.VlanSettings"
+#     table_name: "vNICs"
+#     column_names: "Name,EthConPol,EthNetGrpPol,LANConPol,vNIC Template,Failover,Allowed Vlans,ClassId,NativeVlan,ObjectType,QinQEnabled,QinqVLAN" #Currently displaying VlanSettings as a list with separate columns
+
+# GET SERVER PROFILE vNICs
+  - request_process: true
+    resource_path: "server/Profiles"
+    request_method: "GET"
+    select: "?$select=Name,PolicyBucket,EthIfs,FabricEthNetworkGroupPolicy,EthAdapterPolicy,EthQosPolicy,MacPool"
+    expand: "&$expand=PolicyBucket($select=EthIfs%3B$expand=EthIfs($select=Name,FabricEthNetworkGroupPolicy,EthQosPolicy,EthAdapterPolicy,MacPool%3B$expand=FabricEthNetworkGroupPolicy,EthQosPolicy,MacPool,EthAdapterPolicy))"
+    filter: "Name,PolicyBucket.EthIfs.Name,PolicyBucket.EthIfs.FabricEthNetworkGroupPolicy.Name,PolicyBucket.EthIfs.FabricEthNetworkGroupPolicy.VlanSettings.AllowedVlans,PolicyBucket.EthIfs.EthAdapterPolicy.Name,PolicyBucket.EthIfs.EthQosPolicy.Name,PolicyBucket.EthIfs.MacPool.Name"    
+    table_name: "Server Profile vNICs"
+    column_names: "Name,vNICs,Ethernet Network Group Policy,Allowed VLANs,Etheret Adapter Policy,Ethernet Qos Policy,MAC Pool"
+
+# GET BIOS POLICIES
+  - request_process: true
+    resource_path: "bios/Policies"
+    request_method: "GET"
+    select: "?$select=Name,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,Profiles.Name"
+    table_name: "BIOS Policies"
+    column_names: "Name,Assigned"
+
+# GET BOOT POLICIES
+  - request_process: true
+    resource_path: "boot/PrecisionPolicies"
+    request_method: "GET"
+    select: "?$select=Name,BootDevices,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,BootDevices.BootLoader.Name,BootDevices.BootLoader.Path,BootDevices.Name,BootDevices.Slot,BootDevices.InterfaceName,BootDevices.Lun,BootDevices.Wwpn,Profiles.Name"
+    table_name: "Boot Policies"
+    column_names: "Name,Boot Loader,Boot Loader Path,Boot Order,Slot,Interface Name,LUN,WWPN,Assigned"
+
+# GET FIRMWARE POLICIES
+  - request_process: true
+    resource_path: "firmware/Policies"
+    request_method: "GET"
+    select: "?$select=Name,ModelBundleCombo,Profiles"
+    expand: "&$expand=ModelBundleCombo,Profiles($select=Name)"
+    filter: "Name,ModelBundleCombo.BundleVersion,ModelBundleCombo.ModelFamily,Profiles.Name"
+    table_name: "Firmware Policies"
+    column_names: "Name,Firmware Version,Model,Assigned"
+
+# GET IMC ACCESS POLICIES
+  - request_process: true
+    resource_path: "access/Policies"
+    request_method: "GET"
+    select: "?$select=Name,InbandIpPool,Profiles"
+    expand: "&$expand=InbandIpPool,Profiles($select=Name)"
+    filter: "Name,InbandIpPool.Name,InbandIpPool.IpV4Blocks.From,InbandIpPool.IpV4Blocks.To,InbandIpPool.IpV4Config.Gateway,InbandIpPool.IpV4Config.Netmask,InbandIpPool.IpV4Config.PrimaryDns,Profiles.Name"
+    table_name: "IMC Access Policies"
+    column_names: "Name,IP Pool Name,From,To,Gateway,Mask,DNS,Assigned"
+
+# GET MEMORY POLICIES
+  - request_process: true
+    resource_path: "memory/Policies"
+    request_method: "GET"
+    select: "?$select=Name,EnableDimmBlocklisting,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,EnableDimmBlocklisting,Profiles.Name"
+    table_name: "Memory Policies"
+    column_names: "Name,DIMM Blocklisting Enabled,Assigned"
+
+# GET POWER POLICIES
+  - request_process: true
+    resource_path: "power/Policies"
+    request_method: "GET"
+    select: "?$select=Name,PowerPriority,RedundancyMode,PowerProfiling,PowerRestoreState,DynamicRebalancing,PowerSaveMode,ExtendedPowerCapacity,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,PowerPriority,RedundancyMode,PowerProfiling,PowerRestoreState,DynamicRebalancing,PowerSaveMode,ExtendedPowerCapacity,Profiles.Name"
+    table_name: "Power Policies"
+    column_names: "Name,Power Priority,Redundancy Mode,Power Profiling,Power Restore State,Dynamic Rebalancing,Power Save Mode,Extended Power Capacity,Assigned"
+
+# GET SNMP POLICIES
+  - request_process: true
+    resource_path: "snmp/Policies"
+    request_method: "GET"
+    select: "?$select=Name,AccessCommunityString,Enabled,SnmpPort,SnmpUsers,SnmpTraps,V2Enabled,V3Enabled,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,AccessCommunityString,Enabled,SnmpPort,SnmpUsers,SnmpTraps,AccessCommunityString,V2Enabled,V3Enabled,Profiles.Name"
+    table_name: "SNMP Policies"
+    column_names: "Name,Community String,Enabled,Port,Users,Traps,V2,V3,Assigned"
+
+# GET STORAGE POLICIES
+  - request_process: true
+    resource_path: "storage/StoragePolicies"
+    request_method: "GET"
+    select: "?$select=Name,M2VirtualDrive,Profiles"
+    expand: "&$expand=M2VirtualDrive,Profiles($select=Name)"
+    filter: "Name,M2VirtualDrive.ControllerSlot,M2VirtualDrive.Name,Profiles.Name"
+    table_name: "Storage Policies"
+    column_names: "Name,M2 Controller Slot,M2 Drive Name,Assigned"
+
+# GET KVM POLICIES
+  - request_process: true
+    resource_path: "kvm/Policies"
+    request_method: "GET"
+    select: "?$select=Name,MaximumSessions,EnableVideoEncryption,EnableLocalServerVideo,RemotePort,Profiles"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: "Name,MaximumSessions,EnableVideoEncryption,EnableLocalServerVideo,RemotePort,Profiles.Name"
+    table_name: "vKVM Policies"
+    column_names: "Name,Max Sessions,Encrypted,Local Server Video Enabled,Remote Port,Assigned"
+
+# GET IP POOL
+  - request_process: true
+    resource_path: "ippool/Pools"
+    request_method: "GET"
+    select: "?$select=Name,IpV4Blocks,IpV4Config,Size,Assigned"
+    expand: "&$expand=IpV4Blocks,IpV4Config"
+    filter: "Name,IpV4Blocks.From,IpV4Blocks.To,IpV4Config.Gateway,IpV4Config.Netmask,IpV4Config.PrimaryDns,Size,Assigned"
+    table_name: "IP Pools"
+    column_names: "Name,From,To,Gateway,Net Mask,Primary DNS,Pool Size,IPs Assigned"
+
+# GET MAC POOL
+  - request_process: true
+    resource_path: "macpool/Pools"
+    request_method: "GET"
+    select: "?$select=Name,MacBlocks,Size,Assigned"
+    expand: "&$expand=MacBlocks"
+    filter: "Name,MacBlocks.From,MacBlocks.To,Size,Assigned"
+    table_name: "MAC Pools"
+    column_names: "Name,From,To,Size,Assigned"
+
+# GET WWPN POOL
+  - request_process: true
+    resource_path: "fcpool/Pools"
+    request_method: "GET"
+    select: "?$select=Name,IdBlocks,Size,Assigned"
+    expand: "&$expand=IdBlocks"
+    filter: "Name,IdBlocks.From,IdBlocks.To,Size,Assigned"
+    table_name: "WWPN Pools"
+    column_names: "Name,From,To,Size,Assigned"
+
+# GET UUID POOL
+  - request_process: true
+    resource_path: "uuidpool/Pools"
+    request_method: "GET"
+    select: "?$select=Name,Prefix,UuidSuffixBlocks,Size,Assigned"
+    expand: "&$expand=UuidSuffixBlocks"
+    filter: "Name,Prefix,UuidSuffixBlocks.From,UuidSuffixBlocks.To,Size,Assigned"
+    table_name: "UUID Pools"
+    column_names: "Name,Prefix,From,To,Size,Assigned"
+
+
+# ------------------------------------------------------
+# --------------- FI HARDWARE SECTION ------------------
+# ------------------------------------------------------
+
+
+# GET TRANSCEIVER
+  - request_process: true
+    resource_path: "equipment/Transceivers"
+    request_method: "GET"
+    select: "?$select=PortId,RegisteredDevice,SwitchId,Type,Status"
+    expand: "&$expand=RegisteredDevice"
+    filter: "RegisteredDevice.DeviceHostname,PortId,SwitchId,Type,RegisteredDevice.Pid,Status"
+    table_name: "Transceivers"
+    column_names: "FI Name,Port,SwitchId,Type,FI Model,Status"
+
+# GET PORT MODES FOR EACH PORT POLICY
+  - request_process: true
+    resource_path: "fabric/PortModes"
+    request_method: "GET"
+    select: "?$select=PortIdStart,PortIdEnd,CustomMode,PortPolicy"
+    expand: "&$expand=PortPolicy($select=Name,DeviceModel)"
+    filter: "PortIdStart,PortIdEnd,CustomMode,PortPolicy.Name,PortPolicy.DeviceModel"
+    table_name: "Breakout Port Modes"
+    column_names: "Port Start, Port End,CustomMode,Port Policy, FI Model"
+
+
+
+# ------------------------------------------------------
+# ------------- COMPUTE HARDWARE SECTION ---------------
+# ------------------------------------------------------ 
+
+
+# GET HCL STATUS
+  - request_process: true
+    resource_path: "cond/HclStatuses"
+    request_method: "GET"
+    select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+    expand: ""
+    filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+    table_name: "Hardware and Software Compatibilty"
+    column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
+
+# GET CONTRACT STATUS
+  - request_process: true
+    resource_path: "asset/DeviceContractInformations"
+    request_method: "GET"
+    select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
+    expand: "&$expand=Contract,EndCustomer,Product"
+    filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
+    table_name: "Contract Status"
+    column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
+
+
+
+# ------------------------------------------------------
+# --------- SECURITY NOTIFICATIONS SECTION -------------
+# ------------------------------------------------------ 
+
+# # GET SECURITY ADVISORIES 
+#   - request_process: true
+#     resource_path: "tam/SecurityAdvisories"
+#     request_method: "GET"
+#     select: "?$select=Severity,Name,BaseScore,Description,CveIds"
+#     expand: "&$expand=Severity"
+#     filter: "Severity.Level,Name,BaseScore,Description,CveIds"
+#     table_name: "Security Advisories"
+#     column_names: "Severity Level,Name,Base Score,Description,CveIds"
+
+# # GET ADVISORY INSTANCES
+#   - request_process: true
+#     resource_path: "tam/AdvisoryInstances"
+#     request_method: "GET"
+#     select: "?$select=Advisory,AffectedObject"
+#     expand: "&$expand=Advisory,AffectedObject"
+#     filter: "Advisory.Actions.AlertType,AffectedObject.Model"
+#     table_name: "Advisories"
+#     column_names: "Alert Type,Model"
+
+
+# TO GET
+#-----------
+# Server Profile vHBAs
+# Server Profile Boot Policy
+
+
+

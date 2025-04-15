@@ -1,0 +1,65 @@
+{
+    "ObjectType": "fabric.PortMode.List",
+    "Results": [
+        {
+            "ClassId": "fabric.PortMode",
+            "CustomMode": "BreakoutFibreChannel32G",
+            "Moid": "67645d076f626933017159e0",
+            "ObjectType": "fabric.PortMode",
+            "PortIdEnd": 36,
+            "PortIdStart": 36,
+            "PortPolicy": {
+                "ClassId": "fabric.PortPolicy",
+                "DeviceModel": "UCS-FI-6536",
+                "Moid": "67645d076f626933017159bb",
+                "Name": "UCSX-ASB-PORT",
+                "ObjectType": "fabric.PortPolicy"
+            }
+        },
+        {
+            "ClassId": "fabric.PortMode",
+            "CustomMode": "BreakoutFibreChannel32G",
+            "Moid": "67645d076f62693301715a08",
+            "ObjectType": "fabric.PortMode",
+            "PortIdEnd": 35,
+            "PortIdStart": 35,
+            "PortPolicy": {
+                "ClassId": "fabric.PortPolicy",
+                "DeviceModel": "UCS-FI-6536",
+                "Moid": "67645d076f626933017159bb",
+                "Name": "UCSX-ASB-PORT",
+                "ObjectType": "fabric.PortPolicy"
+            }
+        },
+        {
+            "ClassId": "fabric.PortMode",
+            "CustomMode": "BreakoutFibreChannel16G",
+            "Moid": "677d50236f62693301b21595",
+            "ObjectType": "fabric.PortMode",
+            "PortIdEnd": 36,
+            "PortIdStart": 36,
+            "PortPolicy": {
+                "ClassId": "fabric.PortPolicy",
+                "DeviceModel": "UCS-FI-6536",
+                "Moid": "677d50226f62693301b21469",
+                "Name": "UCSX-KB-PORT",
+                "ObjectType": "fabric.PortPolicy"
+            }
+        },
+        {
+            "ClassId": "fabric.PortMode",
+            "CustomMode": "BreakoutFibreChannel16G",
+            "Moid": "677d50236f62693301b215c6",
+            "ObjectType": "fabric.PortMode",
+            "PortIdEnd": 35,
+            "PortIdStart": 35,
+            "PortPolicy": {
+                "ClassId": "fabric.PortPolicy",
+                "DeviceModel": "UCS-FI-6536",
+                "Moid": "677d50226f62693301b21469",
+                "Name": "UCSX-KB-PORT",
+                "ObjectType": "fabric.PortPolicy"
+            }
+        }
+    ]
+}

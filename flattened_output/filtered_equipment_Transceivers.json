@@ -1,0 +1,1202 @@
+[
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 12,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 33,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 27,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 1,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-SR4-S",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 26,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 8,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 17,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 22,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 16,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 10,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 18,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 23,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 32,
+        "SwitchId": "B",
+        "Type": "GLC-TE",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 9,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 30,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 15,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 20,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 34,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 19,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 21,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 6,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 7,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 28,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 24,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-SR4-S",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 11,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 14,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 13,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 29,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 31,
+        "SwitchId": "B",
+        "Type": "GLC-TE",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 5,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 25,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 18,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 14,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 17,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 20,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 27,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 33,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 19,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 12,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 13,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 7,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 16,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 26,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 32,
+        "SwitchId": "A",
+        "Type": "GLC-TE",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 31,
+        "SwitchId": "A",
+        "Type": "GLC-TE",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 22,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 21,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 25,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 6,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 1,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-SR4-S",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-SR4-S",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 24,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 11,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 34,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 5,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 29,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 23,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 30,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 10,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 8,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 15,
+        "SwitchId": "A",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 9,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 28,
+        "SwitchId": "A",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 1,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 1,
+        "SwitchId": "A",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 1,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 1,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-ASB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "B",
+        "Type": "short wave laser w/o OFC ",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 21,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 7,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 15,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 27,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 24,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 32,
+        "SwitchId": "B",
+        "Type": "GLC-TE",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 17,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 26,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 2,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-SR4-S",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 9,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 12,
+        "SwitchId": "B",
+        "Type": "QSFP-100G-CU3M",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 28,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 3,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 4,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 31,
+        "SwitchId": "B",
+        "Type": "GLC-TE",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "inserted"
+    },
+    {
+        "RegisteredDevice.DeviceHostname": [
+            "UCSX-FI-KB-01"
+        ],
+        "PortId": 19,
+        "SwitchId": "B",
+        "Type": "",
+        "RegisteredDevice.Pid": [
+            "UCS-FI-6536"
+        ],
+        "Status": "removed"
+    }
+]

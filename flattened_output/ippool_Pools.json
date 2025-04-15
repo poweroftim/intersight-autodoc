@@ -1,0 +1,38 @@
+{
+    "ObjectType": "ippool.Pool.List",
+    "Results": [
+        {
+            "Assigned": 0,
+            "ClassId": "ippool.Pool",
+            "IpV4Blocks": [
+                {
+                    "ClassId": "ippool.IpV4Block",
+                    "ObjectType": "ippool.IpV4Block",
+                    "Size": 32,
+                    "From": "10.84.64.4",
+                    "IpV4Config": {
+                        "ClassId": "ippool.IpV4Config",
+                        "ObjectType": "ippool.IpV4Config",
+                        "Gateway": "",
+                        "Netmask": "",
+                        "PrimaryDns": "",
+                        "SecondaryDns": ""
+                    },
+                    "To": "10.84.64.35"
+                }
+            ],
+            "IpV4Config": {
+                "ClassId": "ippool.IpV4Config",
+                "ObjectType": "ippool.IpV4Config",
+                "Gateway": "10.84.64.1",
+                "Netmask": "255.255.255.192",
+                "PrimaryDns": "128.6.1.2",
+                "SecondaryDns": ""
+            },
+            "Moid": "6765b00169627532011bf906",
+            "Name": "UCSX-ASB-MANAGEMENT-IP",
+            "ObjectType": "ippool.Pool",
+            "Size": 32
+        }
+    ]
+}

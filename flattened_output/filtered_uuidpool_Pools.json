@@ -1,0 +1,10 @@
+[
+    {
+        "Name": "UCSX-ASB-UUID",
+        "Prefix": "0EC1146A-E719-11E2",
+        "UuidSuffixBlocks.From": "0000-000000000001",
+        "UuidSuffixBlocks.To": "0000-0000000000C8",
+        "Size": 200,
+        "Assigned": 9
+    }
+]

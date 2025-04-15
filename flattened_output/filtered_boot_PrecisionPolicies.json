@@ -1,0 +1,83 @@
+[
+    {
+        "Name": "UCSX-ASB-SAN-LAN-KVM-BOOT",
+        "BootDevices.BootLoader.Name": [],
+        "BootDevices.BootLoader.Path": [],
+        "BootDevices.Name": [
+            "vHBA-A-tgt01",
+            "vHBA-B-tgt01",
+            "vHBA-A-tgt02",
+            "vHBA-B-tgt02",
+            "KVM-DVD"
+        ],
+        "BootDevices.Slot": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "BootDevices.InterfaceName": [
+            "vHBA-A",
+            "vHBA-B",
+            "vHBA-A",
+            "vHBA-B"
+        ],
+        "BootDevices.Lun": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "BootDevices.Wwpn": [
+            "50:00:09:72:10:33:b4:02",
+            "50:00:09:72:10:33:b4:42",
+            "50:00:09:72:10:33:b4:82",
+            "50:00:09:72:10:33:b4:c2"
+        ],
+        "Profiles.Name": [
+            "UCSX-ASB-GPU-SERVER",
+            "UCSX-ASB-GPU-SERVER-01",
+            "UCSX-ASB-ESXI-SERVER",
+            "UCSX-ASB-ESXI-SERVER-01",
+            "UCSX-ASB-ESXI-SERVER-02",
+            "UCSX-ASB-ESXI-SERVER-03",
+            "UCSX-ASB-ESXI-SERVER-04",
+            "UCSX-ASB-ESXI-SERVER-05",
+            "UCSX-ASB-ESXI-SERVER-06",
+            "UCSX-ASB-ESXI-SERVER-07",
+            "UCSX-ASB-ESXI-SERVER-08"
+        ]
+    },
+    {
+        "Name": "UCSX-VCF-MGMT-BOOT",
+        "BootDevices.BootLoader.Name": [],
+        "BootDevices.BootLoader.Path": [],
+        "BootDevices.Name": [
+            "m2_raid1",
+            "KVM-Mapped-DVD",
+            "CIMC-Mapped-DVD"
+        ],
+        "BootDevices.Slot": "MSTOR-RAID",
+        "BootDevices.InterfaceName": [],
+        "BootDevices.Lun": [],
+        "BootDevices.Wwpn": [],
+        "Profiles.Name": [
+            "UCSX-VCF-MGMT-SERVER",
+            "UCSX-VCF-MGMT-01",
+            "UCSX-VCF-MGMT-02",
+            "UCSX-VCF-MGMT-03",
+            "UCSX-VCF-MGMT-04"
+        ]
+    },
+    {
+        "Name": "SystemDefault",
+        "BootDevices.BootLoader.Name": [],
+        "BootDevices.BootLoader.Path": [],
+        "BootDevices.Name": "UefiShell",
+        "BootDevices.Slot": [],
+        "BootDevices.InterfaceName": [],
+        "BootDevices.Lun": [],
+        "BootDevices.Wwpn": [],
+        "Profiles.Name": []
+    }
+]

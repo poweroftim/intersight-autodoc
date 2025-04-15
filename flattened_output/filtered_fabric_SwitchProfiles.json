@@ -1,0 +1,102 @@
+[
+    {
+        "Name": "UCSX-ASB-A",
+        "PolicyBucket.Name": [
+            "UCSX-ASB-PORT",
+            "UCSX-ASB-NTP",
+            "UCSX-ASB-SYSLOG",
+            "UCSX-ASB-NETWORK",
+            "UCSX-ASB-QoS",
+            "UCSX-ASB-SWITCH",
+            "UCSX-ASB-SNMP",
+            "UCSX-ASB-VLAN",
+            "UCSX-VSAN-ASB"
+        ],
+        "PolicyBucket.ObjectType": [
+            "fabric.PortPolicy",
+            "ntp.Policy",
+            "syslog.Policy",
+            "networkconfig.Policy",
+            "fabric.SystemQosPolicy",
+            "fabric.SwitchControlPolicy",
+            "snmp.Policy",
+            "fabric.EthNetworkPolicy",
+            "fabric.FcNetworkPolicy"
+        ]
+    },
+    {
+        "Name": "UCSX-ASB-B",
+        "PolicyBucket.Name": [
+            "UCSX-ASB-PORT",
+            "UCSX-ASB-NTP",
+            "UCSX-ASB-SYSLOG",
+            "UCSX-ASB-NETWORK",
+            "UCSX-ASB-QoS",
+            "UCSX-ASB-SWITCH",
+            "UCSX-ASB-SNMP",
+            "UCSX-ASB-VLAN",
+            "UCSX-VSAN-ASB"
+        ],
+        "PolicyBucket.ObjectType": [
+            "fabric.PortPolicy",
+            "ntp.Policy",
+            "syslog.Policy",
+            "networkconfig.Policy",
+            "fabric.SystemQosPolicy",
+            "fabric.SwitchControlPolicy",
+            "snmp.Policy",
+            "fabric.EthNetworkPolicy",
+            "fabric.FcNetworkPolicy"
+        ]
+    },
+    {
+        "Name": "UCSX-KB-UCSX-ASB-A",
+        "PolicyBucket.Name": [
+            "UCSX-ASB-PORT",
+            "UCSX-ASB-NTP",
+            "UCSX-KB-VLAN",
+            "UCSX-KB-SNMP",
+            "UCSX-ASB-NETWORK",
+            "UCSX-ASB-SYSLOG",
+            "UCSX-KB-QoS",
+            "UCSX-KB-SWITCH",
+            "UCSX-VSAN-KB"
+        ],
+        "PolicyBucket.ObjectType": [
+            "fabric.PortPolicy",
+            "ntp.Policy",
+            "fabric.EthNetworkPolicy",
+            "snmp.Policy",
+            "networkconfig.Policy",
+            "syslog.Policy",
+            "fabric.SystemQosPolicy",
+            "fabric.SwitchControlPolicy",
+            "fabric.FcNetworkPolicy"
+        ]
+    },
+    {
+        "Name": "UCSX-KB-UCSX-ASB-B",
+        "PolicyBucket.Name": [
+            "UCSX-ASB-PORT",
+            "UCSX-ASB-NTP",
+            "UCSX-KB-VLAN",
+            "UCSX-KB-SNMP",
+            "UCSX-ASB-NETWORK",
+            "UCSX-ASB-SYSLOG",
+            "UCSX-KB-QoS",
+            "UCSX-KB-SWITCH",
+            "UCSX-VSAN-KB"
+        ],
+        "PolicyBucket.ObjectType": [
+            "fabric.PortPolicy",
+            "ntp.Policy",
+            "fabric.EthNetworkPolicy",
+            "snmp.Policy",
+            "networkconfig.Policy",
+            "syslog.Policy",
+            "fabric.SystemQosPolicy",
+            "fabric.SwitchControlPolicy",
+            "fabric.FcNetworkPolicy"
+        ]
+    }
+]

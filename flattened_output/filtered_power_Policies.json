@@ -1,0 +1,30 @@
+[
+    {
+        "Name": "UCSX-ASB-POWER",
+        "PowerPriority": "Low",
+        "RedundancyMode": "Grid",
+        "PowerProfiling": "Enabled",
+        "PowerRestoreState": "AlwaysOff",
+        "DynamicRebalancing": "Enabled",
+        "PowerSaveMode": "Enabled",
+        "ExtendedPowerCapacity": "Enabled",
+        "Profiles.Name": [
+            "UCSX-VCF-MGMT-SERVER",
+            "UCSX-VCF-MGMT-01",
+            "UCSX-VCF-MGMT-02",
+            "UCSX-VCF-MGMT-03",
+            "UCSX-VCF-MGMT-04"
+        ]
+    },
+    {
+        "Name": "SystemDefault",
+        "PowerPriority": "Low",
+        "RedundancyMode": "Grid",
+        "PowerProfiling": "Enabled",
+        "PowerRestoreState": "AlwaysOff",
+        "DynamicRebalancing": "Enabled",
+        "PowerSaveMode": "Enabled",
+        "ExtendedPowerCapacity": "Enabled",
+        "Profiles.Name": []
+    }
+]

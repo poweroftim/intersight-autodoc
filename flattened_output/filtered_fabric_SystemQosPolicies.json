@@ -1,0 +1,112 @@
+[
+    {
+        "Name": "UCSX-ASB-QoS",
+        "Classes.AdminState": [
+            "Disabled",
+            "Disabled",
+            "Disabled",
+            "Disabled",
+            "Enabled",
+            "Enabled"
+        ],
+        "Classes.Cos": [
+            1,
+            2,
+            4,
+            5,
+            255,
+            3
+        ],
+        "Classes.Mtu": [
+            1500,
+            1500,
+            1500,
+            1500,
+            9000,
+            2240
+        ],
+        "Classes.Name": [
+            "Bronze",
+            "Silver",
+            "Gold",
+            "Platinum",
+            "Best Effort",
+            "FC"
+        ],
+        "Classes.PacketDrop": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "Classes.Weight": [
+            7,
+            8,
+            9,
+            10,
+            5,
+            5
+        ],
+        "Profiles.Name": [
+            "UCSX-ASB-B",
+            "UCSX-ASB-A"
+        ]
+    },
+    {
+        "Name": "UCSX-KB-QoS",
+        "Classes.AdminState": [
+            "Disabled",
+            "Disabled",
+            "Disabled",
+            "Disabled",
+            "Enabled",
+            "Enabled"
+        ],
+        "Classes.Cos": [
+            1,
+            2,
+            4,
+            5,
+            255,
+            3
+        ],
+        "Classes.Mtu": [
+            1500,
+            1500,
+            1500,
+            1500,
+            9000,
+            2240
+        ],
+        "Classes.Name": [
+            "Bronze",
+            "Silver",
+            "Gold",
+            "Platinum",
+            "Best Effort",
+            "FC"
+        ],
+        "Classes.PacketDrop": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "Classes.Weight": [
+            7,
+            8,
+            9,
+            10,
+            5,
+            5
+        ],
+        "Profiles.Name": [
+            "UCSX-KB-UCSX-ASB-A",
+            "UCSX-KB-UCSX-ASB-B"
+        ]
+    }
+]

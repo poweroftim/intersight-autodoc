@@ -1,0 +1,253 @@
+{
+    "ObjectType": "fabric.SwitchProfile.List",
+    "Results": [
+        {
+            "ClassId": "fabric.SwitchProfile",
+            "Moid": "67645d2a656e6f3301cc0c0a",
+            "Name": "UCSX-ASB-A",
+            "ObjectType": "fabric.SwitchProfile",
+            "PolicyBucket": [
+                {
+                    "ClassId": "fabric.PortPolicy",
+                    "Moid": "67645d076f626933017159bb",
+                    "Name": "UCSX-ASB-PORT",
+                    "ObjectType": "fabric.PortPolicy"
+                },
+                {
+                    "ClassId": "ntp.Policy",
+                    "Moid": "6764456662757231016e59d0",
+                    "Name": "UCSX-ASB-NTP",
+                    "ObjectType": "ntp.Policy"
+                },
+                {
+                    "ClassId": "syslog.Policy",
+                    "Moid": "676448ed62757231017279c8",
+                    "Name": "UCSX-ASB-SYSLOG",
+                    "ObjectType": "syslog.Policy"
+                },
+                {
+                    "ClassId": "networkconfig.Policy",
+                    "Moid": "67644b9c6275723101757ea8",
+                    "Name": "UCSX-ASB-NETWORK",
+                    "ObjectType": "networkconfig.Policy"
+                },
+                {
+                    "ClassId": "fabric.SystemQosPolicy",
+                    "Moid": "676449566f626933015a8b96",
+                    "Name": "UCSX-ASB-QoS",
+                    "ObjectType": "fabric.SystemQosPolicy"
+                },
+                {
+                    "ClassId": "fabric.SwitchControlPolicy",
+                    "Moid": "67644c0a6f626933015dbf2e",
+                    "Name": "UCSX-ASB-SWITCH",
+                    "ObjectType": "fabric.SwitchControlPolicy"
+                },
+                {
+                    "ClassId": "snmp.Policy",
+                    "Moid": "6764722d6275723101a68e84",
+                    "Name": "UCSX-ASB-SNMP",
+                    "ObjectType": "snmp.Policy"
+                },
+                {
+                    "ClassId": "fabric.EthNetworkPolicy",
+                    "Moid": "67644ae76f626933015c63fa",
+                    "Name": "UCSX-ASB-VLAN",
+                    "ObjectType": "fabric.EthNetworkPolicy"
+                },
+                {
+                    "ClassId": "fabric.FcNetworkPolicy",
+                    "Moid": "67ae4cfb6f6269330158e549",
+                    "Name": "UCSX-VSAN-ASB",
+                    "ObjectType": "fabric.FcNetworkPolicy"
+                }
+            ]
+        },
+        {
+            "ClassId": "fabric.SwitchProfile",
+            "Moid": "67645d2a656e6f3301cc0c12",
+            "Name": "UCSX-ASB-B",
+            "ObjectType": "fabric.SwitchProfile",
+            "PolicyBucket": [
+                {
+                    "ClassId": "fabric.PortPolicy",
+                    "Moid": "67645d076f626933017159bb",
+                    "Name": "UCSX-ASB-PORT",
+                    "ObjectType": "fabric.PortPolicy"
+                },
+                {
+                    "ClassId": "ntp.Policy",
+                    "Moid": "6764456662757231016e59d0",
+                    "Name": "UCSX-ASB-NTP",
+                    "ObjectType": "ntp.Policy"
+                },
+                {
+                    "ClassId": "syslog.Policy",
+                    "Moid": "676448ed62757231017279c8",
+                    "Name": "UCSX-ASB-SYSLOG",
+                    "ObjectType": "syslog.Policy"
+                },
+                {
+                    "ClassId": "networkconfig.Policy",
+                    "Moid": "67644b9c6275723101757ea8",
+                    "Name": "UCSX-ASB-NETWORK",
+                    "ObjectType": "networkconfig.Policy"
+                },
+                {
+                    "ClassId": "fabric.SystemQosPolicy",
+                    "Moid": "676449566f626933015a8b96",
+                    "Name": "UCSX-ASB-QoS",
+                    "ObjectType": "fabric.SystemQosPolicy"
+                },
+                {
+                    "ClassId": "fabric.SwitchControlPolicy",
+                    "Moid": "67644c0a6f626933015dbf2e",
+                    "Name": "UCSX-ASB-SWITCH",
+                    "ObjectType": "fabric.SwitchControlPolicy"
+                },
+                {
+                    "ClassId": "snmp.Policy",
+                    "Moid": "6764722d6275723101a68e84",
+                    "Name": "UCSX-ASB-SNMP",
+                    "ObjectType": "snmp.Policy"
+                },
+                {
+                    "ClassId": "fabric.EthNetworkPolicy",
+                    "Moid": "67644ae76f626933015c63fa",
+                    "Name": "UCSX-ASB-VLAN",
+                    "ObjectType": "fabric.EthNetworkPolicy"
+                },
+                {
+                    "ClassId": "fabric.FcNetworkPolicy",
+                    "Moid": "67ae4cfb6f6269330158e549",
+                    "Name": "UCSX-VSAN-ASB",
+                    "ObjectType": "fabric.FcNetworkPolicy"
+                }
+            ]
+        },
+        {
+            "ClassId": "fabric.SwitchProfile",
+            "Moid": "677d4dfc656e6f3301269782",
+            "Name": "UCSX-KB-UCSX-ASB-A",
+            "ObjectType": "fabric.SwitchProfile",
+            "PolicyBucket": [
+                {
+                    "ClassId": "fabric.PortPolicy",
+                    "Moid": "67645d076f626933017159bb",
+                    "Name": "UCSX-ASB-PORT",
+                    "ObjectType": "fabric.PortPolicy"
+                },
+                {
+                    "ClassId": "ntp.Policy",
+                    "Moid": "6764456662757231016e59d0",
+                    "Name": "UCSX-ASB-NTP",
+                    "ObjectType": "ntp.Policy"
+                },
+                {
+                    "ClassId": "fabric.EthNetworkPolicy",
+                    "Moid": "677d50de6f62693301b2f626",
+                    "Name": "UCSX-KB-VLAN",
+                    "ObjectType": "fabric.EthNetworkPolicy"
+                },
+                {
+                    "ClassId": "snmp.Policy",
+                    "Moid": "677d4f8b6275723101402bed",
+                    "Name": "UCSX-KB-SNMP",
+                    "ObjectType": "snmp.Policy"
+                },
+                {
+                    "ClassId": "networkconfig.Policy",
+                    "Moid": "67644b9c6275723101757ea8",
+                    "Name": "UCSX-ASB-NETWORK",
+                    "ObjectType": "networkconfig.Policy"
+                },
+                {
+                    "ClassId": "syslog.Policy",
+                    "Moid": "676448ed62757231017279c8",
+                    "Name": "UCSX-ASB-SYSLOG",
+                    "ObjectType": "syslog.Policy"
+                },
+                {
+                    "ClassId": "fabric.SystemQosPolicy",
+                    "Moid": "677d505c6f62693301b259e7",
+                    "Name": "UCSX-KB-QoS",
+                    "ObjectType": "fabric.SystemQosPolicy"
+                },
+                {
+                    "ClassId": "fabric.SwitchControlPolicy",
+                    "Moid": "677d4ffe6f62693301b1e961",
+                    "Name": "UCSX-KB-SWITCH",
+                    "ObjectType": "fabric.SwitchControlPolicy"
+                },
+                {
+                    "ClassId": "fabric.FcNetworkPolicy",
+                    "Moid": "67f7b5db6f6269330122b1e5",
+                    "Name": "UCSX-VSAN-KB",
+                    "ObjectType": "fabric.FcNetworkPolicy"
+                }
+            ]
+        },
+        {
+            "ClassId": "fabric.SwitchProfile",
+            "Moid": "677d4dfc656e6f330126978b",
+            "Name": "UCSX-KB-UCSX-ASB-B",
+            "ObjectType": "fabric.SwitchProfile",
+            "PolicyBucket": [
+                {
+                    "ClassId": "fabric.PortPolicy",
+                    "Moid": "67645d076f626933017159bb",
+                    "Name": "UCSX-ASB-PORT",
+                    "ObjectType": "fabric.PortPolicy"
+                },
+                {
+                    "ClassId": "ntp.Policy",
+                    "Moid": "6764456662757231016e59d0",
+                    "Name": "UCSX-ASB-NTP",
+                    "ObjectType": "ntp.Policy"
+                },
+                {
+                    "ClassId": "fabric.EthNetworkPolicy",
+                    "Moid": "677d50de6f62693301b2f626",
+                    "Name": "UCSX-KB-VLAN",
+                    "ObjectType": "fabric.EthNetworkPolicy"
+                },
+                {
+                    "ClassId": "snmp.Policy",
+                    "Moid": "677d4f8b6275723101402bed",
+                    "Name": "UCSX-KB-SNMP",
+                    "ObjectType": "snmp.Policy"
+                },
+                {
+                    "ClassId": "networkconfig.Policy",
+                    "Moid": "67644b9c6275723101757ea8",
+                    "Name": "UCSX-ASB-NETWORK",
+                    "ObjectType": "networkconfig.Policy"
+                },
+                {
+                    "ClassId": "syslog.Policy",
+                    "Moid": "676448ed62757231017279c8",
+                    "Name": "UCSX-ASB-SYSLOG",
+                    "ObjectType": "syslog.Policy"
+                },
+                {
+                    "ClassId": "fabric.SystemQosPolicy",
+                    "Moid": "677d505c6f62693301b259e7",
+                    "Name": "UCSX-KB-QoS",
+                    "ObjectType": "fabric.SystemQosPolicy"
+                },
+                {
+                    "ClassId": "fabric.SwitchControlPolicy",
+                    "Moid": "677d4ffe6f62693301b1e961",
+                    "Name": "UCSX-KB-SWITCH",
+                    "ObjectType": "fabric.SwitchControlPolicy"
+                },
+                {
+                    "ClassId": "fabric.FcNetworkPolicy",
+                    "Moid": "67f7b5db6f6269330122b1e5",
+                    "Name": "UCSX-VSAN-KB",
+                    "ObjectType": "fabric.FcNetworkPolicy"
+                }
+            ]
+        }
+    ]
+}

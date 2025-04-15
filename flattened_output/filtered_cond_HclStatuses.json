@@ -1,0 +1,602 @@
+[
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "4.2(3g)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 7.0 U3",
+        "InvModel": "UCSC-C220-M6S"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240053)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 8.0 U3",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Compatible",
+        "Status": "Validated",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 8.0 U3",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Incompatible-Components",
+        "Status": "Not-Listed",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 8.0 U3",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Validated",
+        "Reason": "Compatible",
+        "Status": "Validated",
+        "InvFirmwareVersion": "5.3(0.250001)",
+        "HclOsVendor": "VMware",
+        "HclOsVersion": "ESXi 8.0 U3",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    },
+    {
+        "HardwareStatus": "Validated",
+        "SoftwareStatus": "Incomplete",
+        "Reason": "Missing-Os-Info",
+        "Status": "Incomplete",
+        "InvFirmwareVersion": "5.2(2.240074)",
+        "HclOsVendor": "",
+        "HclOsVersion": "",
+        "InvModel": "UCSX-210C-M7"
+    }
+]

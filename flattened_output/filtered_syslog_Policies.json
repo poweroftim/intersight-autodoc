@@ -1,0 +1,48 @@
+[
+    {
+        "Name": "UCSX-ASB-SYSLOG",
+        "RemoteClients.Hostname": [
+            "128.6.1.3",
+            "0.0.0.0"
+        ],
+        "RemoteClients.Port": [
+            514,
+            514
+        ],
+        "RemoteClients.Protocol": [
+            "udp",
+            "udp"
+        ],
+        "RemoteClients.MinSeverity": [
+            "warning",
+            "warning"
+        ],
+        "RemoteClients.Enabled": [
+            true,
+            false
+        ]
+    },
+    {
+        "Name": "SystemDefault",
+        "RemoteClients.Hostname": [
+            "0.0.0.0",
+            "0.0.0.0"
+        ],
+        "RemoteClients.Port": [
+            514,
+            514
+        ],
+        "RemoteClients.Protocol": [
+            "udp",
+            "udp"
+        ],
+        "RemoteClients.MinSeverity": [
+            "warning",
+            "warning"
+        ],
+        "RemoteClients.Enabled": [
+            false,
+            false
+        ]
+    }
+]

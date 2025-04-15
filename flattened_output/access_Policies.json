@@ -1,0 +1,205 @@
+{
+    "ObjectType": "access.Policy.List",
+    "Results": [
+        {
+            "ClassId": "access.Policy",
+            "InbandIpPool": {
+                "AccountMoid": "6064aebf7564612d332da45c",
+                "Ancestors": [],
+                "Assigned": 0,
+                "AssignmentOrder": "default",
+                "ClassId": "ippool.Pool",
+                "CreateTime": "2024-12-20T17:57:21.94Z",
+                "Description": "",
+                "DomainGroupMoid": "6064aebf7564612d332da45d",
+                "EnableBlockLevelSubnetConfig": false,
+                "IpV4Blocks": [
+                    {
+                        "ClassId": "ippool.IpV4Block",
+                        "From": "10.84.64.4",
+                        "IpV4Config": {
+                            "ClassId": "ippool.IpV4Config",
+                            "Gateway": "",
+                            "Netmask": "",
+                            "ObjectType": "ippool.IpV4Config",
+                            "PrimaryDns": "",
+                            "SecondaryDns": ""
+                        },
+                        "ObjectType": "ippool.IpV4Block",
+                        "Size": 32,
+                        "To": "10.84.64.35"
+                    }
+                ],
+                "IpV4Config": {
+                    "ClassId": "ippool.IpV4Config",
+                    "Gateway": "10.84.64.1",
+                    "Netmask": "255.255.255.192",
+                    "ObjectType": "ippool.IpV4Config",
+                    "PrimaryDns": "128.6.1.2",
+                    "SecondaryDns": ""
+                },
+                "IpV6Blocks": [],
+                "IpV6Config": {
+                    "ClassId": "ippool.IpV6Config",
+                    "Gateway": "",
+                    "ObjectType": "ippool.IpV6Config",
+                    "Prefix": 0,
+                    "PrimaryDns": "",
+                    "SecondaryDns": ""
+                },
+                "ModTime": "2024-12-20T17:57:22.09Z",
+                "Moid": "6765b00169627532011bf906",
+                "Name": "UCSX-ASB-MANAGEMENT-IP",
+                "ObjectType": "ippool.Pool",
+                "Organization": {
+                    "ClassId": "mo.MoRef",
+                    "Moid": "6064aec26972652d33638ccd",
+                    "ObjectType": "organization.Organization",
+                    "link": "https://www.intersight.com/api/v1/organization/Organizations/6064aec26972652d33638ccd"
+                },
+                "Owners": [
+                    "6064aebf7564612d332da45c"
+                ],
+                "PermissionResources": [
+                    {
+                        "ClassId": "mo.MoRef",
+                        "Moid": "6064aec26972652d33638ccd",
+                        "ObjectType": "organization.Organization",
+                        "link": "https://www.intersight.com/api/v1/organization/Organizations/6064aec26972652d33638ccd"
+                    }
+                ],
+                "Reservations": [],
+                "Reserved": 0,
+                "ShadowPools": [
+                    {
+                        "ClassId": "mo.MoRef",
+                        "Moid": "6765b00269627532011bf90c",
+                        "ObjectType": "ippool.ShadowPool",
+                        "link": "https://www.intersight.com/api/v1/ippool/ShadowPools/6765b00269627532011bf90c"
+                    }
+                ],
+                "SharedScope": "",
+                "Size": 32,
+                "Tags": [
+                    {
+                        "Key": "location",
+                        "Value": "ASB"
+                    }
+                ],
+                "V4Assigned": 0,
+                "V4Size": 32,
+                "V6Assigned": 0,
+                "V6Size": 0
+            },
+            "Moid": "6769759162757231015087fe",
+            "Name": "UCSX-ASB-IMC",
+            "ObjectType": "access.Policy",
+            "Profiles": [
+                {
+                    "ClassId": "server.ProfileTemplate",
+                    "Moid": "6765b0df77696e3301d19227",
+                    "Name": "UCSX-ASB-GPU-SERVER",
+                    "ObjectType": "server.ProfileTemplate"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "6765b2ab77696e3301d1e54e",
+                    "Name": "UCSX-ASB-GPU-SERVER-01",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.ProfileTemplate",
+                    "Moid": "67c079dc77696e3301e8f7e9",
+                    "Name": "UCSX-ASB-ESXI-SERVER",
+                    "ObjectType": "server.ProfileTemplate"
+                },
+                {
+                    "ClassId": "server.ProfileTemplate",
+                    "Moid": "67f677b477696e3301252e3f",
+                    "Name": "UCSX-VCF-MGMT-SERVER",
+                    "ObjectType": "server.ProfileTemplate"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6794d77696e3301257e62",
+                    "Name": "UCSX-VCF-MGMT-01",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6794f77696e3301257f16",
+                    "Name": "UCSX-VCF-MGMT-02",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6795077696e3301257fca",
+                    "Name": "UCSX-VCF-MGMT-03",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67f6795177696e33012580b3",
+                    "Name": "UCSX-VCF-MGMT-04",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd403a77696e330121cdee",
+                    "Name": "UCSX-ASB-ESXI-SERVER-01",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd403c77696e330121ced5",
+                    "Name": "UCSX-ASB-ESXI-SERVER-02",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd403e77696e330121cf70",
+                    "Name": "UCSX-ASB-ESXI-SERVER-03",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fd404077696e330121d071",
+                    "Name": "UCSX-ASB-ESXI-SERVER-04",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613077696e330153646b",
+                    "Name": "UCSX-ASB-ESXI-SERVER-05",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613277696e330153653c",
+                    "Name": "UCSX-ASB-ESXI-SERVER-06",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613377696e33015365ef",
+                    "Name": "UCSX-ASB-ESXI-SERVER-07",
+                    "ObjectType": "server.Profile"
+                },
+                {
+                    "ClassId": "server.Profile",
+                    "Moid": "67fe613577696e33015366b7",
+                    "Name": "UCSX-ASB-ESXI-SERVER-08",
+                    "ObjectType": "server.Profile"
+                }
+            ]
+        },
+        {
+            "ClassId": "access.Policy",
+            "InbandIpPool": null,
+            "Moid": "66ff5e386275723101015783",
+            "Name": "SystemDefault",
+            "ObjectType": "access.Policy",
+            "Profiles": []
+        }
+    ]
+}

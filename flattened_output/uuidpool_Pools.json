@@ -1,0 +1,23 @@
+{
+    "ObjectType": "uuidpool.Pool.List",
+    "Results": [
+        {
+            "Assigned": 9,
+            "ClassId": "uuidpool.Pool",
+            "Moid": "6765b20669627532011bfacf",
+            "Name": "UCSX-ASB-UUID",
+            "ObjectType": "uuidpool.Pool",
+            "Prefix": "0EC1146A-E719-11E2",
+            "Size": 200,
+            "UuidSuffixBlocks": [
+                {
+                    "ClassId": "uuidpool.UuidBlock",
+                    "ObjectType": "uuidpool.UuidBlock",
+                    "Size": 200,
+                    "From": "0000-000000000001",
+                    "To": "0000-0000000000C8"
+                }
+            ]
+        }
+    ]
+}

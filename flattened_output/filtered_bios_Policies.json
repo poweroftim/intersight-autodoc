@@ -1,0 +1,153 @@
+[
+    {
+        "Name": "UCSX-ASB-ESXI-BIOS",
+        "Profiles.Name": [
+            "UCSX-ASB-ESXI-SERVER",
+            "UCSX-VCF-MGMT-SERVER",
+            "UCSX-VCF-MGMT-01",
+            "UCSX-VCF-MGMT-02",
+            "UCSX-VCF-MGMT-03",
+            "UCSX-VCF-MGMT-04",
+            "UCSX-ASB-ESXI-SERVER-01",
+            "UCSX-ASB-ESXI-SERVER-02",
+            "UCSX-ASB-ESXI-SERVER-03",
+            "UCSX-ASB-ESXI-SERVER-04",
+            "UCSX-ASB-ESXI-SERVER-05",
+            "UCSX-ASB-ESXI-SERVER-06",
+            "UCSX-ASB-ESXI-SERVER-07",
+            "UCSX-ASB-ESXI-SERVER-08"
+        ]
+    },
+    {
+        "Name": "EnergyEfficiency-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "LowLatency-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "MaximumPerformance-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "AnalyticsDatabaseSystems-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "HighPerformanceComputing-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "JavaApplicationServer-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "OnlineTransactionProcessing-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "Virtualization-M5-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "CPUIntensive-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "EnergyEfficiency-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "IOIntensive-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "LowLatency-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "AnalyticalDatabaseSystems-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "DataAnalytics-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "HighPerformanceComputing-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "RelationalDatabaseSystems-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "Virtualization-M6-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "ComputationIntensive-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "EnergyEfficiency-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "IOIntensive-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "HighPerformanceComputing-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "LowLatency-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "VDI-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "Virtualization-M6-AMD",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "CPUIntensive-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "EnergyEfficient-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "LowLatency-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "AnalyticalDatabaseSystems-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "DataAnalytics-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "HighPerformanceComputing-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "RelationalDatabaseSystems-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "Virtualization-M7-Intel",
+        "Profiles.Name": []
+    },
+    {
+        "Name": "SystemDefault",
+        "Profiles.Name": []
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "UCSX-ASB-DATA-A-MAC-POOL",
+        "MacBlocks.From": "00:25:B5:BA:30:00",
+        "MacBlocks.To": "00:25:B5:BA:30:FF",
+        "Size": 256,
+        "Assigned": 13
+    },
+    {
+        "Name": "UCSX-ASB-DATA-B-MAC-POOL",
+        "MacBlocks.From": "00:25:B5:BB:30:00",
+        "MacBlocks.To": "00:25:B5:BB:30:FF",
+        "Size": 256,
+        "Assigned": 13
+    }
+]
