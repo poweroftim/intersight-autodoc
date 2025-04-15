@@ -158,9 +158,9 @@ def main():
             # Save the JSON response to a separate file named after the resource_path
             response_json = response.json()
             resource_name = operation['resource_path'].replace('/', '_')
-            output_file_path = os.path.join(OUTPUT_DIRECTORY, f'{resource_name}.json')
-            with open(output_file_path, 'w') as output_file:
-                json.dump(response_json, output_file, indent=4)
+            input_file_path = os.path.join(INPUT_DIRECTORY, f'{resource_name}.json')
+            with open(input_file_path, 'w') as input_file:
+                json.dump(response_json, input_file, indent=4)
 
             # Filter JSON response to only include selected keys if filter exists
             if 'filter' in operation:
