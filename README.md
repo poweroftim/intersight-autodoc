@@ -87,8 +87,8 @@ OPERATIONS:
 
 Ensure the directories specified in config.yaml exist:
 
-- **input**: Raw JSON files will be saved here.
-- **output**: Processed JSON files will be saved here.
+- **output**: Raw JSON files will be saved here.
+- **flattened_output**: Processed JSON files will be saved here.
 - **excel_output**: Excel files will be saved here.
 - **word_template_path**: "template.docx"
     - Use the Word Doc included in the repo.
