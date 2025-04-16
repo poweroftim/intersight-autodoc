@@ -47,7 +47,7 @@ def ensure_directories_exist():
     for file operations such as saving JSON or Excel files.
     """
     os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
-    os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
+    os.makedirs(FLATTENED_OUTPUT_DIRECTORY, exist_ok=True)
     os.makedirs(EXCEL_OUTPUT_DIRECTORY, exist_ok=True)
 
 def create_auth_object():
