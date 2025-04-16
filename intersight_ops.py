@@ -29,8 +29,8 @@ except yaml.YAMLError as e:
     raise ValueError(f"Error parsing 'operations.yaml': {e}")
 
 # Access configuration values
-INPUT_DIRECTORY = config['directories']['input'] # Directory containing JSON files
-OUTPUT_DIRECTORY = config['directories']['output'] # Directory to save flattened JSON files
+OUTPUT_DIRECTORY = config['directories']['output'] # Directory containing JSON files
+FLATTENED_OUTPUT_DIRECTORY = config['directories']['flattened_output'] # Directory to save flattened JSON files
 EXCEL_OUTPUT_DIRECTORY = config['directories']['excel_output'] # Directory to save Excel files
 WORD_TEMPLATE_PATH = config['word_template_path'] # Path to the Word document template
 SECRET_KEY_PATH = os.getenv("SECRET_KEY_PATH") # Intersight API Secret Key
@@ -46,7 +46,7 @@ def ensure_directories_exist():
     This function is typically called at the start of the program to prepare the environment
     for file operations such as saving JSON or Excel files.
     """
-    os.makedirs(INPUT_DIRECTORY, exist_ok=True)
+    os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
     os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
     os.makedirs(EXCEL_OUTPUT_DIRECTORY, exist_ok=True)
 
@@ -158,15 +158,15 @@ def main():
             # Save the JSON response to a separate file named after the resource_path
             response_json = response.json()
             resource_name = operation['resource_path'].replace('/', '_')
-            input_file_path = os.path.join(INPUT_DIRECTORY, f'{resource_name}.json')
-            with open(input_file_path, 'w') as input_file:
-                json.dump(response_json, input_file, indent=4)
+            output_file_path = os.path.join(OUTPUT_DIRECTORY, f'{resource_name}.json')
+            with open(output_file_path, 'w') as output_file:
+                json.dump(response_json, output_file, indent=4)
 
             # Filter JSON response to only include selected keys if filter exists
             if 'filter' in operation:
                 filter_keys = [key.strip() for key in operation['filter'].split(',')]
                 filtered_json = filter_json(response_json, filter_keys)
-                filtered_output_file_path = os.path.join(OUTPUT_DIRECTORY, f'filtered_{resource_name}.json')
+                filtered_output_file_path = os.path.join(FLATTENED_OUTPUT_DIRECTORY, f'filtered_{resource_name}.json')
                 with open(filtered_output_file_path, 'w') as filtered_output_file:
                     json.dump(filtered_json, filtered_output_file, indent=4)
 
