@@ -1,6 +1,6 @@
 directories:
-  input: './output'
-  output: './flattened_output'
+  output: './output'
+  flattened_output: './flattened_output'
   excel_output: './excel_output'
 
 word_template_path: './template.docx'
