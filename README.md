@@ -56,10 +56,10 @@ Config.yaml - If using an Intersight appliance, an update to the base_url will b
 ```bash
 # Config.yaml
 directories:
-  output: "input"
-  flattened_output: "output"
-  excel_output: "excel_output"
-word_template_path: "template.docx"
+  output: "./output"
+  flattened_output: "./flattened_output"
+  excel_output: "./excel_output"
+word_template_path: "./template.docx"
 base_url: "https://www.intersight.com/api/v1"
 ```
 
