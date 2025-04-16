@@ -119,6 +119,7 @@ Get Requests
 - EoX Information
 
 Code Improvements
+- Embed Placeholders in Word Doc for Table Placement
 - Error Handling
 - Logging
 - Environment Variable Validation
