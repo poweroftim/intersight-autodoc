@@ -15,6 +15,7 @@ OPERATIONS:
     filter: "Name,ConfigContext.ConfigState,SwitchProfiles.Name,SrcTemplate"
     table_name: "Domain Profiles"
     column_names: "Name,Config State,Switch Profile Name,Domain Template"
+    placeholder: "{{domain_profiles}}"
 
 # GET SWITCH PROFILES
   - request_process: true
@@ -23,8 +24,9 @@ OPERATIONS:
     select: "?$select=Name,AssociatedSwitch,PolicyBucket"
     expand: "&$expand=AssociatedSwitch($select=Name,Model,SwitchId,SwitchProfileName,Serial,EthernetSwitchingMode,FcSwitchingMode,OutOfBandIpAddress,OutOfBandIpGateway,OutOfBandIpMask),PolicyBucket($select=Name,ObjectType)"
     filter: "Name,AssociatedSwitch.Model,AssociatedSwitch.SwitchId,AssociatedSwitch.Serial,AssociatedSwitch.EthernetSwitchingMode,AssociatedSwitch.FcSwitchingMode,AssociatedSwitch.OutOfBandIpAddress"
-    table_name: "Switch Profiles"
+    table_name: "Fabric Interconnects"
     column_names: "Name,Model,Fabric,Serial,Eth Switch Mode,FC Switch Mode,IP"
+    placeholder: "{{fabric_interconnects}}"
 
 # GET DOMAIN POLICIES
   - request_process: true
@@ -35,6 +37,7 @@ OPERATIONS:
     filter: "Name,PolicyBucket.DeviceModel,PolicyBucket.Name"
     table_name: "Domain Policies"
     column_names: "Profile,Device Model,Policy Name"
+    placeholder: "{{domain_policies}}"
 
 # GET VLAN POLICIES
   - request_process: true
@@ -45,6 +48,7 @@ OPERATIONS:
     filter: "EthNetworkPolicy.Name,Name,AutoAllowOnUplinks,IsNative,VlanId,MulticastPolicy.Name"
     table_name: "VLAN Policies"
     column_names: "VLAN Policy,VLAN Name,Allowed On Uplinks,Native,VLAN,Multicast Policy"
+    placeholder: "{{vlan_policies}}"
 
 # GET MULTICAST POLICIES
   - request_process: true
@@ -55,6 +59,7 @@ OPERATIONS:
     filter: "Name,QuerierState,SnoopingState,SrcIpProxy,Organization.Name"
     table_name: "Multicast Policies"
     column_names: "Name,Querier State,Snooping State,Source IP Proxy,Organization"
+    placeholder: "{{multicast_policies}}"
 
 # GET DNS SERVERS
   - request_process: true
@@ -65,6 +70,7 @@ OPERATIONS:
     filter: "Name,PreferredIpv4dnsServer,AlternateIpv4dnsServer,Profiles.Name"
     table_name: "DNS Policies"
     column_names: "Name,Primary DNS,Secondary DNS,Assigned"
+    placeholder: "{{network_connectivity_policies}}"
 
 # GET NTP SERVERS
   - request_process: true
@@ -75,6 +81,7 @@ OPERATIONS:
     filter: "Name,NtpServers,Profiles.Name"
     table_name: "NTP Policies"
     column_names: "NTP Policy, NTP Servers,Assigned"
+    placeholder: "{{ntp_policies}}"
 
 # GET SYSTEM QOS
   - request_process: true
@@ -85,6 +92,7 @@ OPERATIONS:
     filter: "Name,Classes.AdminState,Classes.Cos,Classes.Mtu,Classes.Name,Classes.PacketDrop,Classes.Weight,Profiles.Name"
     table_name: "System QoS Policies"
     column_names: "Name,AdminState,CoS,MTU,Class,Packet Drop,Weight,Assigned"
+    placeholder: "{{system_qos_policies}}"
 
 # GET SYSLOG POLICIES
   - request_process: true
@@ -95,6 +103,7 @@ OPERATIONS:
     filter: "Name,RemoteClients.Hostname,RemoteClients.Port,RemoteClients.Protocol,RemoteClients.MinSeverity,RemoteClients.Enabled"
     table_name: "SYSLOG Policies"
     column_names: "Name,Remote Client,Port,Protocol,Min Sev,Enabled"
+    placeholder: "{{syslog_policies}}"
 
 # GET SWITCH CONTROL POLICIES
   - request_process: true
@@ -105,6 +114,7 @@ OPERATIONS:
     filter: "Name,EthernetSwitchingMode,FcSwitchingMode,ReservedVlanStartId,VlanPortOptimizationEnabled,Profiles.Name"
     table_name: "Switch Control Policies"
     column_names: "Name,Eth Switch Mode,FC Switch Mode,Reserved VLAN Start ID,VLAN Port Optimization Enabled,Assigned"
+    placeholder: "{{switch_control_policies }}"
 
 # GET PORT POLICIES
   - request_process: true
@@ -115,6 +125,18 @@ OPERATIONS:
     filter: "Name,Profiles.Name"
     table_name: "Port Policies"
     column_names: "Port Policy,Switch Profiles"
+    placeholder: "{{port_policies}}"
+
+# # GET PORT-CHANNELS -- !!! INCOMPLETE
+#   - request_process: true
+#     resource_path: "ether/PortChannels"
+#     request_method: "GET"
+#     select: "?$select=PortChannelId,Mode,Role,EquipmentSwitchCard,PortGroups,FcPorts"
+#     expand: "&$expand=EquipmentSwitchCard($select=PortGroups%3B$expand=PortGroups($select=FcPorts%3b$expand=FcPorts($select=PortId,OperSpeed,SwitchId,Role,RegisteredDevice%3B$expand=RegisteredDevice($select=DeviceHostname,DeviceIpAddress,Pid))))&$filter=contains(Role,%27Uplink%27)"
+#     filter: "EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.DeviceHostname,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.IpAddress,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.Pid,PortChannelId,Mode,Role"
+#     table_name: "Fibre Channel Port-Channels"
+#     column_names: "EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.DeviceHostname,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.IpAddress,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.Pid,PortChannelId,Mode,Role"
+#     placeholder: "{{fc_port_channels}}"
 
 
 # ------------------------------------------------------
@@ -129,8 +151,8 @@ OPERATIONS:
     expand: ""
     filter: "Name,ManagementMode,Usage"
     table_name: "Server Profile Templates"
-    column_names: "Name, Management Mode,Usage"
-
+    column_names: "Name, Management Mode,Total Assigned"
+    placeholder: "{{server_profile_templates}}"
 
 # GET SERVER PROFILES
   - request_process: true
@@ -141,6 +163,29 @@ OPERATIONS:
     filter: "Name,ManagementMode,TargetPlatform,AssociatedServer.Name,SrcTemplate.Name"
     table_name: "Server Profiles"
     column_names: "Name, Management Mode,Platform,Associated Server,Server Template"
+    placeholder: "{{server_profiles}}"
+
+# GET LAN CONNECTIVITY POLICIES
+  - request_process: true
+    resource_path: "vnic/LanConnectivityPolicies"
+    request_method: "GET"
+    select: "?$select=Name,EthIfs,Profiles,PlacementMode,Order,SrcTemplate"
+    expand: "&$expand=Profiles($select=Name),EthIfs($select=Name,Order,SrcTemplate%3B$expand=SrcTemplate($select=Name))"
+    filter: "Name,EthIfs.Name,EthIfs.Order,PlacementMode,EthIfs.SrcTemplate.Name,Profiles.Name"    
+    table_name: "LAN Connectivity Policies"
+    column_names: "Name,vNICs,PCI Order,Placement Mode,vNIC Template,Assigned"
+    placeholder: "{{lan_connectivity_policies}}"
+
+# GET SAN CONNECTIVITY POLICIES
+  - request_process: true
+    resource_path: "vnic/SanConnectivityPolicies"
+    request_method: "GET"
+    select: "?$select=Name,FcIfs,Profiles,PlacementMode,Order,SrcTemplate"
+    expand: "&$expand=Profiles($select=Name),FcIfs($select=Name,Order,SrcTemplate%3B$expand=SrcTemplate($select=Name))"
+    filter: "Name,FcIfs.Name,FcIfs.Order,PlacementMode,FcIfs.SrcTemplate.Name,Profiles.Name"    
+    table_name: "SAN Connectivity Policies"
+    column_names: "Name,vHBAs,PCI Order,Placement Mode,vHBA Template,Assigned"
+    placeholder: "{{san_connectivity_policies}}"
 
 # GET SERVER PROFILE vNICs
   - request_process: true
@@ -151,16 +196,94 @@ OPERATIONS:
     filter: "Name,PolicyBucket.EthIfs.Name,PolicyBucket.EthIfs.FabricEthNetworkGroupPolicy.Name,PolicyBucket.EthIfs.FabricEthNetworkGroupPolicy.VlanSettings.AllowedVlans,PolicyBucket.EthIfs.EthAdapterPolicy.Name,PolicyBucket.EthIfs.EthQosPolicy.Name,PolicyBucket.EthIfs.MacPool.Name"    
     table_name: "Server Profile vNICs"
     column_names: "Name,vNICs,Ethernet Network Group Policy,Allowed VLANs,Etheret Adapter Policy,Ethernet Qos Policy,MAC Pool"
+    placeholder: "{{server_profile_vnics}}"
 
-# GET BIOS POLICIES
+# GET SERVER PROFILE vHBAs
   - request_process: true
-    resource_path: "bios/Policies"
+    resource_path: "server/Profiles"
     request_method: "GET"
-    select: "?$select=Name,Profiles"
-    expand: "&$expand=Profiles($select=Name)"
-    filter: "Name,Profiles.Name"
-    table_name: "BIOS Policies"
-    column_names: "Name,Assigned"
+    select: "?$select=Name,PolicyBucket,FcIfs,FcAdapterPolicy,FcQosPolicy,WwpnPool,FcNetworkPolicy"
+    expand: "&$expand=PolicyBucket($select=FcIfs%3B$expand=FcIfs($select=Name,FcQosPolicy,FcAdapterPolicy,FcNetworkPolicy,WwpnPool,SanConnectivityPolicy%3B$expand=FcQosPolicy,FcNetworkPolicy,WwpnPool,FcAdapterPolicy))"
+    filter: "Name,PolicyBucket.FcIfs.Name,PolicyBucket.FcIfs.FcNetworkPolicy.VsanSettings.Id,PolicyBucket.FcIfs.FcAdapterPolicy.Name,PolicyBucket.FcIfs.FcQosPolicy.Name,PolicyBucket.FcIfs.WwpnPool.Name"    
+    table_name: "Server Profile vHBAs"
+    column_names: "Name,vHBAs,Allowed VSANs,FC Adapter Policy,FC Qos Policy,WWPN Pool"
+    placeholder: "{{server_profile_vhbas}}"
+
+# GET VNIC TEMPLATES
+  - request_process: true
+    resource_path: "vnic/VnicTemplates"
+    request_method: "GET"
+    select: "?$select=Name,EthAdapterPolicy,EthNetworkPolicy,EthQosPolicy,FabricEthNetworkControlPolicy,FabricEthNetworkGroupPolicy,FailoverEnabled,MacPool,SwitchId,LcpUsageCount,UsageCount"
+    expand: "&$expand=EthAdapterPolicy($select=Name),EthNetworkPolicy($select=Name),EthQosPolicy($select=Name),FabricEthNetworkControlPolicy($select=Name),FabricEthNetworkGroupPolicy($select=Name),MacPool($select=Name)"
+    filter: "Name,EthAdapterPolicy.Name,EthNetworkPolicy.Name,EthQosPolicy.Name,FabricEthNetworkControlPolicy.Name,FabricEthNetworkGroupPolicy.Name,MacPool.Name,SwitchId,LcpUsageCount,UsageCount"
+    table_name: "vNIC Templates"
+    column_names: "Name,Ethernet Adapter Policy,Ethernet Network Policy,Ethernet Qos Policy,Ethernet Network Control Policy,Ethernet Network Group Policy,MAC Pool,Fabric,LCP Usage Count,Usage Count"
+    placeholder: "{{vnic_templates}}"
+
+# GET ETHERNET NETWORK GROUP POLICIES
+  - request_process: true
+    resource_path: "fabric/EthNetworkGroupPolicies"
+    request_method: "GET"
+    select: "?$select=Name,VlanSettings"
+    expand: "&$expand=VlanSettings($select=AllowedVlans)"
+    filter: "Name,VlanSettings.AllowedVlans"
+    table_name: "Ethernet Network Group Policies"
+    column_names: "Name,Allowed VLANs"
+    placeholder: "{{ethernet_network_group_policies}}"
+
+# GET FC NETWORK POLICIES
+  - request_process: true
+    resource_path: "vnic/FcNetworkPolicies"
+    request_method: "GET"
+    select: "?$select=Name,VsanSettings"
+    expand: "&$expand=VsanSettings($select=Id)"
+    filter: "Name,VsanSettings.Id"
+    table_name: "FC Network Policy"
+    column_names: "Name,Allowed VSANs"
+    placeholder: "{{fc_network_policies}}"
+
+# GET VHBA TEMPLATES
+  - request_process: true
+    resource_path: "vnic/VhbaTemplates"
+    request_method: "GET"
+    select: "?$select=Name,FcAdapterPolicy,FcNetworkPolicy,FcQosPolicy,ScpUsageCount,SwitchId,UsageCount,WwpnPool"
+    expand: "&$expand=FcAdapterPolicy($select=Name),FcNetworkPolicy($select=Name),FcQosPolicy($select=Name),WwpnPool($select=Name)"
+    filter: "Name,FcAdapterPolicy.Name,FcNetworkPolicy.Name,FcQosPolicy.Name,WwpnPool.Name,SwitchId,ScpUsageCount,UsageCount"
+    table_name: "vHBA Templates"
+    column_names: "Name,FC Adapter Policy,FC Network Policy,FC QoS Policy,WWPN Pool,Fabric,SCP Usage Count,Usage Count"
+    placeholder: "{{vhba_templates}}"
+
+# GET ETHERNET ADAPTER POLICIES
+  - request_process: true
+    resource_path: "vnic/EthAdapterPolicies"
+    request_method: "GET"
+    select: "?$select=Name,Description,CompletionQueueSettings,RxQueueSettings,TxQueueSettings,UplinkFailbackTimeout"
+    expand: ""
+    filter: "Name,Description,CompletionQueueSettings.Count,CompletionQueueSettings.RingSize,RxQueueSettings.Count,RxQueueSettings.RingSize,TxQueueSettings.Count,TxQueueSettings.RingSize,UplinkFailbackTimeout"
+    table_name: "Ethernet Adapter Policies"
+    column_names: "Name,Description,Completion Queue Settings Count,Completion Queue Settings Ring Size,Rx Queue Settings Count,Rx Queue Settings Ring Size,Tx Queue Settings Count,Tx Queue Settings Ring Size,Uplink Failback Timeout"
+    placeholder: "{{ethernet_adapter_policies}}"
+
+# GET FC ADAPTER POLICIES
+  - request_process: true
+    resource_path: "vnic/FcAdapterPolicies"
+    request_method: "GET"
+    select: "?$select=Name,IoThrottleCount,LunCount,LunQueueDepth,RxQueueSettings,TxQueueSettings,ScsiQueueSettings"
+    expand: "&$expand=RxQueueSettings,TxQueueSettings,ScsiQueueSettings"
+    filter: "Name,IoThrottleCount,LunCount,LunQueueDepth,RxQueueSettings.Count,RxQueueSettings.RingSize,TxQueueSettings.Count,TxQueueSettings.RingSize,ScsiQueueSettings.Count,ScsiQueueSettings.RingSize"
+    table_name: "FC Adapter Policies"
+    column_names: "Name,I/O Throttle Count,LUN Count,LUN Queue Depth,Rx Queue Settings Count,Rx Queue Settings Ring Size,Tx Queue Settings Count,Tx Queue Settings Ring Size,SCSI Queue Settings Count, SCSI Queue Settings Ring Size"
+    placeholder: "{{fc_adapter_policies}}"
+
+# # GET BIOS POLICIES - !!! INCOMPLETE
+#   - request_process: true
+#     resource_path: "bios/Policies"
+#     request_method: "GET"
+#     select: "?$select=Name,Profiles"
+#     expand: "&$expand=Profiles($select=Name)"
+#     filter: "Name,Profiles.Name"
+#     table_name: "BIOS Policies"
+#     column_names: "Name,Assigned"
 
 # GET BOOT POLICIES
   - request_process: true
@@ -171,6 +294,7 @@ OPERATIONS:
     filter: "Name,BootDevices.BootLoader.Name,BootDevices.BootLoader.Path,BootDevices.Name,BootDevices.Slot,BootDevices.InterfaceName,BootDevices.Lun,BootDevices.Wwpn,Profiles.Name"
     table_name: "Boot Policies"
     column_names: "Name,Boot Loader,Boot Loader Path,Boot Order,Slot,Interface Name,LUN,WWPN,Assigned"
+    placeholder: "{{boot_policies}}"
 
 # GET FIRMWARE POLICIES
   - request_process: true
@@ -181,6 +305,7 @@ OPERATIONS:
     filter: "Name,ModelBundleCombo.BundleVersion,ModelBundleCombo.ModelFamily,Profiles.Name"
     table_name: "Firmware Policies"
     column_names: "Name,Firmware Version,Model,Assigned"
+    placeholder: "{{firmware_policies}}"
 
 # GET IMC ACCESS POLICIES
   - request_process: true
@@ -191,6 +316,7 @@ OPERATIONS:
     filter: "Name,InbandIpPool.Name,InbandIpPool.IpV4Blocks.From,InbandIpPool.IpV4Blocks.To,InbandIpPool.IpV4Config.Gateway,InbandIpPool.IpV4Config.Netmask,InbandIpPool.IpV4Config.PrimaryDns,Profiles.Name"
     table_name: "IMC Access Policies"
     column_names: "Name,IP Pool Name,From,To,Gateway,Mask,DNS,Assigned"
+    placeholder: "{{imc_access_policies}}"
 
 # GET MEMORY POLICIES
   - request_process: true
@@ -201,6 +327,7 @@ OPERATIONS:
     filter: "Name,EnableDimmBlocklisting,Profiles.Name"
     table_name: "Memory Policies"
     column_names: "Name,DIMM Blocklisting Enabled,Assigned"
+    placeholder: "{{memory_policies}}"
 
 # GET POWER POLICIES
   - request_process: true
@@ -211,6 +338,7 @@ OPERATIONS:
     filter: "Name,PowerPriority,RedundancyMode,PowerProfiling,PowerRestoreState,DynamicRebalancing,PowerSaveMode,ExtendedPowerCapacity,Profiles.Name"
     table_name: "Power Policies"
     column_names: "Name,Power Priority,Redundancy Mode,Power Profiling,Power Restore State,Dynamic Rebalancing,Power Save Mode,Extended Power Capacity,Assigned"
+    placeholder: "{{power_policies}}"
 
 # GET SNMP POLICIES
   - request_process: true
@@ -221,6 +349,7 @@ OPERATIONS:
     filter: "Name,AccessCommunityString,Enabled,SnmpPort,SnmpUsers,SnmpTraps,AccessCommunityString,V2Enabled,V3Enabled,Profiles.Name"
     table_name: "SNMP Policies"
     column_names: "Name,Community String,Enabled,Port,Users,Traps,V2,V3,Assigned"
+    placeholder: "{{snmp_policies}}"
 
 # GET STORAGE POLICIES
   - request_process: true
@@ -231,6 +360,7 @@ OPERATIONS:
     filter: "Name,M2VirtualDrive.ControllerSlot,M2VirtualDrive.Name,Profiles.Name"
     table_name: "Storage Policies"
     column_names: "Name,M2 Controller Slot,M2 Drive Name,Assigned"
+    placeholder: "{{storage_policies}}"
 
 # GET KVM POLICIES
   - request_process: true
@@ -241,6 +371,7 @@ OPERATIONS:
     filter: "Name,MaximumSessions,EnableVideoEncryption,EnableLocalServerVideo,RemotePort,Profiles.Name"
     table_name: "vKVM Policies"
     column_names: "Name,Max Sessions,Encrypted,Local Server Video Enabled,Remote Port,Assigned"
+    placeholder: "{{kvm_policies}}"
 
 # GET IP POOL
   - request_process: true
@@ -251,6 +382,7 @@ OPERATIONS:
     filter: "Name,IpV4Blocks.From,IpV4Blocks.To,IpV4Config.Gateway,IpV4Config.Netmask,IpV4Config.PrimaryDns,Size,Assigned"
     table_name: "IP Pools"
     column_names: "Name,From,To,Gateway,Net Mask,Primary DNS,Pool Size,IPs Assigned"
+    placeholder: "{{ip_pools}}"
 
 # GET MAC POOL
   - request_process: true
@@ -261,6 +393,7 @@ OPERATIONS:
     filter: "Name,MacBlocks.From,MacBlocks.To,Size,Assigned"
     table_name: "MAC Pools"
     column_names: "Name,From,To,Size,Assigned"
+    placeholder: "{{mac_pools}}"
 
 # GET WWPN POOL
   - request_process: true
@@ -271,6 +404,7 @@ OPERATIONS:
     filter: "Name,IdBlocks.From,IdBlocks.To,Size,Assigned"
     table_name: "WWPN Pools"
     column_names: "Name,From,To,Size,Assigned"
+    placeholder: "{{fc_pools}}"
 
 # GET UUID POOL
   - request_process: true
@@ -281,6 +415,7 @@ OPERATIONS:
     filter: "Name,Prefix,UuidSuffixBlocks.From,UuidSuffixBlocks.To,Size,Assigned"
     table_name: "UUID Pools"
     column_names: "Name,Prefix,From,To,Size,Assigned"
+    placeholder: "{{uuid_pools}}"
 
 
 # ------------------------------------------------------
@@ -288,26 +423,25 @@ OPERATIONS:
 # ------------------------------------------------------
 
 
-# GET TRANSCEIVER
-  - request_process: true
-    resource_path: "equipment/Transceivers"
-    request_method: "GET"
-    select: "?$select=PortId,RegisteredDevice,SwitchId,Type,Status"
-    expand: "&$expand=RegisteredDevice"
-    filter: "RegisteredDevice.DeviceHostname,PortId,SwitchId,Type,RegisteredDevice.Pid,Status"
-    table_name: "Transceivers"
-    column_names: "FI Name,Port,SwitchId,Type,FI Model,Status"
+# # GET TRANSCEIVER
+#   - request_process: true
+#     resource_path: "equipment/Transceivers"
+#     request_method: "GET"
+#     select: "?$select=PortId,RegisteredDevice,SwitchId,Type,Status"
+#     expand: "&$expand=RegisteredDevice"
+#     filter: "RegisteredDevice.DeviceHostname,PortId,SwitchId,Type,RegisteredDevice.Pid,Status"
+#     table_name: "Transceivers"
+#     column_names: "FI Name,Port,SwitchId,Type,FI Model,Status"
 
-# GET PORT MODES FOR EACH PORT POLICY
-  - request_process: true
-    resource_path: "fabric/PortModes"
-    request_method: "GET"
-    select: "?$select=PortIdStart,PortIdEnd,CustomMode,PortPolicy"
-    expand: "&$expand=PortPolicy($select=Name,DeviceModel)"
-    filter: "PortIdStart,PortIdEnd,CustomMode,PortPolicy.Name,PortPolicy.DeviceModel"
-    table_name: "Breakout Port Modes"
-    column_names: "Port Start, Port End,CustomMode,Port Policy, FI Model"
-
+# # GET PORT MODES FOR EACH PORT POLICY
+#   - request_process: true
+#     resource_path: "fabric/PortModes"
+#     request_method: "GET"
+#     select: "?$select=PortIdStart,PortIdEnd,CustomMode,PortPolicy"
+#     expand: "&$expand=PortPolicy($select=Name,DeviceModel)"
+#     filter: "PortIdStart,PortIdEnd,CustomMode,PortPolicy.Name,PortPolicy.DeviceModel"
+#     table_name: "Breakout Port Modes"
+#     column_names: "Port Start, Port End,CustomMode,Port Policy, FI Model"
 
 
 # ------------------------------------------------------
@@ -315,25 +449,25 @@ OPERATIONS:
 # ------------------------------------------------------ 
 
 
-# GET HCL STATUS
-  - request_process: true
-    resource_path: "cond/HclStatuses"
-    request_method: "GET"
-    select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
-    expand: ""
-    filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
-    table_name: "Hardware and Software Compatibilty"
-    column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
+# # GET HCL STATUS
+#   - request_process: true
+#     resource_path: "cond/HclStatuses"
+#     request_method: "GET"
+#     select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+#     expand: ""
+#     filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+#     table_name: "Hardware and Software Compatibilty"
+#     column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
 
-# GET CONTRACT STATUS
-  - request_process: true
-    resource_path: "asset/DeviceContractInformations"
-    request_method: "GET"
-    select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
-    expand: "&$expand=Contract,EndCustomer,Product"
-    filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
-    table_name: "Contract Status"
-    column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
+# # GET CONTRACT STATUS
+#   - request_process: true
+#     resource_path: "asset/DeviceContractInformations"
+#     request_method: "GET"
+#     select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
+#     expand: "&$expand=Contract,EndCustomer,Product"
+#     filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
+#     table_name: "Contract Status"
+#     column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
 
 
 
