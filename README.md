@@ -87,6 +87,10 @@ Execute the script:
 python intersight_autodoc.py
 ```
 
+Example Output:
+<img width="669" alt="Screenshot 2025-04-22 at 2 57 36 PM" src="https://github.com/user-attachments/assets/7f6cea8b-eeeb-4ab4-8ca9-adf11342423d" />
+
+
 ## Notes
 - **Authentication**: Ensure the secret_key_path and api_key_id in the .env file are valid for accessing the Intersight API. See operations.yaml for examples of use.
 - **Word Template**: Use the Word Doc template provided in the repository.
