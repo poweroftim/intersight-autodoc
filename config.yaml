@@ -3,5 +3,11 @@ directories:
   flattened_output: './flattened_output'
   excel_output: './excel_output'
 
-word_template_path: './template.docx'
+autodoc_template_path: './autodoc_template.docx'
+autodoc_completed_path: './autodoc_completed.docx'
 base_url: 'https://www.intersight.com/api/v1/'
+
+
+CUSTOMER_INFO:
+ - customer_name: 'Customer Name'
+ - date: 'Day Month Year'

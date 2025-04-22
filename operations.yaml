@@ -127,6 +127,17 @@ OPERATIONS:
     column_names: "Port Policy,Switch Profiles"
     placeholder: "{{port_policies}}"
 
+# GET PORT-CHANNELS
+  - request_process: true
+    resource_path: "ether/PortChannels"
+    request_method: "GET"
+    select: "?$select=PortChannelId,OperSpeed,BandWidth,Role,RegisteredDevice,SwitchId"
+    expand: "&$expand=RegisteredDevice&$filter=contains(Role,%27Uplink%27)"
+    filter: "RegisteredDevice.DeviceHostname,SwitchId,PortChannelId,OperSpeed,BandWidth,Role"
+    table_name: "Port-Channels"
+    column_names: "Domain Profile,Fabric,PortChannel ID,Speed,Bandwidth,Role"
+    placeholder: "{{port_channels}}"
+
 # # GET PORT-CHANNELS -- !!! INCOMPLETE
 #   - request_process: true
 #     resource_path: "ether/PortChannels"
@@ -137,6 +148,29 @@ OPERATIONS:
 #     table_name: "Fibre Channel Port-Channels"
 #     column_names: "EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.DeviceHostname,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.IpAddress,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.Pid,PortChannelId,Mode,Role"
 #     placeholder: "{{fc_port_channels}}"
+
+
+
+# # GET PORT-CHANNELS -- !!! INCOMPLETE
+#   - request_process: true
+#     resource_path: "ether/PortChannels"
+#     request_method: "GET"
+#     select: "?$select=PortChannelId,OperSpeed,BandWidth,Role,RegisteredDevice,SwitchId,EquipmentSwitchCard,PortGroups,EthernetPorts"
+#     expand: "&$expand=RegisteredDevice,EquipmentSwitchCard($select=PortGroups%3B$expand=PortGroups($select=EthernetPorts%3B$expand=EthernetPorts($select=PortId)))&$filter=contains(Role,%27Uplink%27)"
+#     filter: "RegisteredDevice.DeviceHostname,SwitchId,PortChannelId,EquipmentSwitchCard.PortGroups.EthernetPorts.PortId,OperSpeed,BandWidth,Role"
+#     table_name: "Port-Channels"
+#     column_names: "Domain Profile,Fabric,PortChannel ID,Member Port,Speed,Bandwidth,Role"
+#     placeholder: "{{port_channels}}"
+
+# # GET PORT-CHANNELS -- !!! WORKING
+#   - request_process: true
+#     resource_path: "equipment/SwitchCards"
+#     request_method: "GET"
+#     select: "?$select=Name,PortChannelId,PortChannels,BandWidth,OperSpeed,Role,SwitchId"
+#     expand: "&$expand=PortChannels($select=PortChannelId,BandWidth,OperSpeed,Role,SwitchId,RegisteredDevice%3B$expand=RegisteredDevice)"
+#     filter: "PortChannels.RegisteredDevice.DeviceHostname,PortChannels.SwitchId,PortChannels.PortChannelId,PortChannels.BandWidth,PortChannels.OperSpeed,PortChannels.Role"
+#     table_name: "Port-Channels"
+#     column_names: "Domain Profile,Fabric,PortChannel Id,Bandwidth,Speed,Role"
 
 
 # ------------------------------------------------------
