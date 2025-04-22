@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 Create an .env file in the intersight-autodoc directory with the following values:
 ```bash
-SECRET_KEY_PATH=./<PATH_TO_API_KEY>
+SECRET_KEY_PATH=./<PATH_TO_SECRET_API_KEY>
 API_KEY_ID=<API_KEY>
 ```
 
@@ -83,17 +83,7 @@ OPERATIONS:
 
 
 
-### 6. Prepare Word Doc and Directories
-
-Ensure the directories specified in config.yaml exist:
-
-- **output**: Raw JSON files will be saved here.
-- **flattened_output**: Processed JSON files will be saved here.
-- **excel_output**: Excel files will be saved here.
-- **word_template_path**: "template.docx"
-    - Use the Word Doc included in the repo.
-
-### 7. Run the script
+### 6. Run the script
 
 Execute the script:
 
@@ -111,15 +101,6 @@ python intersight_autodoc.py
 - **Directory Errors**: Verify that the directories specified in config.yaml exist.
 - **API Errors**: Check your api_key_id and secret_key_path for validity.
 
-## Feature Backlog
 
-Get Requests
-- Fibre Channel Objects (vHBAs, Zoning, etc.)
-- Security Advisories
-- EoX Information
-
-Code Improvements
-- Embed Placeholders in Word Doc for Table Placement
-- Error Handling
-- Logging
-- Environment Variable Validation
+## Feature Requests/Issues
+Please use the Issues Tab for any feature requests, issues, etc. Thanks!
