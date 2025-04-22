@@ -98,7 +98,7 @@ Ensure the directories specified in config.yaml exist:
 Execute the script:
 
 ```bash
-python intersight_ops.py
+python intersight_autodoc.py
 ```
 
 ## Notes
