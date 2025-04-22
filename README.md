@@ -68,13 +68,14 @@ For help learning which $select and $expand queries to use, the [Intersight API 
 # Operations.yaml
 OPERATIONS:
   - request_method: "GET"
-    resource_path: "/resource/path"
-    select: "?$select=field1,field2"
-    expand: "&$expand=relatedResource" 
+    resource_path: "/resource/path" 
+    select: "?$select=field1,field2" # Copy and paste the $select query from the API client
+    expand: "&$expand=relatedResource" # Copy and paste the $expand query from the API client. 
     filter: "field1,field2" # This is a filter for JSON output, not the $filter for the Intersight API. 
     request_process: true
-    table_name: "Name of table in Word Doc"
-    column_names: "Rename columns from filter list. Retain the order."
+    table_name: "Name of table in Word Doc" 
+    column_names: "Rename columns from filter list" #The order of the filter and column names fields must match. 
+    placeholder: "{{placeholder_name}}" #Insert placeholders in your document to control the order in which the tables appear. 
 ```
 
 
