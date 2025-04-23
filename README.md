@@ -34,7 +34,8 @@ pip install -r requirements.txt
 
 ### 4. Define Environment Variables
 
-Create a v2 API Key within Intersight. 
+Create a v2 API Key within Intersight.
+<br>
 <img width="465" alt="Screenshot 2025-04-23 at 10 39 45 AM" src="https://github.com/user-attachments/assets/7b4bed64-89c3-4d24-b44a-f4206452da00" />
 
 Create an .env file in the intersight-autodoc directory with the following values:
