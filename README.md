@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 Create an .env file in the intersight-autodoc directory with the following values:
 ```bash
-SECRET_KEY_PATH=./<PATH_TO_SECRET_API_KEY>
+SECRET_KEY_PATH=./NAME_OF_SECRET_API_KEY.txt
 API_KEY_ID=<API_KEY>
 ```
 
