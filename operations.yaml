@@ -5,6 +5,16 @@ OPERATIONS:
 # -------- DOMAIN PROFILES AND POLICIES SECTION --------
 # ------------------------------------------------------
 
+# GET ORGANIZATIONS
+  - request_process: true
+    resource_path: "organization/Organizations"
+    request_method: "GET"
+    select: "?$select=Name,Description,ResourceGroups"
+    expand: "&$expand=ResourceGroups($select=Name,Qualifier)"
+    filter: "Name,Description,ResourceGroups.Name,ResourceGroups.Qualifier"
+    table_name: "Organizations"
+    column_names: "Name,Description,RG Name,RG Qualifier"
+    placeholder: "{{organizations}}"
 
 # GET DOMAIN PROFILES
   - request_process: true
@@ -149,8 +159,6 @@ OPERATIONS:
 #     column_names: "EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.DeviceHostname,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.IpAddress,EquipmentSwitchCard.PortGroups.FcPorts.RegisteredDevice.Pid,PortChannelId,Mode,Role"
 #     placeholder: "{{fc_port_channels}}"
 
-
-
 # # GET PORT-CHANNELS -- !!! INCOMPLETE
 #   - request_process: true
 #     resource_path: "ether/PortChannels"
@@ -173,9 +181,9 @@ OPERATIONS:
 #     column_names: "Domain Profile,Fabric,PortChannel Id,Bandwidth,Speed,Role"
 
 
-# ------------------------------------------------------
-# -------- SERVER PROFILES AND POLICIES SECTION --------
-# ------------------------------------------------------
+# # ------------------------------------------------------
+# # -------- SERVER PROFILES AND POLICIES SECTION --------
+# # ------------------------------------------------------
 
 # GET SERVER PROFILE TEMPLATES
   - request_process: true
@@ -453,29 +461,49 @@ OPERATIONS:
 
 
 # ------------------------------------------------------
+# --------------- INTERSIGHT TARGETS  ------------------
+# ------------------------------------------------------
+
+# GET INTERSIGHT TARGETS
+  - request_process: true
+    resource_path: "asset/Targets"
+    request_method: "GET"
+    select: "?$select=Name,TargetType,ProductId,ManagementLocation,Status"
+    expand: ""
+    filter: "Name,TargetType,ProductId,ManagementLocation,Status"
+    table_name: "Intersight Targets Claimed"
+    column_names: "Name,Type,Product Id,Management Type,Status"
+    placeholder: "{{intersight_targets}}"
+
+
+
+
+# ------------------------------------------------------
 # --------------- FI HARDWARE SECTION ------------------
 # ------------------------------------------------------
 
 
-# # GET TRANSCEIVER
-#   - request_process: true
-#     resource_path: "equipment/Transceivers"
-#     request_method: "GET"
-#     select: "?$select=PortId,RegisteredDevice,SwitchId,Type,Status"
-#     expand: "&$expand=RegisteredDevice"
-#     filter: "RegisteredDevice.DeviceHostname,PortId,SwitchId,Type,RegisteredDevice.Pid,Status"
-#     table_name: "Transceivers"
-#     column_names: "FI Name,Port,SwitchId,Type,FI Model,Status"
+# GET TRANSCEIVER
+  - request_process: true
+    resource_path: "equipment/Transceivers"
+    request_method: "GET"
+    select: "?$select=PortId,RegisteredDevice,SwitchId,Type,Status"
+    expand: "&$expand=RegisteredDevice&$filter=contains(Status,%27inserted%27)"
+    filter: "RegisteredDevice.DeviceHostname,PortId,SwitchId,Type,RegisteredDevice.Pid,Status"
+    table_name: "Transceivers"
+    column_names: "FI Name,Port,SwitchId,Type,FI Model,Status"
+    placeholder: "{{inserted_transceivers}}"
 
-# # GET PORT MODES FOR EACH PORT POLICY
-#   - request_process: true
-#     resource_path: "fabric/PortModes"
-#     request_method: "GET"
-#     select: "?$select=PortIdStart,PortIdEnd,CustomMode,PortPolicy"
-#     expand: "&$expand=PortPolicy($select=Name,DeviceModel)"
-#     filter: "PortIdStart,PortIdEnd,CustomMode,PortPolicy.Name,PortPolicy.DeviceModel"
-#     table_name: "Breakout Port Modes"
-#     column_names: "Port Start, Port End,CustomMode,Port Policy, FI Model"
+# GET PORT MODES FOR EACH PORT POLICY
+  - request_process: true
+    resource_path: "fabric/PortModes"
+    request_method: "GET"
+    select: "?$select=Parent,PortIdStart,PortIdEnd,CustomMode,PortPolicy"
+    expand: "&$expand=PortPolicy($select=Name,DeviceModel),Parent($select=Name,Profiles)"
+    filter: "Parent.Name,PortIdStart,PortIdEnd,CustomMode,PortPolicy.Name,PortPolicy.DeviceModel"
+    table_name: "Breakout Port Modes"
+    column_names: "Port Policy,Port Start, Port End,CustomMode,Port Policy,FI Model"
+    placeholder: "{{breakout_ports}}"
 
 
 # ------------------------------------------------------
@@ -483,25 +511,47 @@ OPERATIONS:
 # ------------------------------------------------------ 
 
 
-# # GET HCL STATUS
-#   - request_process: true
-#     resource_path: "cond/HclStatuses"
-#     request_method: "GET"
-#     select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
-#     expand: ""
-#     filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
-#     table_name: "Hardware and Software Compatibilty"
-#     column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
+# GET UCSM MANAGED SERVERS
+  - request_process: true
+    resource_path: "compute/PhysicalSummaries"
+    request_method: "GET"
+    select: "?$select=Model,Name,ManagementMode,Firmware,ChassisId,ServiceProfile,Serial,AlarmSummary"
+    expand: "&$filter=contains(ManagementMode,'UCSM')&$orderby=ServiceProfile"
+    filter: "ServiceProfile,Model,Name,AlarmSummary.Health,Firmware,ChassisId,Serial"
+    table_name: "UCSM Managed Servers"
+    column_names: "Service Profile,Model,Name,Health,Firmware Version,Chassis ID,Serial"
+    placeholder: "{{ucsm_managed_servers}}"
 
-# # GET CONTRACT STATUS
-#   - request_process: true
-#     resource_path: "asset/DeviceContractInformations"
-#     request_method: "GET"
-#     select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
-#     expand: "&$expand=Contract,EndCustomer,Product"
-#     filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
-#     table_name: "Contract Status"
-#     column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
+# GET DISK LIFE REMAINING
+  - request_process: true
+    resource_path: "storage/PhysicalDisks"
+    request_method: "GET"
+    select: "?$select=Dn,Description,Pid,DiskState,FailurePredicted,PercentLifeLeft,WearStatusInDays,Vendor,Type,Size"
+    expand: "&$orderby=PercentLifeLeft"
+    filter: "Pid,DiskState,PercentLifeLeft,FailurePredicted,WearStatusInDays,Description,Dn"
+    table_name: "Disk Life Remaining"
+    column_names: "PID,Disk State,Percent Life Left,Failure Predicted,Wear Status In Days,Description,Dn"
+    placeholder: "{{disk_life_remaining}}"
+
+# GET HCL STATUS
+  - request_process: true
+    resource_path: "cond/HclStatuses"
+    request_method: "GET"
+    select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+    expand: ""
+    filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+    table_name: "Hardware and Software Compatibilty"
+    column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
+
+# GET CONTRACT STATUS
+  - request_process: true
+    resource_path: "asset/DeviceContractInformations"
+    request_method: "GET"
+    select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
+    expand: "&$expand=Contract,EndCustomer,Product"
+    filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
+    table_name: "Contract Status"
+    column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
 
 
 
