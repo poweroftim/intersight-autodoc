@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 Create v3 API Key within Intersight.
 <br>
-<img width="472" alt="Screenshot 2025-04-28 at 11 02 20 AM" src="https://wwwin-github.cisco.com/storage/user/59500/files/6ce8097b-ba2b-408b-bb35-53d6f5d58311">
+<img width="469" alt="Screenshot 2025-04-28 at 11 05 55 AM" src="https://github.com/user-attachments/assets/83b14ca6-1c11-4142-81de-8f9153df81bf" />
 
 Create an .env file in the intersight-autodoc directory with the following values:
 ```bash
