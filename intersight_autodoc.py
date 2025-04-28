@@ -3,12 +3,14 @@ import json
 import requests
 import pandas as pd
 import yaml
+import sys
 from dotenv import load_dotenv
 from intersight_auth import IntersightAuth
 from docx import Document
 from docx.shared import Pt
+from requests import Session
 
-load_dotenv()
+load_dotenv(dotenv_path=".env")
 
 # Validate configuration files
 try:
@@ -62,12 +64,17 @@ def create_auth_object():
     Returns:
         IntersightAuth: An authentication object to be used for API requests.
     """
-    if not SECRET_KEY_PATH or not API_KEY_ID:
-        raise ValueError("Environment variables SECRET_KEY_PATH and API_KEY_ID must be set.")
-    return IntersightAuth(
-        secret_key_filename=SECRET_KEY_PATH,
-        api_key_id=API_KEY_ID
+
+    with open(SECRET_KEY_PATH, 'r') as key_file:
+        my_secret_key = key_file.read()
+
+    session = Session()
+    session.auth = IntersightAuth(
+        api_key_id=API_KEY_ID,
+        secret_key_string=my_secret_key
     )
+    return session.auth
+    
 
 def get_nested_value(data, keys):
     """
