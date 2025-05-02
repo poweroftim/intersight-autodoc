@@ -180,6 +180,33 @@ OPERATIONS:
 #     table_name: "Port-Channels"
 #     column_names: "Domain Profile,Fabric,PortChannel Id,Bandwidth,Speed,Role"
 
+# # ------------------------------------------------------
+# # -------- CHASSIS PROFILES AND POLICIES SECTION --------
+# # ------------------------------------------------------
+
+# GET CHASSIS PROFILE TEMPLATES
+  - request_process: true
+    resource_path: "chassis/ProfileTemplates"
+    request_method: "GET"
+    select: "?$select=Name,PolicyBucket,Usage"
+    expand: "&$expand=PolicyBucket($select=Name)"
+    filter: "Name,PolicyBucket.Name,Usage"
+    table_name: "Chassis Profile Templates"
+    column_names: "Name,Policies,Total Assigned"
+    placeholder: "{{chassis_profile_templates}}"
+
+# GET CHASSIS PROFILES
+  - request_process: true
+    resource_path: "chassis/Profiles"
+    request_method: "GET"
+    select: "?$select=AssignedChassis,Name,PolicyBucket,SrcTemplate"
+    expand: "&$expand=PolicyBucket,SrcTemplate"
+    filter: "Name,PolicyBucket.Name,SrcTemplate.Name,AssignedChassis"
+    table_name: "Chassis Profiles"
+    column_names: "Name,Policies,Template,Assigned"
+    placeholder: "{{chassis_profiles}}"
+
+
 
 # # ------------------------------------------------------
 # # -------- SERVER PROFILES AND POLICIES SECTION --------
@@ -477,7 +504,6 @@ OPERATIONS:
 
 
 
-
 # ------------------------------------------------------
 # --------------- FI HARDWARE SECTION ------------------
 # ------------------------------------------------------
@@ -522,6 +548,12 @@ OPERATIONS:
     column_names: "Service Profile,Model,Name,Health,Firmware Version,Chassis ID,Serial"
     placeholder: "{{ucsm_managed_servers}}"
 
+
+# ------------------------------------------------------
+# ------------- INTERSIGHT HEALTH METRICS --------------
+# ------------------------------------------------------ 
+
+
 # GET DISK LIFE REMAINING
   - request_process: true
     resource_path: "storage/PhysicalDisks"
@@ -533,26 +565,35 @@ OPERATIONS:
     column_names: "PID,Disk State,Percent Life Left,Failure Predicted,Wear Status In Days,Description,Dn"
     placeholder: "{{disk_life_remaining}}"
 
-# GET HCL STATUS
+# # GET HCL STATUS
+#   - request_process: true
+#     resource_path: "cond/HclStatuses"
+#     request_method: "GET"
+#     select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+#     expand: ""
+#     filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
+#     table_name: "Hardware and Software Compatibilty"
+#     column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
+
+# # GET CONTRACT STATUS
+#   - request_process: true
+#     resource_path: "asset/DeviceContractInformations"
+#     request_method: "GET"
+#     select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
+#     expand: "&$expand=Contract,EndCustomer,Product"
+#     filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
+#     table_name: "Contract Status"
+#     column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
+
+
+# GET INTERSIGHT LICENSES
   - request_process: true
-    resource_path: "cond/HclStatuses"
+    resource_path: "license/LicenseInfos"
     request_method: "GET"
-    select: "?$select=ManagedObject,HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
-    expand: ""
-    filter: "HardwareStatus,SoftwareStatus,Reason,Status,InvFirmwareVersion,HclOsVendor,HclOsVersion,InvModel"
-    table_name: "Hardware and Software Compatibilty"
-    column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
-
-# GET CONTRACT STATUS
-  - request_process: true
-    resource_path: "asset/DeviceContractInformations"
-    request_method: "GET"
-    select: "?$select=Contract,EndCustomer,Product,DeviceId,ServiceDescription,ServiceEndDate"
-    expand: "&$expand=Contract,EndCustomer,Product"
-    filter: "Contract.ContractNumber,Contract.LineStatus,Product.Number,DeviceId,ServiceDescription,ServiceEndDate"
-    table_name: "Contract Status"
-    column_names: "Contract,Status,PID,Serial Number,Service Level,End Date"
-
-
-
+    select: "?$select=DaysLeft,LicenseState,LicenseCount,LicenseCountPurchased,LicenseType,ExpireTime"
+    expand: "&$filter=ExpireTime ne 0001-01-01T00:00:00Z"
+    filter: "LicenseType,LicenseState,DaysLeft,LicenseCount,LicenseCountPurchased,ExpireTime"
+    table_name: "Intersight Licenses"
+    column_names: "License Type,License Status,Days Left,License Count,Licenses Purchased,Expire Time"
+    placeholder: "{{intersight_licenses}}"
 
