@@ -5,6 +5,7 @@ directories:
 
 autodoc_template_path: './autodoc_template.docx'
 autodoc_completed_path: './autodoc_completed.docx'
+autodoc_completed_path_with_bios: './autodoc_completed_with_bios.docx'
 base_url: 'https://www.intersight.com/api/v1/'
 
 

@@ -170,7 +170,7 @@ OPERATIONS:
 #     column_names: "Domain Profile,Fabric,PortChannel ID,Member Port,Speed,Bandwidth,Role"
 #     placeholder: "{{port_channels}}"
 
-# # GET PORT-CHANNELS -- !!! WORKING
+# # GET PORT-CHANNELS -- !!! INCOMPLETE
 #   - request_process: true
 #     resource_path: "equipment/SwitchCards"
 #     request_method: "GET"
@@ -344,15 +344,16 @@ OPERATIONS:
     column_names: "Name,I/O Throttle Count,LUN Count,LUN Queue Depth,Rx Queue Settings Count,Rx Queue Settings Ring Size,Tx Queue Settings Count,Tx Queue Settings Ring Size,SCSI Queue Settings Count, SCSI Queue Settings Ring Size"
     placeholder: "{{fc_adapter_policies}}"
 
-# # GET BIOS POLICIES - !!! INCOMPLETE
+# # GET BIOS POLICIES
 #   - request_process: true
 #     resource_path: "bios/Policies"
 #     request_method: "GET"
-#     select: "?$select=Name,Profiles"
+#     select: "?"
 #     expand: "&$expand=Profiles($select=Name)"
-#     filter: "Name,Profiles.Name"
+#     filter: ""
 #     table_name: "BIOS Policies"
-#     column_names: "Name,Assigned"
+#     column_names: ""
+#     placeholder: "{{bios_policies}}"
 
 # GET BOOT POLICIES
   - request_process: true
@@ -565,7 +566,7 @@ OPERATIONS:
     column_names: "PID,Disk State,Percent Life Left,Failure Predicted,Wear Status In Days,Description,Dn"
     placeholder: "{{disk_life_remaining}}"
 
-# # GET HCL STATUS
+# # GET HCL STATUS - INCOMPLETE
 #   - request_process: true
 #     resource_path: "cond/HclStatuses"
 #     request_method: "GET"
@@ -575,7 +576,7 @@ OPERATIONS:
 #     table_name: "Hardware and Software Compatibilty"
 #     column_names: "HW Status,SW Status,Reason,HCL Status,FW Version,Vendor,OS Version,Inv Model"
 
-# # GET CONTRACT STATUS
+# # GET CONTRACT STATUS - INCOMPLETE
 #   - request_process: true
 #     resource_path: "asset/DeviceContractInformations"
 #     request_method: "GET"

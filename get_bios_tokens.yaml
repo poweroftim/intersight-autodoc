@@ -1,0 +1,17 @@
+# get_bios_tokens.yaml
+
+OPERATIONS:
+# ------------------------------------------------------
+# ----------------- BIOS POLICIES ----------------------
+# ------------------------------------------------------
+
+# GET BIOS POLICIES
+  - request_process: true
+    resource_path: "bios/Policies"
+    request_method: "GET"
+    select: "?"
+    expand: "&$expand=Profiles($select=Name)"
+    filter: ""
+    table_name: "BIOS Policies"
+    column_names: ""
+    placeholder: "{{bios_policies}}"
