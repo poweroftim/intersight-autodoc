@@ -91,8 +91,19 @@ Execute the script:
 ```bash
 python intersight_autodoc.py
 ```
+The completed doc will be named "autodoc_completed.docx"
 
-Example Output:
+### 7. Include BIOS Policies
+Due to the structure of the Intersight API, BIOS policies must be collected after running the intersight_autodoc.py script. 
+
+Execute the script:
+
+```bash
+python get_bios_tokens.py
+```
+The completed doc will be named "autodoc_completed_with_bios.docx"
+
+## Example Output:
 <br>
 <img width="669" alt="Screenshot 2025-04-22 at 2 57 36 PM" src="https://github.com/user-attachments/assets/7f6cea8b-eeeb-4ab4-8ca9-adf11342423d" />
 
