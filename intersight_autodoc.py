@@ -162,6 +162,7 @@ def main():
                     paragraph.text = paragraph.text.replace(placeholder, str(value))
 
 
+    # Process each operation defined in operations.yaml
     for operation in OPERATIONS:
         if operation['request_process']:
             response = None
@@ -173,8 +174,15 @@ def main():
                     auth=auth
                 )
             
-            # Save the JSON response to a separate file named after the resource_path
+            # Parse the JSON response
             response_json = response.json()
+
+            # Check if the response contains an empty "Results" list
+            if not response_json or ('Results' in response_json and not response_json['Results']):
+                print(f"No data returned for operation: {operation['resource_path']}. Skipping...")
+                continue
+
+            # Save the JSON response to a separate file named after the resource_path
             resource_name = operation['resource_path'].replace('/', '_')
             output_file_path = os.path.join(OUTPUT_DIRECTORY, f'{resource_name}.json')
             with open(output_file_path, 'w') as output_file:
