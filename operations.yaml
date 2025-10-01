@@ -559,11 +559,11 @@ OPERATIONS:
   - request_process: true
     resource_path: "storage/PhysicalDisks"
     request_method: "GET"
-    select: "?$select=Dn,Description,Pid,DiskState,FailurePredicted,PercentLifeLeft,WearStatusInDays,Vendor,Type,Size"
-    expand: "&$orderby=PercentLifeLeft"
-    filter: "Pid,DiskState,PercentLifeLeft,FailurePredicted,WearStatusInDays,Description,Dn"
+    select: "?$select=Description,Pid,DiskState,FailurePredicted,PercentLifeLeft,WearStatusInDays,Vendor,Type,Size,Name,Parent,Model"
+    expand: "&$expand=Parent($select=ComputeBoard%3B$expand=ComputeBoard($select=Parent%3B$expand=Parent))&$orderby=PercentLifeLeft"
+    filter: "Pid,DiskState,PercentLifeLeft,FailurePredicted,WearStatusInDays,Description,Parent.ComputeBoard.Parent.Model,Parent.ComputeBoard.Parent.Name"
     table_name: "Disk Life Remaining"
-    column_names: "PID,Disk State,Percent Life Left,Failure Predicted,Wear Status In Days,Description,Dn"
+    column_names: "PID,Disk State,Percent Life Left,Failure Predicted,Wear Status In Days,Description,Server Model,Server Name"
     placeholder: "{{disk_life_remaining}}"
 
 # # GET HCL STATUS - INCOMPLETE
